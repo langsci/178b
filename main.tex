@@ -1,48 +1,24 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                              %%%
-%%%     Language Science Press Master File       %%%
-%%%         follow the instructions below        %%%
-%%%                                              %%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- 
-% Everything following a % is ignored
-% Some lines start with %. Remove the % to include them
-
-\documentclass[output=book,
-  nonflat,
-  modfonts,
+\documentclass[output=book, nonflat, modfonts,
   colorlinks,
 % showindex
 		  ]{langsci/langscibook}    
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                              %%%
 %%%          additional packages                 %%%
-%%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% put all additional commands you need in the 
-% following files. {I}f you do not know what this might 
-% mean, you can safely ignore this section
-
 \input{localmetadata.tex}
 \input{localpackages.tex}
 \input{localhyphenation.tex}
 \bibliography{bibliography} 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                              %%%
 %%%             Frontmatter                      %%%
-%%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
-\usepackage{lipsum}
 \begin{document}     
 \input{localcommands.tex} 
  
-
 \maketitle                
 \frontmatter
-% %% uncomment if you have preface and/or acknowledgements
 
 \currentpdfbookmark{Contents}{name} % adds a PDF bookmark
 \tableofcontents
@@ -51,39 +27,21 @@
 \include {chapters/Abstract}
 % \include{chapters/abbreviations}
 \mainmatter         
-  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                              %%%
 %%%             Chapters                         %%%
-%%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include{chapters/01Introduction}
-\include{chapters/02Background}
-\include{chapters/03Framework}
-\include{chapters/04Particles}
-\include{chapters/05WordOrder}
-\include{chapters/06Intonation}
-\include{chapters/07Discussion}
-\include{chapters/08Conclusion}
- 
-
-% % copy the lines above and adapt as necessary
+% \include{chapters/02Background}
+% \include{chapters/03Framework}
+% \include{chapters/04Particles}
+% \include{chapters/05WordOrder}
+% \include{chapters/06Intonation}
+% \include{chapters/07Discussion}
+% \include{chapters/08Conclusion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%                                              %%%
 %%%             Backmatter                       %%%
-%%%                                              %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-% \input{localseealso.tex} 
-% There is normally no need to change the backmatter section
 \input{backmatter.tex} 
 \end{document} 
-
-% you can create your book by running
-% xelatex main.tex
-%
-% you can also try a simple 
-% make
-% on the commandline
