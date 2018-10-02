@@ -1,0 +1,34 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 463.8708709911364 
+xmax = 465.86520106452514 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "phrase" 
+        xmin = 463.8708709911364 
+        xmax = 465.86520106452514 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 463.8708709911364 
+            xmax = 463.9121313640407 
+            text = "" 
+        intervals [2]:
+            xmin = 463.9121313640407 
+            xmax = 464.45037327291334 
+            text = "sugoi" 
+        intervals [3]:
+            xmin = 464.45037327291334 
+            xmax = 465.5012355711472 
+            text = "tatakai-da-yo-ne" 
+        intervals [4]:
+            xmin = 465.5012355711472 
+            xmax = 465.81157680363236 
+            text = "kore" 
+        intervals [5]:
+            xmin = 465.81157680363236 
+            xmax = 465.86520106452514 
+            text = "" 

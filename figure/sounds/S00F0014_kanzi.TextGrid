@@ -1,0 +1,34 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 6.016 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "trans" 
+        xmin = 0 
+        xmax = 6.016 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.873576005029732 
+            text = "" 
+        intervals [2]:
+            xmin = 3.873576005029732 
+            xmax = 4.1928200779510005 
+            text = "husigina" 
+        intervals [3]:
+            xmin = 4.1928200779510005 
+            xmax = 4.56854219423137 
+            text = "kanzi-ga" 
+        intervals [4]:
+            xmin = 4.56854219423137 
+            xmax = 4.995948694566684 
+            text = "si-masi-te" 
+        intervals [5]:
+            xmin = 4.995948694566684 
+            xmax = 6.016 
+            text = "" 

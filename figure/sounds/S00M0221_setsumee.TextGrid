@@ -1,0 +1,42 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 4.992 
+tiers? <exists> 
+size = 1 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "trs" 
+        xmin = 0 
+        xmax = 4.992 
+        intervals: size = 7 
+        intervals [1]:
+            xmin = 0 
+            xmax = 0.5356071978314502 
+            text = "" 
+        intervals [2]:
+            xmin = 0.5356071978314502 
+            xmax = 0.9792120808475527 
+            text = "setumee-o" 
+        intervals [3]:
+            xmin = 0.9792120808475527 
+            xmax = 1.0457404149513807 
+            text = "u" 
+        intervals [4]:
+            xmin = 1.0457404149513807 
+            xmax = 1.1594101827795225 
+            text = "ke" 
+        intervals [5]:
+            xmin = 1.1594101827795225 
+            xmax = 1.3191234008671644 
+            text = "ta" 
+        intervals [6]:
+            xmin = 1.3191234008671644 
+            xmax = 1.8302588015392933 
+            text = "n-desu-ga" 
+        intervals [7]:
+            xmin = 1.8302588015392933 
+            xmax = 4.992 
+            text = "" 

@@ -1,0 +1,182 @@
+% abbr.sty
+% version 1.04 (2002/12/06) by KURAHASHI Minori (minori@freemail.hu)
+% a tool to handle abbreviations
+
+% !!! needs multicol.sty  !!!
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{abbr}
+[2003/12/06 Ver. 1.04
+    A tool for abbreviations]
+\RequirePackage{multicol}
+
+%%% \addabbr %%%
+\newcommand{\addabbr}{\@ifnextchar[%]
+{\@optaddabbr}{\@addabbr}}
+
+\def\@abbrs{}
+\def\@setabbrs#1#2{\global\edef#1{#1,#2}}
+
+\def\@addabbrhlp{%
+The ID of the abbreviation displayed already used,
+\MessageBreak use another ID for this abbreviation.}
+
+\def\@optaddabbr[#1]#2#3{%
+\@ifundefined{@abbr#2}{%
+\expandafter\gdef\csname @abbr#2\endcsname{%
+{\optstyleofabbr{#1}}\@puttotoa{#2}}
+\expandafter\gdef\csname @abbrdes#2\endcsname{#3}
+\newcounter{abbr#2}[resetabbr]%
+\@setabbrs\@abbrs{#2}}%
+{\PackageError{abbr}{Abbreviation `#2' already defined}{\@addabbrhlp}}}
+
+\def\@addabbr#1#2{%
+\@ifundefined{@abbr#1}{%
+\expandafter\gdef\csname @abbr#1\endcsname{%
+{\styleofabbr{#1}}\@puttotoa{#1}}
+\expandafter\gdef\csname @abbrdes#1\endcsname{#2}
+\newcounter{abbr#1}[resetabbr]%
+\@setabbrs\@abbrs{#1}}%
+{\PackageError{abbr}{Abbreviation `#1' already defined}{\@addabbrhlp}}}
+
+%%% \ab{...}/\abd{...} %%%
+\def\@abbrhlp{%
+The abbreviation displayed not defined by \protect\addabbr, make sure that you%
+\MessageBreak used correct ID of abbreviation, or use \protect\addabbr\space%
+to define it.}
+\def\ab#1{\@ifundefined{@abbr#1}{%
+\PackageError{abbr}{Abbreviation `#1' not defined}{\@abbrhlp}}%
+{\csname @abbr#1\endcsname}}
+\def\abd#1{\@ifundefined{@abbrdes#1}{%
+\PackageError{abbr}{Abbreviation `#1' not defined}{\@abbrhlp}}%
+{\csname @abbrdes#1\endcsname}}
+
+%%% \puttotoa %%%
+\def\@puttotoa#1{\@ifundefined{@abbr#1}{%
+\PackageError{abbr}{Abbreviation `#1' not defined}{\@abbrhlp}}%
+{\addtocounter{abbr#1}{1}}}
+
+\def\@puttedabbrs{}
+\def\@setputtedabbrs#1#2{\global\edef#1{#1,#2}}
+
+\def\puttotoa#1{%
+\@setputtedabbrs\@puttedabbrs{#1}
+\@for\eachputtedabbr:=\@puttedabbrs\do{%
+\ifx\eachputtedabbr\empty\relax
+\else
+\@puttotoa{\eachputtedabbr}
+\fi}}
+
+%%% \removefromtoa %%%
+\def\@removefromtoa#1{\@ifundefined{@abbr#1}{%
+\PackageError{abbr}{Abbreviation `#1' not defined}{\@abbrhlp}}%
+{\setcounter{abbr#1}{0}}}
+\def\@removedabbrs{}
+\def\@setremovedabbrs#1#2{\global\edef#1{#1,#2}}
+
+\def\removefromtoa#1{%
+\@setremovedabbrs\@removedabbrs{#1}
+\@for\eachremovedabbr:=\@removedabbrs\do{%
+\ifx\eachremovedabbr\empty\relax
+\else
+\@removefromtoa{\eachremovedabbr}
+\fi}}
+
+%%% \resetabbr %%%
+
+\def\resetabbr{\stepcounter{resetabbr}}
+\newcounter{resetabbr}
+
+%%% \title- / \note- / \leveloftoa %%%
+\def\titleoftoa#1{\gdef\@titleoftoa{#1}}
+\def\noteoftoa#1{\def\@noteoftoa{#1}}
+\def\@leveloftoa{\@ifundefined{chapter}{section}{chapter}}
+\def\columnsoftoa#1{\gdef\@columnsoftoa{#1}}
+
+%%% default style, title, note %%%
+\def\styleofabbr#1{\relax{#1}}
+\def\optstyleofabbr#1{\relax{#1}}
+\def\@titleoftoa{Abbreviations}
+\def\@noteoftoa{\relax}
+\def\@columnsoftoa{2}
+
+
+%%% \tableofabbr %%%
+\newcounter{numberofabbrs}
+\def\tableofabbr{%
+\mark{\@titleoftoa}
+\csname \@leveloftoa\endcsname*{\@titleoftoa}
+\addcontentsline{toc}{\@leveloftoa}{\@titleoftoa}
+\bigskip
+\hfil\begin{minipage}{.9\textwidth}\@noteoftoa\end{minipage}\hfil
+\ifnum\@columnsoftoa>1%
+\begin{multicols}{\@columnsoftoa}
+\else
+\bigskip
+\fi
+\noindent
+\@for\eachabbr:=\@abbrs\do{%
+\ifx\eachabbr\empty\relax
+\else
+ \ifnum\value{abbr\eachabbr}>0%
+ \addtocounter{numberofabbrs}{1}%
+  \ifnum\value{numberofabbrs}=1%
+\csname @abbr\eachabbr\endcsname~~\dotfill~~%
+\csname @abbrdes\eachabbr\endcsname%
+  \else\\%
+\csname @abbr\eachabbr\endcsname~~\dotfill~~%
+\csname @abbrdes\eachabbr\endcsname%
+  \fi
+ \fi
+\fi}
+\ifnum\@columnsoftoa>1%
+\end{multicols}
+\fi}
+
+%%% \completetableofabbr %%%
+\def\completetableofabbr{%
+\@for\eachabbr:=\@abbrs\do{%
+\ifx\eachabbr\empty\relax
+\else
+\@puttotoa{\eachabbr}
+\fi
+}\tableofabbr}
+
+%%% \footnoteofabbr %%%
+\def\footnoteofabbr{%
+\footnote{
+\@noteoftoa
+\medskip\\
+\hfil\begin{minipage}{.9\textwidth}%
+\@for\eachabbr:=\@abbrs\do{%
+\ifx\eachabbr\empty\relax
+\else
+ \ifnum\value{abbr\eachabbr}>0%
+ \addtocounter{numberofabbrs}{1}%
+  \ifnum\value{numberofabbrs}=1%
+ \csname @abbr\eachabbr\endcsname:%
+\csname @abbrdes\eachabbr\endcsname%
+  \else, %
+\csname @abbr\eachabbr\endcsname:%
+\csname @abbrdes\eachabbr\endcsname%
+  \fi
+ \fi
+\fi}
+\end{minipage}\hfil\\}}
+
+%%% \completefootnoteofabbr %%%
+\def\completefootnoteofabbr{%
+\@for\eachabbr:=\@abbrs\do{%
+\ifx\eachabbr\empty\relax
+\else
+\puttotoa{\eachabbr}
+\fi
+}\footnoteofabbr}
+
+
+%%% rename abbr %%%
+\def\renewabbrname#1#2{
+\addabbr{#1}{}
+\expandafter\gdef\csname @abbr#1\endcsname{\csname @abbr#2\endcsname}}
+
+%%% end of abbr.sty %%%
