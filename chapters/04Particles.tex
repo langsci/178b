@@ -25,22 +25,23 @@
 %%----------------------------------------------------
 \section{Introduction}\label{ParIntro}
 
-In this section, I will describe
+In this chapter, I will describe
 so-called topic particles coding different kinds of topics (\S \ref{TopPar})
 and
 so-called case particles coding different kinds of foci and grammatical functions (\S \ref{CasePar}).
-Table \ref{ParInfoStatusT} summarises kinds of so-called topic particles and case particles
-coding topics and focus in different statuses of given-new taxonomy.
+Table \ref{ParInfoStatusT} summarizes kinds of so-called topic particles and case particles
+coding topics and focus in different statuses of the given-new taxonomy.
 The activation status is also specified in the table to show the correspondence,
-although I mainly use the terms of given-new taxonomy.
-Different topic particles attach to elements in different statuses of given-new taxonomy,
+although I mainly use the terms of the given-new taxonomy.
+The shaded cells indicate that they are indistinguishable with each other in the annotation proposed in \S \ref{FrameworkTFIdent}
+Different topic particles attach to elements in different statuses of the given-new taxonomy,
 while case particles are not sensitive to the given-new taxonomy.
 Instead, case particles are sensitive to the grammatical functions and the broad vs.\ narrow focus distinction,
 which is summarized in Table \ref{OvertZeroCaseParT1}.
 The morpheme \ab{cop} indicates copula.
 
 \begin{table}[hbt]
-	\caption{Topic particle vs.\ activation status and given-new taxonomy}
+	\caption{Topic particle vs.\ activation status and the given-new taxonomy}
 	\label{ParInfoStatusT}
 	\begin{center}
 	\begin{tabular}{|l|l|c|c|}
@@ -102,9 +103,9 @@ The morpheme \ab{cop} indicates copula.
 \end{table}
 
 I argue that these tables are a kind of semantic map \cite{croft01,haspelmath03}.
-By arguing that Table \ref{ParInfoStatusT} and \ref{OvertZeroCaseParT1} are examples of semantic maps,
+By arguing that Tables \ref{ParInfoStatusT} and \ref{OvertZeroCaseParT1} are examples of semantic maps,
 I postulate that
-the scales of given-new taxonomy (the column) and the topic vs.\ focus distinction (the row) in Table \ref{ParInfoStatusT} and
+the scales of the given-new taxonomy (the column) and the topic vs.\ focus distinction (the row) in Table \ref{ParInfoStatusT} and
 the contrast vs.\ non-contrast distinction (the column) and the grammatical function (the row) in \ref{OvertZeroCaseParT1} are cognitively real and continuous in the way they are ordered in the tables.
 This argument and the Semantic Map Connectivity Hypothesis \ref{SemanticMapHyp} in \S \ref{FrameworkSemanticMap} lead us to our hypotheses \Next.
 %
@@ -117,7 +118,7 @@ the contrast vs.\ non-contrast distinction and the grammatical function in \ref{
 	map onto a connected region in the conceptual space.
 
 The semantic maps in Table \ref{ParInfoStatusT} and \ref{OvertZeroCaseParT1}
-support the hypothesis \Last because
+support hypothesis \Last, because
 all of the particles are in connected regions.
 In the following sections,
 I will show the details of the distributions of these particles
@@ -129,7 +130,7 @@ with specific examples.
 \section{So-called topic particles}\label{TopPar}
 
 As shown in Table \ref{ParInfoStatusT},
-evoked elements are coded by \ci{Toiuno-wa} or \ci{wa},
+evoked elements are coded by \ci{toiuno-wa} or \ci{wa},
 while inferable elements are coded by \ci{wa}.
 Declining and unused elements are coded by a copula followed by \ci{kedo} `though' or \ci{ga} `though'.
 The zero particle (indicated by {\O}) can code elements in the given-new taxonomy.
@@ -141,7 +142,7 @@ I propose that inferable and declining elements and unused and brand-new element
 Table \ref{ParInfoStatusCTT} and Figure \ref{ParInfoStatusCTF} show the distributions of elements in different information status coded by different particles in our corpus.
 %Table \ref{ParInfoStatusT} and Figure \ref{ParInfoStatusF} show the distributions of elements coded by case particles,
 %which are also put here for comparison.
-Overall, the topic particles \ci{toiuno-wa} and \ci{wa} codes more ratio of anaphoric elements than the case particles \ci{ga} and \ci{o}.
+Overall, the topic particles \ci{toiuno-wa} and \ci{wa} code a higher ratio of anaphoric elements than the case particles \ci{ga} and \ci{o}.
 The particles \ci{mo} and \ci{ni} are included here for comparison.
 In the corpus, the markers \ci{wa}, \ci{toiuno-wa}, and \ci{mo} are the most frequent topic markers and 
 \ci{ga}, \ci{o}, and \ci{ni} are the most frequent case markers (except for \ci{no} `\ab{gen}').
@@ -150,25 +151,25 @@ In the corpus, the markers \ci{wa}, \ci{toiuno-wa}, and \ci{mo} are the most fre
 %\ci{mo} can actually code focus elements and it is not a topic marker in terms of the present study's definition.
 Note that ``anaphoric'' in the present work just means ``the element in question has the co-referential antecedent'' and ``non-anaphoric'' means ``it does not.''
 Elements with bridging antecedents are included in ``non-anaphoric.''
-See \S \ref{FW:Cor:AnaRel} for the detail of the procedure of annotation.
+See \S \ref{FW:Cor:AnaRel} for the details of the procedure of annotation.
 \chd{A linear mixed effects model was employed to predict information status.%
  \footnote{
- I used R for the statistical analysis of the thesis.
+ I used R for the statistical analysis of the study.
  \code{https://www.r-project.org}
  The packages \code{lme4} and \code{lsmeans} were employed.
  }
 I included particles (\ci{toiuno-wa, wa, mo, ga, o, ni}), word order (\code{nth} in CSJ, see \S \ref{WO:Intro} for the definition of this annotation), and intonation (phrasal vs.~clausal IU, see \S \ref{Int:PIUCIU} for the definitions)
 as fixed effects, and speakers (\code{TalkID}) as a random effect.
-The model with the effects of particles, word order, and intonation is significantly different from the model without each of those effects (likelihood ratio test, $p<0.001$ a model without particles, $p<0.01$ that without word order, and $p<0.05$ without intonation).%
- \footnote{The effects of word order and intonation are to be discussed
-           in Chapter \ref{WordOrder} and \ref{Intonation}, respectively.}
+The model with the effects of particles, word order, and intonation is significantly different from the model without each of those effects (likelihood ratio test, $p<0.001$ a model without particles, $p<0.01$ one without word order, and $p<0.05$ without intonation).%
+ \footnote{The effects of word order and intonation will be discussed
+           in Chapters \ref{WordOrder} and \ref{Intonation}, respectively.}
 The least-squares mean for each level of the particles was calculated, and the pairwise comparisons among particles were conducted.
 The results of this pairwise comparison is shown in Table \ref{Par:InfoStatusPar:LSMEANST},
 which only includes the pairs of interest and those whose p-values are less than $0.5$.%
 \footnote{
-The p-values are adjusted using Tukey method for comparing a family of multiple estimates.
+The p-values are adjusted using the Tukey method for comparing a family of multiple estimates.
 }
-The contrast of \code{ga - o}, whose estimate is $-0.465$, indicates that
+The contrast of \ci{ga} $-$ \ci{o}, whose estimate is $-0.465$, indicates that
 the least-squares mean of the odds ratio of anaphoric elements coded by \ci{ga} is significantly less than the least-squares mean of the odds ratio of those coded by \ci{o};
 in other words, anaphoric elements are more likely to be coded by \ci{o} than by \ci{ga}.
 Similarly, anaphoric elements are more likely to be coded by \ci{wa} than by \ci{ga}, by \ci{ni}, and by \ci{mo}.
@@ -181,7 +182,7 @@ most of the \ci{toiuno-wa} coded elements are in phrasal IUs (see Chapter \ref{I
 }
 
 The statistical analysis shows that
-\ci{toiuno-wa} codes as much ratio of anaphoric elements as \ci{wa} does.
+\ci{toiuno-wa} codes as high a ratio of anaphoric elements as \ci{wa} does.
 However, detailed qualitative analysis in \S \ref{Toiunowa} reveals that
 in fact the referents of \ci{toiuno-wa}-coded elements are evoked;
 the referent of non-anaphoric elements coded by \ci{toiuno-wa} has been introduced implicitly in the previous contexts.
@@ -192,13 +193,13 @@ the referent of non-anaphoric elements coded by \ci{toiuno-wa} has been introduc
 On the other hand,
 the referent of \ci{wa}-coded elements have not necessarily been introduced in the previous contexts;
 they can be inferable elements.
-The zero marker {\O} does not appear frequently enough in the corpus because CSJ consists of formal speeches.
+The zero marker {\O} does not appear frequently enough in the corpus because CSJ consists of formal speech.
 As has already been pointed out in \citeA{tsutsui84} and discussed in \S \ref{BackSubSubZero},
-zero markers tend not to appear in formal speeches.
+zero markers tend not to appear in formal speech.
 %In fact,
 %the new elements coded by topic markers (except for \ci{mo}) are either inferable or unused
 %and are never inactive as discussed below.
-There are not enough examples for copula followed by \ci{ga} or \ci{kedo} (7 examples)
+There are not enough examples for the copula followed by \ci{ga} or \ci{kedo} (7 examples)
 and I refrain from generalizing by this small amount of data.
 Instead,
 I will employ grammatical judgements and analyze these examples qualitatively,
@@ -209,20 +210,20 @@ Persistence,
 which is proposed in \citeA{givon83} to measure topichood,
 is the number of times the referent is mentioned
 after it is mentioned by the expression in question.
-The persistence of elements are shown in Table \ref{ParPerNumT}.
+The persistence of elements is shown in Table \ref{ParPerNumT}.
 The table shows the count of persistent and non-persistent elements;
 the persistent elements are mentioned at least once in the following discourse after it is mentioned,
 while non-persistent elements are not mentioned in the following discourse.
-See \ref{FW:Cor:AnaRel} for the procedure of annotation.
+See \S \ref{FW:Cor:AnaRel} for the procedure of annotation.
 \chd{A linear mixed effects model was applied to predict persistence (persistent vs.~non-persistent).
 I used particles (\ci{toiuno-wa, wa, mo, ga, o, ni}), word order (\code{nth} in CSJ), and intonation (phrasal vs.~clausal IU) as fixed effects and speakers (\code{TalkID}) as a random effect.
-The model with the effects of particles, word order, and intonation is significantly different from the model without either of the effects of particles and word order (likelihood ratio test, $p<0.001$ a model without particles, $p<0.01$ that without word order).
-However, that with the effects of particles, word order, and intonation is not significantly different from that without the effect of intonation ($p=0.423$).
+The model with the effects of particles, word order, and intonation is significantly different from the model without either of the effects of particles and word order (likelihood ratio test, $p<0.001$ a model without particles, $p<0.01$ the model without word order).
+However, the model with the effects of particles, word order, and intonation is not significantly different from the model without the effect of intonation ($p=0.423$).
 The least-squares means were calculated, and the pairwise comparisons among particles were conducted.
-The results of this pairwise comparison is shown in Table \ref{Par:PersistencePar:LSMEANST},
+The results of this pairwise comparison are shown in Table \ref{Par:PersistencePar:LSMEANST},
 which only includes the pairs of interest and those whose p-values are less than $0.5$.
 }
-\chd{Although the effect of particles are significant,
+\chd{Although the effect of particles is significant,
 this effect mainly appears to come from the contribution of \ci{ni} in contrast with \ci{toiuno-wa}, \ci{wa}, and \ci{o}, which is not of interest in the present work.
 %I expected the topic particles \ci{toiuno-wa} and \ci{wa} to be more persistent than the case particles \ci{ga} or \ci{o}.
 One notable contrast is the effect of \ci{toiuno-wa} in contrast to \ci{ga}.
@@ -275,7 +276,7 @@ Numbers more than or equal to 5 are compressed as ``5+''.
 	      & {\rt (42.6\%)} & {\rt (41.1\%)} & {\rt (61.9\%)} & {\rt (61.9\%)} & {\rt (52.1\%)} & {\rt (59.8\%)} \\
 	\midrule
 	Sum   & 68             & 190        & 118         & 452        & 340       & 445 \\
-	      & {\rt (100\%)}  & {\rt (100\%)}& {\rt (100\%)}&{\rt (100\%)} & {\rt (100\%)} & {\rt (100\%)} \\
+%	      & {\rt (100\%)}  & {\rt (100\%)}& {\rt (100\%)}&{\rt (100\%)} & {\rt (100\%)} & {\rt (100\%)} \\
 	\bottomrule
 	\end{tabular}
 	\end{center}
@@ -325,7 +326,7 @@ Numbers more than or equal to 5 are compressed as ``5+''.
 	                  & {\rt (33.8\%)} & {\rt (43.7\%)} & {\rt (55.1\%)} & {\rt (53.7\%)} & {\rt (48.5\%)} & {\rt (58.7\%)} \\
 	\midrule
 	Sum               & 68             & 190     &  118    & 452    & 340 & 445 \\
-	                  & {\rt (100\%)} & {\rt (100\%)} & {\rt (100\%)} & {\rt (100\%)} & {\rt (100\%)} & {\rt (100\%)} \\
+%	                  & {\rt (100\%)} & {\rt (100\%)} & {\rt (100\%)} & {\rt (100\%)} & {\rt (100\%)} & {\rt (100\%)} \\
 	\bottomrule
 	\end{tabular}
 	\end{center}
@@ -372,7 +373,7 @@ Numbers more than or equal to 5 are compressed as ``5+''.
 \end{table}
 
 
-Elements coded by so-called topic markers cannot be repeated as news as shown in hypothetical conversation between A and B in the following examples.
+Elements coded by so-called topic markers cannot be repeated as news, as shown in the hypothetical conversation between A and B in the following examples.
 %
 %	\ex. \ag. tozan-\EM{toiuno-wa} \\
 %			mountain.climbing-\ab{quot}-\ci{wa} \\
@@ -396,7 +397,7 @@ the \ci{toiuno-wa}-coded elements
 \ci{mooningu thii} `morning tea'%
 	\footnote{
 	As discussed in \S \ref{Toiunowa},
-	there are some formal variations of \ci{toiuno-wa} and,
+	there are some formal variations of \ci{toiuno-wa};
 	\ci{tteno-wa} is one of these variations.
 	}
 and \ci{eberesuto-kaidoo} `the Everest Trail'
@@ -433,7 +434,7 @@ can be repeated as news.
 %このエベレスト街道というのはチベットとネパールの交易路にもなっておりまして (S01F0151: 105.73-110.29)
 %
 As shown in \Next,
-the element \ci{thii-taimu} `tea time' coded by copula + \ci{kedo}%
+the element \ci{thii-taimu} `tea time' coded by the copula + \ci{kedo}%
 	\footnote{
 	Again there are some variations of this marker
 	and I will discuss this in \S \ref{kedo}.
@@ -499,12 +500,12 @@ As indicated in Table \ref{ParInfoStatusT} and will be discussed below,
 brand-new elements can never be coded by topic markers;
 they can never be assumed to be shared between the speaker and the hearer.
 Non-anaphoric elements coded by topic markers are
-inferable, declining, or unused
+inferable, declining, or unused,
 as will be discussed in the following sections.
 %as has been pointed out in \citeA{kuno73} and as has been discussed in \S \ref{BackSecTopic}.
 For example,
 as in \Next,
-it is unacceptable for topic markers to code brand new elements \ci{oozei-no hito} `many people' out-of-the-blue.
+it is unacceptable for topic markers to code brand new elements \ci{oozei-no hito} `many people' out of the blue.
 % without assuming that the hearer can identify which girl the speaker is talking about.%
 %	\footnote{
 %	As discussed in \S \ref{TopZero} and \S \ref{FocZero},
@@ -540,7 +541,7 @@ Similarly, it is unacceptable for other topic markers to code these elements, wh
 
 %Although it is possible to interpret \Last as ``girls in general wear red hats,''
 %it is otherwise unacceptable.
-While \ci{oozei-no hito} `many people' in \Last was unanchored in Prince's term,
+While \ci{oozei-no hito} `many people' in \Last was unanchored in terms of \citeA{prince81},
 \ci{taroo-no otoosan} `Taro's father' in \Next is anchored.
 The element coded by a topic marker is still not acceptable in an out-of-the-blue context.
 %
@@ -571,7 +572,7 @@ cannot be repeated as news and hence considered to be presupposed to be shared.
 
 
 In the following sections,
-I analyze each topic markers in detail.
+I analyze each topic marker in detail.
 
 %%----------------------------------------------------
 \subsection{\textit{Toiuno-wa}}\label{Toiunowa}
@@ -584,7 +585,7 @@ availability in the universe of discourse.
 
 There are phonetic variations of \ci{toiuno-wa}:
 \ci{(t)teno-wa}, \ci{t(y)uuno-wa}, \ci{teiuno-wa}, etc.
-I put them into the same category \ci{toiuno-wa} and assume that they are the same
+I put them into the same category as \ci{toiuno-wa} and assume that they are the same
 except for stylistic difference.
 
 
@@ -593,17 +594,17 @@ except for stylistic difference.
 
 \ci{Toiuno-wa} typically codes evoked elements.
 As exemplified in \Next and \NNext,
-the antecedent of the \ci{toiuno-wa}-coded elements,
-\ci{un} `fortune' in \Next and \ci{tiryoo-hoo} `treatment methods' in \NNext,
+the antecedents of the \ci{toiuno-wa}-coded elements,
+\ci{un} `luck' in \Next and \ci{tiryoo-hoo} `treatment methods' in \NNext,
 are mentioned in the immediately preceding contexts.
 %
 \ex.
  \ag. syokugyoo-ni taisite-no \EMi{un}-toiu koto-o tyotto o-hanasi si-tai-to omoi-masu \\
-		job-to towards-\ab{gen} fortune-\ab{quot} thing-\ci{o} a.bit \ab{plt}-talk do-want-\ab{quot} think-\ab{plt} \\
-		`I would like to talk a bit about fortune in job.'
+		job-to towards-\ab{gen} luck-\ab{quot} thing-\ci{o} a.bit \ab{plt}-talk do-want-\ab{quot} think-\ab{plt} \\
+		`I'd like to speak a bit about the role of luck in one's career.'
  \bg. de \EM{un-toiuno-wa} maa iroirona un-ga aru-to omou-n-desu-keredomo \\
- 	then fortune-\ci{toiuno-wa} \ab{fl} various fortune-\ci{ga} exist-\ab{quot} think-\ab{nmlz}-\ab{plt}-though \\
-	`I guess there are various kinds of fortunes...'
+ 	then luck-\ci{toiuno-wa} \ab{fl} various luck-\ci{ga} exist-\ab{quot} think-\ab{nmlz}-\ab{plt}-though \\
+	`I guess there are various kinds of lucks...'
 	\hfill{(\code{S01F0038: 0.53-8.70})}
 %職業に対しての運ということをちょっとお話ししたいと思います
 %で運というのはまー色々な運があると思うんですけれども
@@ -617,7 +618,7 @@ are mentioned in the immediately preceding contexts.
 		`The treatment methods had not been established.'
 	\bg. sono \EM{tiryoo-hoo-toiuno-wa} yuiitu ... suteroidozai-de sinkoo okur-aseru koto-dake-desi-ta \\
 		that treatment-method-\ci{toiuno-wa} only ... steroid-by progress delay-\ab{caus} thing-only-\ab{plt}-\ab{past} \\
-		`The only way to treat is just to delay the progress of the disease by steroid that I cannot use.' \hfill{(\code{S02F0100: 294.39-308.12})}
+		`The only way to treat is just to delay the progress of the disease using steroid, which I cannot use.' \hfill{(\code{S02F0100: 294.39-308.12})}
 
 %でその病気は原因が不明で治療法も確立していませんでした
 %その治療法というのは唯一私が使うことのできないステロイド剤で進行遅らせることだけで (S02F0100: 294.39-308.12)
@@ -643,19 +644,19 @@ when the speaker mentioned `sports watching' with \ci{toiuno-wa} coding in line 
 %私自身ぐはえーあまりこうスポーツ観戦ていうのはちょっとしなかったんですね (S01M0182: 52.77-79.62)
 
 Similarly, in \Next,
-\ci{taitoru} `title (in piano competitions)' is an non-anaphoric element
+\ci{taitoru} `title (in piano competitions)' is a non-anaphoric element
 but the speaker was talking about `awards' in the preceding context
 and `title' can be considered to have been evoked at the time of utterance \Next[e].
 %
 \ex. \a. I have been participating in various piano competitions
-	\b. So far the best award I received was the fourth best play in the China-Japan International Competition.
+	\b. So far the best award I received was the fourth best place in the China-Japan International Competition.
 	\b. Beyond that, I would like to receive higher awards.
 	\bg. ano doositemo kore-wa yappari piano-o kokorozasu mono-ni totte-wa \\
 		\ab{fl} anyhow this-\ci{wa} anyway piano-\ci{o} orient people-for in.terms.of-\ci{wa} \\
 		`This, for those who want to make name as a pianist,'
 	\bg. kono \EM{taitoru-tteiuno-wa} sugoku ookii-node \\
 		this title-\ci{toiuno-wa} very big-because \\
-		`titles matters a lot, so...'
+		`titles matter a lot, so...'
 \hfill{(\code{S00F0209: 507.13-529.76})}
 %
 %やはりあの今まで受けたコンクールの最高順位が
@@ -684,7 +685,7 @@ Therefore, ``human beings'' are always available as topic.
 
 Readers might think that \Last is acceptable because `human being' is generic rather than evoked in the physical context.
 However, I do not employ this account for the following two reasons:
-(i) being generic is a characteristics across all \ci{toiuno-wa}-coded elements (see \S \ref{Par:Topic:Toiunowa:Other}), and
+(i) being generic is a characteristic across all \ci{toiuno-wa}-coded elements (see \S \ref{Par:Topic:Toiunowa:Other}), and
 (ii) even though the elements are generic, some elements are still difficult to be coded by \ci{toiuno-wa} in the beginning of speeches.
 %Let us discuss example \Next, which is at the very beginning of a speech about Kosovo conflicts.
 \chd{Let us discuss example \Next,
@@ -692,7 +693,7 @@ which is at the very beginning of a speech about travel to Hawaii.}
 %
 \exg.\label{Par:Toiunowa:Ex:Hawaii}teema-wa hawai-too-no sizen-no subarasisa-to tabi-no tanosisa-nituite-desu \\
    theme-\ci{wa} Hawaii-island-\ab{gen} nature-\ab{gen} splendor-and travel-\ab{gen} fun-about-\ab{cop} \\
-   `The topic (of this talk) is about the splendor of Hawaii nature and fun of travelling.'
+   `The topic (of this talk) is about the splendor of Hawaii nature and fun of traveling.'
  \hfill{(\code{S00F0014: 0.30-6.08})}
 %テーマはハワイ島の自然の素晴らしさと旅の楽しさについてです
 %%
@@ -709,10 +710,10 @@ which is at the very beginning of a speech about travel to Hawaii.}
 %% (S00M0199: 0.24-10.50)
 
 \chd{In this example,
-the speaker did not choose to code `the splendor of Hawaii nature and fun of travelling' with \ci{toiuno-wa}.
+the speaker did not choose to code `the splendor of Hawaii nature and fun of traveling' with \ci{toiuno-wa}.
 It is harder to code this with \ci{toiuno-wa} than `human being' because
 it is not always available as topic
-even though `the splendor of Hawaii nature and fun of travelling'
+even though `the splendor of Hawaii nature and fun of traveling'
 is generic.}
 %The sentence itself is natural if \ci{ni-tuite} is replaced with \ci{toiuno-wa}.
 %(In that case, \Last[a-b] are considered to be a single coherent sentence.)
@@ -735,7 +736,7 @@ The climate in Iran has not been mentioned before \Next[c],
 but is still coded by \ci{toiuno-wa}.
 The climate in Iran is neither implicitly introduced nor available as universal topic.
 \ex. \label{IranClimate}
- \a. (The speaker moved to Iran when she is a middle school student.)
+ \a. (The speaker moved to Iran when she was a middle school student.)
  \b. (The school for Japanese students in Iran was small but she had a lot of fun there.)
  \bg. eeto iran-no \EM{kikoo-tteiuno-wa} tomokaku kansoo si-tei-masi-te \\
  	\ab{fl} Iran-\ab{gen} \ci{climate-toiuno-wa} at.any.rate dry do-\ab{prog}-\ab{plt}-and \\
@@ -792,12 +793,12 @@ The airport is inferable because the speaker has already mentioned flying to Luk
 %そのルクラの村なんですが
 %飛行場は本当に山の中にありまして (S01F0151: 179.50-191.39)
 
-I speculate that the different acceptabilities of \ci{toiuno-wa} among \ref{IranClimate}, \LLast, and \Last are due to different statuses of given-new taxonomy or the accessibility of the elements;
-`the climate' in \ref{IranClimate} and `the background' in \LLast are more general terms and are easily accessible
+I speculate that the different acceptabilities of \ci{toiuno-wa} among \ref{IranClimate}, \LLast, and \Last are due to different statuses in the given-new taxonomy or the accessibility of the elements;
+`the climate' in \ref{IranClimate} and `the background' in \LLast are more general terms and are more easily accessible
 than `the airport' in \Last.
-Note that this does not contradict, rather, is consistent with, the Semantic Map connectivity Hypothesis \ref{SemanticMapHypIS}.
+Note that this does not contradict, but rather is consistent with, the Semantic Map Connectivity Hypothesis \ref{SemanticMapHypIS}.
 Since the given-new taxonomy scale is continuous,
-the boundary between evoked and inferable is blur, and
+the boundary between evoked and inferable is blurred, and
 among the inferable elements in these examples,
 `the climate' of Iran in \ref{IranClimate} and `the background' in \LLast are easier to access than `the airport' in \Last.
 This is consistent with the nature of the conceptual space,
@@ -809,7 +810,7 @@ The degree of how a referent is declining is difficult to calculate from the cor
 Apparently, it does not simply correspond to the distance between an element and its antecedent,
 but the intervention of (an)other topic(s) seems to be more relevant.
 For example,
-a copula followed by \ci{kedo} codes declining or unused elements as will be shown in \S \ref{kedo}.
+a copula followed by \ci{kedo} codes declining or unused elements, as will be shown in \S \ref{kedo}.
 In \Next[g],
 it codes a declining element rather than unused element
 because the element has already been introduced in line a.
@@ -828,7 +829,7 @@ this marker cannot be replaced with \ci{toiuno-wa}.
  \b. I have been participating in various piano competitions
  \b. So far the best award I received was the fourth best play in the China-Japan International Competition.
  \b. Beyond that, I would like to receive higher awards.
- \b. Titles matters a lot for pianists, so I will work hard.
+ \b. Titles matter a lot for pianists, so I will work hard.
  \bg. de ato-wa \EM{sigoto-no} \EM{bubun-\{nan-desu-keredomo/(??toiuno-wa)\}} \\
  	then remaining-\ci{wa} job-\ab{gen} part-\{\ab{nmlz}-\ab{cop}.\ab{plt}-though/\ci{toiuno-wa}\} \\
 	`Concerning the other one, job,'
@@ -908,7 +909,7 @@ It is very difficult to find unused elements
 because of the nature of our corpus;
 each speaker gave a speech in front of people s/he does not know
 and there are few things the speaker can assume to be shared with the hearer(s).
-However, constructed examples like \Next clearly shows that \ci{toiuno-wa} cannot code unused elements.
+However, constructed examples like \Next clearly show that \ci{toiuno-wa} cannot code unused elements.
 %
 \ex. \label{FacebookParty}Context: According to Facebook, both A and B are going to a party tomorrow. But they have not seen each other for a week. A sees B in a classroom and talks to B:
 	\a.[A:] asita-no \EM{paathii-\{da-kedo/??toiuno-wa\}} nan-zi-kara-na-no \\
@@ -923,7 +924,7 @@ This is shown in \Next[A].%
 	\ci{tteiuno-wa} is more casual than \ci{toiuno-wa}.
 	\ci{Toiuno-wa} sounds too formal in this utterance.
 	}
-\ex. \label{Party}Context: A and B are having a conversation. B mentioned the tomorrow's party, which A knows that both A and B are going to.
+\ex. \label{Party}Context: A and B are having a conversation. B mentioned tomorrow's party, which A knows that both A and B are going to.
 	\ag.[A:] sono \EM{paathii-\{??da-kedo/tteiuno-wa\}} nan-zi-kara-na-no \\
 		that party-\{\ab{cop}-though/\ci{toiuno-wa}\} what-o'clock-from-\ab{cop}-\ab{q} \\
 		`What time does tomorrow's party start?' 
@@ -932,7 +933,7 @@ This is shown in \Next[A].%
 %%----------------------------------------------------
 \subsubsection{Further characteristics of \textit{toiuno-wa}-coded elements}\label{Par:Topic:Toiunowa:Other}
 
-Statements about \ci{toiuno-wa}-coded elements tend to represent the general characteristics of the referents
+Statements about \ci{toiuno-wa}-coded elements tend to represent the general characteristics of the referents,
 as has been pointed out in \citeA{masuoka87,masuoka08}.
 Masuoka argues that \ci{toiuno-wa}-coded elements only accompany individual-level predicates (in his term, property predicates).
 This is clearly shown in the contrast between \Next[a] and \Next[b] (repeated from \ref{ExSatiko}) in \S \ref{Back:GeneralChar:Toiunowa}.
@@ -943,7 +944,7 @@ the individual-level predication \Next[b] does allow \ci{toiuno-wa}.
 \ag. *satiko-\EM{toiuno-wa} uso-o tui-ta \\
      Sachiko-\ci{toiuno-wa} lie-\ci{o} commit-\ab{past} \\
      `Sachiko lied.'
-     \hfill{\cite[p.~96]{masuoka12}}
+     \hfill{\cite[96]{masuoka12}}
 \bg. satiko-\EM{toiuno-wa} uso-tuki-da \\
      Sachiko-\ci{toiuno-wa} lie-commiter-\ab{cop} \\
      `Sachiko is a liar.'
@@ -957,7 +958,7 @@ the speaker is talking about the general characteristics of puppies.
 %
 \exg. \EM{koinu-toiuno-wa} dono syurui-demo hizyooni ano neru-no-ga tokui-desu-ne \\
  puppy-\ci{toiuno-wa} which kind-also very \ab{fl} sleep-\ab{nmlz}-\ci{ga} good.at-\ab{cop}.\ab{plt}-\ab{fp} \\
- `Puppies are, no matter what kinds, good at sleeping.'
+ `Puppies are, no matter what kind, good at sleeping.'
  \hfill{(\code{S02M1698: 166.62-170.59})}
 %小犬というのはどの種類でも非常にあの寝るのが得意ですね
 % (S02M1698: 166.62-170.59)
@@ -1014,7 +1015,7 @@ As exemplified in the following examples,
 \ci{wa} can code evoked elements.
 In \Next,
 `chelow kebab' is mentioned in line a,
-and it is mentioned again in line b and g.
+and it is mentioned again in lines b and g.
 The second and the third mentioned elements are coded by \ci{wa}.
 %
 \ex.\label{kebab}
@@ -1055,8 +1056,8 @@ and it is mentioned again in line c, which is coded by \ci{wa}.
 	`I was waiting for the result of the medical exam.'
  \bg. nde sono kensa-no \EM{kekka-wa} hutuu-no hito-yori-mo sootoo izyoodat-ta-n-desu-ga \\
  	and that exam-\ab{gen} result-\ci{wa} normal-\ab{gen} person-than-also very abnormal-\ab{past}-\ab{nmlz}-\ab{cop}-though \\
- 	`The result of the exam was quite abnormal than common people,'
- \b. but it didn't reach the disease.
+ 	`According to the result of the exam, the value was quite abnormal compared with common people,'
+ \b. but it didn't pass the threshold that I could acquire the disease.
  \hfill{(S02F0100: 662.61-677.85)}
 %で(0.373)私は(0.393)そして一週間(0.115)(F あのー)(1.016)自分でも驚く程冷静に検査の結果を待ちました
 %んで(0.222)その検査の結果は(0.24)普通の人よりも(D す)(0.454)相当異常だったんですが病気にまでは至っていませんでした
@@ -1142,20 +1143,20 @@ Kuno's examples like \Next may be natural at the beginning of speech.
 \exg. kuzira-\EM{wa} honyuu-doobutu-desu \\
       whale-\ab{top} mammal-animal-\ab{cop}.\ab{plt} \\
       `Speaking of whales, they are mammals. (A whale is a mammal.)'
-      \hfill{\cite[p.~44]{kuno73}}
+      \hfill{\cite[44]{kuno73}}
 
-People can expect the speaker to start talking about \ci{kuzira} `whales' out-of-the-blue.
+People can expect the speaker to start talking about \ci{kuzira} `whales' out of the blue.
 However, it is difficult to expect the speaker to talk about
 ``Kosovo War'' (\code{S00M0199}) and ``Himalaya trekking'' (\code{S01F0151}).
 Therefore,
-these NPs  are not naturally coded by \ci{wa} out-of-the-blue
-even when they are in generic statements
+these NPs  are not naturally coded by \ci{wa} out of the blue
+even when they are in generic statements,
 because they are not available as topics and are difficult to accommodate.
 The speakers would choose other forms to introduce these NPs,
 then might explain them in more detail in generic statements.
 Out of 12 speeches I studied,
 there is only one speech (\code{S02M1698}) where the speaker begins with a generic statement with \ci{toiuno-wa},
-which is \ref{ExNingenToiunowa}.
+which is \ref{ExNingenToiunowa} above.
 The speaker begins with a generic statement about human beings in general,
 which the hearer(s) can easily expect the speaker to start talking about out-of-the-blue.
 
@@ -1165,7 +1166,7 @@ which the hearer(s) can easily expect the speaker to start talking about out-of-
 %%% contrastive P & patient Sではハが必須なのは何故か
 
 I argue that so-called contrastive \ci{wa},
-which has been discussed for a long time in the literature \cite[e.g.,][]{kuno73},
+which has been discussed extensively in the literature \cite[e.g.,][]{kuno73},
 %%% Reference
 is a special case for \ci{wa} coding inferable elements.
 In typical cases of inferables like \ref{siken},
@@ -1183,17 +1184,17 @@ one is furnished but the other is not.
  \a. I'm looking for a new room and yesterday I saw one room.
  \bg. \EM{reezooko-wa} tui-te-nakat-ta-kedo \EM{sentaku-ki-wa} tui-te-ta-yo \\
  	fridge-\ci{wa} come.with-\ab{prog}-\ab{neg}-\ab{past}-though washing-machine-\ci{wa} come.with-\ab{prog}-\ab{past}-\ab{fp} \\
-	`Though (The room) doesn't come with a fridge, (it) comes with a washing machine.'
+	`Though (the room) doesn't come with a fridge, (it) comes with a washing machine.'
 
 Note that \ci{wa} coding \ci{hituzi} `sheep' is still not natural in \Next
 for the same reason as described in relation to \ref{ExSentakuki};
-sheep is not expected as a normal thing which accompanies with an apartment.
+a sheep is not expected as a normal thing which is included with an apartment.
 %
 \ex.
  \a. I'm looking for a new room and yesterday I saw one room.
  \bg. ??\EM{reezooko-wa} tui-te-nakat-ta-kedo \EM{hituzi-wa} tui-te-ta-yo \\
  	fridge-\ci{wa} come.with-\ab{prog}-\ab{neg}-\ab{past}-though sheep-\ci{wa} come.with-\ab{prog}-\ab{past}-\ab{fp} \\
-	`Though (The room) doesn't come with a fridge, (it) comes with a sheep.'
+	`Though (the room) doesn't come with a fridge, (it) comes with a sheep.'
 
 Similarly, in \Next from our corpus,
 the \ci{wa}-coded elements \ci{tinomigo} `infants' and \ci{inu} `dogs' are contrasted.
@@ -1205,7 +1206,7 @@ They belong to the relevant category of `creatures that might not be allowed to 
 	`Germany is a dog-friendly country.'
  \bg. tatoeba aa resutoran-de-mo anoo \EM{tinomigo-wa} haire-nai-yoona resutoran-mo \EM{inu-wa} haireru-to \\
  	for.example \ab{fl} restaurant-at-also \ab{fl} infant-\ci{wa} enter.can-\ab{neg}-such.as restaurant-also dog-\ci{wa} enter.can-\ab{quot} \\
- 	`For example, restaurants that infants are not allowed to get in, uh, dogs can get into them.'
+ 	`For example, restaurants where infants are not allowed to get in, uh, dogs can get in them.'
 	\hfill{(\code{S02M1698: 243.46-256.10})}
 %でドイツという国は非常に(F あの)(D うー)(0.224)犬に(0.368)(F え)住み易い(0.312)国です
 %例えば(0.344)(F (? あー))レストランでも(0.397)(F あのー)乳飲み子は入れないようなレストランも犬は(0.156)入れると
@@ -1219,7 +1220,7 @@ However, there is a problem with this claim.
 It is possible for non-contrastively \ci{wa}-coded elements to be non-anaphoric;
 they can be inferable as we have seen in the previous section.
 If what Kuno means by ``anaphoric'' includes bridging anaphora \cite{clark75} and thus includes inferable elements,
-then contrastively \ci{wa}-coded elements are also anaphoric
+then contrastively \ci{wa}-coded elements are also anaphoric,
 because the elements belong to the same category relevant to the current discourse.
 I argue that the distinction between contrastive and non-contrastive is continuous and a matter of degree;
 if there are more than two evoked referents in the same category,
@@ -1244,7 +1245,7 @@ it is non-contrastive.
 Declining elements cannot be coded by \ci{wa}.
 For example, in \ref{sigoto}, which is repeated here as \Next for convenience,
 `job' is intervened by another topic `fame'.
-When the speaker mentions back to `job',
+When the speaker goes back to `job',
 it is not natural for \ci{wa} to code the element `job'.
 %
 \ex.
@@ -1253,11 +1254,11 @@ it is not natural for \ci{wa} to code the element `job'.
  \b. I have been participating in various piano competitions
  \b. So far the best award I received was the fourth best play in the China-Japan International Competition.
  \b. Beyond that, I would like to receive higher awards.
- \b. Titles matters a lot for pianists, so I will work hard.
+ \b. Titles matter a lot for pianists, so I will work hard.
  \bg. de ato-wa \EM{sigoto-no} \EM{bubun-\{nan-desu-keredomo/(??-wa)\}} \\
  	then remaining-\ci{wa} job-\ab{gen} part-\{\ab{nmlz}-\ab{cop}.\ab{plt}-though/\ci{-wa}\} \\
 	`Concerning the other one, job,'
- \b. to receive heigher wages...
+ \b. to receive higher wages...
 \hfill{(\code{S00F0209: 495.77-539.19})}
 %
 %これからのあの目標っていうのがありまして
@@ -1276,7 +1277,7 @@ it is not natural for \ci{wa} to code the element `job'.
 % (S00F0209: 495.77-539.19)
 
 Similarly,
-unused elements cannot be coded by \ci{wa}
+unused elements cannot be coded by \ci{wa},
 as the contrast between \Next and \NNext shows.
 These examples are repeated from \ref{FacebookParty} and \ref{Party}.
 %
@@ -1310,7 +1311,7 @@ they are unnatural in spoken Japanese.
 	\ab{fl} bathroom-\ci{wa} where-\ab{cop}.\ab{plt}-\ab{q} \\
 	`Excuse me, where is the bathroom?'
 
-Assuming that \Last is produced out-of-the-blue without the previous mention of the bathroom,
+Assuming that \Last is produced out-of-the-blue without previous mention of the bathroom,
 the best marker is \ci{\O}.
 It seems that in written Japanese,
 \ci{wa} can be used to code unused elements as shown in \Next,
@@ -1321,7 +1322,7 @@ assuming that this is written Japanese (in an e-mail or letter).
  very interesting-\ab{past}-\ab{plt} \\
  `By the way, the movie I mentioned the other day was very interesting.'
 
-The spoken Japanese version of \Last is not natural as shown in \Next.
+The spoken Japanese version of \Last is not natural, as shown in \Next.
 %
 \exg. ?a kono aida hanasi-te-ta \EM{eega-wa} totemo omosirokat-ta-desu-yo \\
 	oh this interval talk-\ab{prog}-\ab{past} movie
@@ -1329,12 +1330,12 @@ The spoken Japanese version of \Last is not natural as shown in \Next.
  `By the way, the movie I mentioned the other day was very interesting.'
 
 Formal speech is closer to written Japanese than casual speech
-and the boundary between them is blur.
+and the boundary between them is blurred.
 Note, however, that
 the conceptual space is a suitable format to capture variations like this \cite[see][]{croft10}.
 
 %%----------------------------------------------------
-\subsection{Copula followed by \textit{ga} or \textit{kedo}}\label{kedo}
+\subsection{The copula followed by \textit{ga} or \textit{kedo}}\label{kedo}
 
 A combination of a copula followed by \ci{ga} or \ci{kedo}
 codes declining or unused elements.
@@ -1343,7 +1344,7 @@ there are not many examples of \chd{these topic markers} in the corpus
 and I will mainly employ grammatical judgements of constructed and actual examples
 and analyze them qualitatively rather than quantitatively.
 The results are compatible with the claims in \citeA{koide84} and \citeA{takahashi99},
-which supports the conclusion of this thesis.
+which supports the conclusion of this chapter.
 As discussed in \S \ref{BackSubSubKedo},
 they argue that \ci{ga} newly introduces topics in the beginning of a discourse.
 
@@ -1361,7 +1362,7 @@ I will sometimes call this marker \ci{kedo}.
 Keep in mind, however, that there are variations of \ci{kedo} as well as copulas preceding it.
 
 %%----------------------------------------------------
-\subsubsection{Evoked and inferable elements cannot be coded by copula followed by \textit{ga} or \textit{kedo}}
+\subsubsection{Evoked and inferable elements cannot be coded by the copula followed by \textit{ga} or \textit{kedo}}
 
 Evoked elements cannot be coded by \ci{kedo}.
 This is exemplified in \Next,
@@ -1394,11 +1395,11 @@ where `ice cream' is assumed to be inferable because they are talking about the 
 
 
 %%----------------------------------------------------
-\subsubsection{Declining and unused elements can be coded by copula followed by \textit{ga} or \textit{kedo}}
+\subsubsection{Declining and unused elements can be coded by the copula followed by \textit{ga} or \textit{kedo}}
 
 Declining elements can be coded by \ci{kedo}.
 As discussed above,
-there are no simple way to identify declining elements.
+there is no simple way to identify declining elements.
 The declining status appears to be related to intervention of other topics;
 when the speaker shifts one topic to another topic and mentions the first one again,
 the first topic is considered to be declining.
@@ -1414,11 +1415,11 @@ where the second topic (job) is considered to be declining.
  \b. I have been participating in various piano competitions.
  \b. So far the best award I received was the fourth best play in the China-Japan International Competition.
  \b. Beyond that, I would like to receive higher awards.
- \b. Titles matters a lot for pianists, so I will work hard.
+ \b. Titles matter a lot for pianists, so I will work hard.
  \bg. de ato-wa \EM{sigoto-no} \EM{bubun-nan-desu-keredomo} \\
  	then remaining-\ci{wa} job-\ab{gen} part-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
 	`Concerning the other one, job,'
- \b. to receive heigher wages...
+ \b. to receive higher wages...
 \hfill{(\code{S00F0209: 495.77-534.04})}
 %
 %これからのあの目標っていうのがありまして
@@ -1442,7 +1443,7 @@ This kind of referent can also be coded by \ci{kedo}.
 \ci{Kedo} is able to upgrade the referent to the topic status.
 %
 \ex.\label{thii-taimu2}
- \a. While we trek on the Everest Trail, the cook make us lunch in a way,
+ \a. While we trek on the Everest Trail, the cook makes us lunch in a way,
  \b. in addition, there is tea time and we can take a break while we climb the mountain,
  \b. so, we walked without feeling that we were in a big group.
  \bg. de kono \EM{thii-taimu-nan-desu-keredomo} \\
@@ -1468,11 +1469,11 @@ There is only one non-anaphoric element coded by \ci{kedo} as in \Next,
 while the other six examples are anaphoric.
 In \Next,
 the speaker has been talking about travel to Hawaii,
-then she mentions `the travelling style',
+then she mentions `the traveling style',
 which is coded by \ci{kedo}.
 \ex. \ag. nde ee kono tabi-no \EM{sutairu-tteiu-mono-nan-desu-keredomo} \\
 		and \ab{fl} this travel-\ab{gen} style-called-thing-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
-		`And regarding this travel's style'
+		`And regarding this traveling style'
 	\bg. anoo watasi-wa moo kekkoo ma tabi-nare-teru-to iu-ka \\
 		\ab{fl} \ab{1}.\ab{sg}-\ci{wa} \ab{fl} to.some.extent \ab{fl} travel-is.used.to-\ab{quot} say-\ab{q} \\
 		`I'm used to travel to some extent, so to speak...'
@@ -1482,15 +1483,15 @@ which is coded by \ci{kedo}.
 %あのー私はもう結構ま旅慣れてると言うか (S00F0014: 300.43-309.95)
 
 This kind of example may be considered to be inferable;
-travelling is associated with its style.
+traveling is associated with its style.
 However, the association might be too weak.
 I categorize this example as a marginal case of inferable
 and \ci{kedo} functions to upgrade the referent to the topic status.
 
-Unused elements can be coded by \ci{kedo}
+Unused elements can be coded by \ci{kedo},
 as shown in \Next.
 In \Next,
-it is assumed that speaker Y and hearer H shares particular ice cream
+it is assumed that speaker Y and hearer H share a particular ice cream
 but it is not evoked in H's mind
 because s/he is just in school.
 %
@@ -1528,7 +1529,7 @@ because s/he is just in school.
 %えーま当時のユーゴスラビア共和国内のえー民族紛争いわゆるコソボ問題っていうことなりますけれども (S00M0199: 33.75-43.61)
 
 %%----------------------------------------------------
-\subsubsection{Further analysis of copula followed by \textit{ga} or \textit{kedo}}
+\subsubsection{Further analysis of the copula followed by \textit{ga} or \textit{kedo}}
 
 The above examples of \ci{kedo} might be considered to be clauses rather than phrases
 because \ci{ga} and \ci{kedo} are subordinate-clause markers.
@@ -1539,28 +1540,28 @@ Thus all the examples of topics coded by \ci{kedo} above might also be the predi
 %
 \ex. \ag. sono hawai-too-no ma kankoo-no itiban sono ookina pointo-tteiuno-ga \EM{kirauea-kazan-nan-desu-keredomo} \\
 		\ab{fl} Hawaii-island-\ab{gen} \ab{fl} sightseeing-\ab{gen} most \ab{fl} big point-\ci{toiuno-ga} Kilauea-volcano-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
-		`The biggest sightseeing point is Hawaii island is Kilauea...'
+		`The biggest sightseeing point on Hawaii island is Kilauea...'
 	\bg. anoo kirauea-kazan-mo mappu-o kai-masi-te de zibun-tati-de ma renta-kaa-o tobasi-te e iki-masi-ta \\
 	\ab{fl} Kilauea-volcano-also map-\ci{o} buy-\ab{plt}-and and self-\ab{pl}-by \ab{fl} rent.a-car-\ci{o} drive-and \ab{fl} go-\ab{plt}-\ab{past} \\
-	`(We) bought a map, drove rent-a-car, and went to Kilauea by ourselves.'
+	`(We) bought a map, drove a rental car, and went to Kilauea by ourselves.'
 		\hfill{(\code{S00F0014: 836.05-850.16})}
 
-However, there are differences between examples like \Last
-and topics coded by \ci{kedo} discussed in preceding sections.
-As has been mentioned in \S \ref{BackSubSubKedo}.
+However, there are differences between examples like \Last[a]
+and topics coded by \ci{kedo} discussed in preceding sections,
+as was mentioned in \S \ref{BackSubSubKedo}.
 First,
 it is actually impossible to ``recover'' the subject of alleged copula clauses in topic-coding \ci{kedo},
 while it is possible in general for the copula predicate followed by \ci{kedo} to have a subject.
 For example,
 one cannot ``recover'' the subject of the alleged copula clause \ref{aisuT},
-while examples like \Last does have a subject.
+while examples like \Last[a] do have a subject.
 Therefore,
 the former is considered to be a kind of phrase,
 whereas the latter is a kind of clause.
 
 Second,
 topic elements coded by \ci{kedo} are presupposed to be shared between the speaker and the hearer,
-while the predicate of copula clauses followed by \ci{kedo} like \Last are not presupposed to be shared.
+while predicates of copula clauses followed by \ci{kedo} like \Last are not presupposed to be shared.
 This is supported by the \ci{hee} test.
 As shown in \Next, \ci{kedo}-coded topics cannot be repeated as news preceded by \ci{hee} `oh, really'.
 %
@@ -1581,11 +1582,11 @@ As shown in \Next, \ci{kedo}-coded topics cannot be repeated as news preceded by
 %(S01F0151: 187.33-191.39)
 
 On the other hand,
-the predicate of copula clauses followed by \ci{kedo} can be repeated as news as shown in \Next.
+the predicate of copula clauses followed by \ci{kedo} can be repeated as news, as shown in \Next.
 %
 \ex. \ag.[A:] sono hawai-too-no ma kankoo-no itiban sono ookina pointo-tteiuno-ga \EM{kirauea-kazan-nan-desu-keredomo} \\
 		\ab{fl} Hawaii-island-\ab{gen} \ab{fl} sightseeing-\ab{gen} most \ab{fl} big point-\ci{toiuno-ga} Kilauea-volcano-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
-		`The biggest sightseeing point is Hawaii island is Kilauea...'
+		`The biggest sightseeing point on Hawaii island is Kilauea...'
 %	\bg. anoo kirauea-kazan-mo mappu-o kai-masi-te de zibun-tati-de ma renta-kaa-o tobasi-te e iki-masi-ta \\
 %	\ab{fl} Kilauea-volcano-also map-\ci{o} buy-\ab{plt}-and and self-\ab{pl}-by \ab{fl} rent.a-car-\ci{o} drive-and \ab{fl} go-\ab{plt}-\ab{past} \\
 %	`(We) bought a map, drove rent-a-car, and went to Kilauea by ourselves.'
@@ -1610,14 +1611,14 @@ and I leave it open for future studies.
 \subsection{{\O$_{t}$}}\label{TopZero}
 
 As mentioned earlier,
-zero particles do not appear frequently in our corpus
+the zero particles do not appear frequently in our corpus
 because of the stylistic difference.
 As a result,
 most examples in this section are constructed rather than naturally produced.
 
 There are two kinds of zero particles:
 a topic-coding zero particle ({\O$_{t}$}) and a focus-coding zero particle ({\O$_{f}$}).
-There are at least three differences as summarized in \Next \cite[see also][]{niwa06,nakagawasato12}.
+There are at least three differences, as summarized in \Next \cite[see also][]{niwa06,nakagawasato12}.
 %
 \ex.
 \begin{tabular}{lll}
@@ -1638,7 +1639,7 @@ On the other hand,
 those coded by {\O$_{f}$} are by definition assumed not to be shared between the speaker and the hearer.
 They appear close to the predicate and are not followed by the accentual-phrase boundary;
 rather, they are produced in a single intonation contour with the predicate.
-As shown in the contrast between \Next and \NNext,
+As shown by the contrast between \Next and \NNext,
 the element \ci{nezumi} `mouse' preceding another argument \ci{neko} `cat' is felicitous when the speaker and the hearer share the referent in question as in \Next[Y],
 while it is not when they do not share the referent as in \NNext[Y].
 On the other hand,
@@ -1660,7 +1661,7 @@ while it is not when they share the referent as in \Next[Y$^{\prime}$].
 		`The cat caught a mouse.'
 
 %
-\ex. Context: Y and his cat is relaxing in the living room.
+\ex. Context: Y and his cat are relaxing in the living room.
 	H comes into the room.
 	\a.[H:] Anything fun today?
 	\bg.[Y:] ??\EM{nezumi-\O}, neko-ga tukamae-ta-yo \\
@@ -1673,10 +1674,10 @@ while it is not when they share the referent as in \Next[Y$^{\prime}$].
 
 Similarly,
 \citeA[Chapter 10]{niwa06} reports that topical elements such as
-\ci{ano ko} `that girl' and \ci{ree-no seerusuman} `the salesman' are felicitously zero-coded clause-initially
+\ci{ano ko} `that girl' and \ci{ree-no seerusuman} `the salesman' are felicitously zero-coded clause-initially,
 as the contrasts between \Next[a--b] and \NNext[a--b] show.
 %
-\ex.\label{Par:Ex:Anoko} (People have discussed a female newcommer \ci{ano ko} `that girl'.)
+\ex.\label{Par:Ex:Anoko} (People have discussed a female newcomer \ci{ano ko} `that girl'.)
  \ag. oi keiri-ka-ni \EM{ano} \EM{ko}-\{\EM{ga/{\O}}\} hait-ta-zo \\
       hey accounting-section-\ab{dat} that girl-\{\ci{ga/{\O}}\} enter-\ab{past}-\ab{fp}\\
       `Hey, that girl joined the accounting section.'
@@ -1688,14 +1689,14 @@ as the contrasts between \Next[a--b] and \NNext[a--b] show.
 \ex.\label{Par:Ex:Seerusuman}
  \ag. kinoo \EM{ree-no} \EM{seerusuman}-\{\EM{ga/{\O}}\} ki-ta-mitai-da-yo \\
       yesterday you.know.who-\ab{gen} salesman-\{\ci{ga/{\O}}\} come-\ab{past}-\ab{infr}-\ab{cop}-\ab{fp} \\
-      `Yesterday that salesman came (here), apparently'
+      `Yesterday that salesman came (here), apparently.'
  \bg. \EM{ree-no} \EM{seerusuman}-\{\EM{ga/{\O}}\} kinoo ki-ta-mitai-da-yo \\
       you.know.who-\ab{gen} salesman-\{\ci{ga/{\O}}\} yesterday come-\ab{past}-\ab{infr}-\ab{cop}-\ab{fp} \\
-      `Yesterday that salesman came (here), apparently'
+      `Yesterday that salesman came (here), apparently.'
       \hfill{(ibid.)}
 
 
-On the other hand, focal elements such as \ci{kawaii ko} `a cute girl' and \ci{dokokano seerusuman} `a salesman' are not felicitously zero-coded clause-initially as the contrasts between \Next[a--b] and \NNext[a--b] show.
+On the other hand, focal elements such as \ci{kawaii ko} `a cute girl' and \ci{dokokano seerusuman} `a salesman' are not felicitously zero-coded clause-initially, as the contrasts between \Next[a--b] and \NNext[a--b] show.
 %
 \ex.
  \ag. oi keiri-ka-ni \EM{sugoi} \EM{kawaii} \EM{ko}-\{\EM{ga/{\O}}\} hait-ta-zo \\
@@ -1709,10 +1710,10 @@ On the other hand, focal elements such as \ci{kawaii ko} `a cute girl' and \ci{d
 \ex.
  \ag. kinoo \EM{dokoka-no} \EM{seerusuman}-\{\EM{ga/{\O}}\} ki-ta-mitai-da-yo \\
       yesterday somewhere-\ab{gen} salesman-\{\ci{ga/{\O}}\} come-\ab{past}-\ab{infr}-\ab{cop}-\ab{fp} \\
-      `Yesterday a salesman came (here), apparently'
+      `Yesterday a salesman came (here), apparently.'
  \bg. \EM{dokoka-no} \EM{seerusuman}-\{\EM{ga/?{\O}}\} kinoo ki-ta-mitai-da-yo \\
       somewhere-\ab{gen} salesman-\{\ci{ga/{\O}}\} yesterday come-\ab{past}-\ab{infr}-\ab{cop}-\ab{fp} \\
-      `Yesterday a salesman came (here), apparently'
+      `Yesterday a salesman came (here), apparently.'
       \hfill{(ibid.)}
 %(40) a. おい、経理課にすごいかわいい子{φ/が}入ったぞ
 %     b. おい、すごいかわいい子{?φ/が}経理課に入ったぞ
@@ -1734,13 +1735,13 @@ instead, \ci{ga}-coding is natural.
 The question which naturally arises is whether these elements are actually topics.
 I argue that unused elements are ambiguous between topic and focus.
 They are topics in the sense that the referent in question is shared between the speaker and the hearer \chd{via shared knowledge or common sense};
-they are focus in the sense that it is newly introduced into the discourse.
+they are foci in the sense that it is newly introduced into the discourse.
 %I discuss this issue in \S \ref{Par:Dis:Cont}.
 
 Throughout this section,
 I mainly discuss P (the patient-like argument in transitive clauses) preceding A (the agent-like argument in transitive clauses)
 because \chd{it is clear that they are preposed,
-which are tend to be topics
+which tend to be topics,
 as we will see in Chapter \ref{WordOrder}}.
 %because it is clear from the word order that P preceding A is a topic rather than focus.
 %to make sure that it is really a topic rather than a focus.
@@ -1748,7 +1749,7 @@ as we will see in Chapter \ref{WordOrder}}.
 %%----------------------------------------------------
 \subsubsection{Evoked, inferable, declining, and unused elements can be coded by {\O$_{t}$}}
 
-Evoked elements can be coded by {\O$_{t}$}
+Evoked elements can be coded by {\O$_{t}$},
 as exemplified in \Next,
 where `mouse' is assumed to be evoked in H's mind
 because H is looking at the trap to catch a mouse.
@@ -1766,13 +1767,13 @@ In this case, \ci{wa}-coding is also natural.
 		`The cat caught (the) mouse.' \hfill{(Evoked topic P)}
 
 This judgement might be too subtle for some readers.
-Here I am assuming that H is thinking about the mouse because s/he is checks the trap right now.
+Here I am assuming that H is thinking about the mouse because s/he is checking the trap right now.
 Given this assumption, Y can felicitously use \ci{wa} as well as zero-coding.
 
-Inferable elements can be also coded by {\O$_{t}$}
+Inferable elements can also be coded by {\O$_{t}$},
 as shown in \Next.
 \ci{Hyoosi} `(book) cover' is used instead of \ci{nezumi} `mouse',
-which is easily associate with a book and is assumed to be inferable from the book mentioned earlier.
+which is easily associated with a book and is assumed to be inferable from the book mentioned earlier.
 Again, \ci{wa}-coding is also natural in this case.
 %
 \ex. Context: Y borrowed a book from H and wants to return it.
@@ -1814,7 +1815,7 @@ I suspect that this is because the referent `mouse' is the center of the speaker
 the mouse is still evoked,
 which causes \ci{wa}, rather than \ci{da-kedo} to be natural.
 
-Unused elements can be coded by {\O$_{t}$}
+Unused elements can be coded by {\O$_{t}$},
 as exemplified in \Next,
 where the referent `mouse' is assumed to be unused
 because there is no clear evidence that H is thinking about the mouse at the time of utterance,
@@ -1842,7 +1843,7 @@ if the topic is zero-coded.
 For example, in \Next,
 where \ci{thii-taimu} `tea time' is originally coded by \ci{kedo},
 `tea time' and the following clause are only vaguely connected
-and the status of the topic element in grammatical function within the clauses is not clear.
+and the status of the topic element in terms of grammatical function (such as subject or object) within the clauses is not clear.
 In this case, coding elements by {\O$_{t}$} is difficult.
 %
 \ex. \ag. de kono \EM{thii-taimu-\{nan-desu-keredomo/(??{\O$_{t}$})\}} \\
@@ -1862,7 +1863,7 @@ In this case, coding elements by {\O$_{t}$} is difficult.
 %the zero-coded unused element in question are more relevant to the context than the \ci{kedo}-coded unused element.
 
 Another difference between zero-coded elements and explicitly coded elements is whether backchannel responses such as \ci{un} `yeah' are possible right after the production of the topic element in question.
-For example, in \ref{UnusedMouse} repeated here as \Next,
+For example, in \ref{UnusedMouse}, repeated here as \Next,
 it is difficult to insert a backchannel response such as \ci{un} `yeah' after \ci{nezumi-{\O$_{t}$}},
 but it is possible after \ci{nezumi-da-kedo}.
 %
@@ -1886,11 +1887,11 @@ while this assessment effect is weaker in zero-coding.
 The findings of topic codings are summarized in Table \ref{ParInfoStatusT},
 repeated here as Table \ref{ParInfoStatusT3} for convenience.
 The results indicate that topics are heterogeneous,
-but at the same time, can be accounted for in terms of given-new taxonomy.
-Closer analyses also revealed that the given-new taxonomy are continuous and there are borderline cases.
+but at the same time, can be accounted for in terms of the given-new taxonomy.
+Closer analyses also revealed that the given-new taxonomy is continuous and there are borderline cases.
 
 \begin{table}[hbt]
-	\caption{Topic marker vs.\ activation status and given-new taxonomy}
+	\caption{Topic marker vs.\ activation status and the given-new taxonomy}
 	\label{ParInfoStatusT3}
 	\begin{center}
 	\begin{tabular}{|l|l|c|c|}
@@ -1918,7 +1919,7 @@ are a combination of
 the descriptions of \citeA{masuokatakubo92} and \citeA{takubo89}.
 The statements that include \ci{toiuno-wa}-coded elements describe the general characteristics of the referents.
 Although it is not always the case that the speaker assumes that the hearer does not know the referent in question,
-the speaker might assume that s/he knows about it more than the hearer.
+the speaker might assume that s/he knows more about it than the hearer.
 For example, in \Next,
 \ci{hawai} `Hawaii' is coded by \ci{toiuno-wa},
 where I do not believe that
@@ -1947,17 +1948,17 @@ This is not only compatible with, but also elaborates the observation that
 \ci{wa} codes elements that have been ``entered into the registry of the present discourse'' \cite[45]{kuno73}.
 I provided the cognitive model which well captures the distribution of \ci{wa}-coding and showed the range of \ci{wa}-coding:
 what can be and cannot be coded by \ci{wa}.
-This thesis also provided an unified account for \ci{wa}-coding in general,
+This chapter also provided an unified account for \ci{wa}-coding in general,
 i.e., \ci{wa}-coding including generic and contrastive \ci{wa}.
 Of course, further empirical investigations are necessary to test whether the observations proposed here are supported or not.
 
 The discussion in \S \ref{kedo} supports the previous observation of this topic expression;
 the expression is used to newly introduce topics in the beginning of a discourse or a paragraph \cite{koide84,takahashi99}.
-I re-examined this observation in terms of given-new taxonomy.
+I re-examined this observation in terms of the given-new taxonomy.
 
 The discussion in \S \ref{TopZero} distinguished topic vs.~focus zero particles,
 following \citeA{niwa06} and \citeA{nakagawasato12},
-This section investigated topic zero particles and made it clear
+This section investigated the topic zero particles and made it clear
 that they can code elements referring to all entities in the given-new taxonomy
 if the entities are shared between the speaker and the hearer.
 
@@ -2080,20 +2081,20 @@ where the speaker's neck is not presupposed to be at issue at the time of uttera
 
 In the following sections,
 I will discuss focus coding mainly by means of case particles including zero ({\O$_{f}$}).
-The distribution of particles are summarized in Table \ref{OvertZeroCaseParT} (repeated from Table \ref{OvertZeroCaseParT1}),
+The distribution of particles is summarized in Table \ref{OvertZeroCaseParT} (repeated from Table \ref{OvertZeroCaseParT1}),
 where A indicates the agent-like argument of a transitive clause,
 S indicates the only argument of intransitive clause, and
 P indicates the patient-like argument of a transitive clause \cite{comrie78,dixon79}.
 Since zero-coding typically appears only in casual speech,
 the main source for the generalization in Table \ref{OvertZeroCaseParT}
-is grammatical judgements.
+comes from grammaticality judgements.
 
 Note that Table \ref{OvertZeroCaseParT} is also a kind of semantic map;
 a scale of agentivity on the one hand
 and that of contrastiveness on the other.
 \chd{Here I categorize argument focus together with contrastive focus
 to refer to ``contrastive focus''
-because, as long as \ci{ga}/\ci{o} vs.~zero-coding concerns, argument and contrastive focus do not differ from each other;
+because, as long as \ci{ga}/\ci{o} vs.~zero-coding is concerned, argument and contrastive focus do not differ from each other;
 \ci{ga}/\c{o} overtly codes argument and contrastive focus (of P and patient S),
 whereas zero-coding is preferred elsewhere.}
 
@@ -2184,8 +2185,8 @@ where only \ci{neko} `cat' rather than the whole clause is the domain of focus.
 Agent S is obligatorily coded by \ci{ga},
 while patient S can be coded by either \ci{ga} or {\O$_{f}$},
 when S is non-contrastive focus,
-which has already been pointed out in \citeA[pp.~56-57]{kageyama93}.
-As shown in the contrast between \Next and \NNext,
+which has already been pointed out in \citeA[56-57]{kageyama93}.
+As shown by the contrast between \Next and \NNext,
 agent S is naturally coded by \ci{ga},
 but not \ci{o} or {\O$_{f}$} as in \Next,
 while patient S can be naturally coded by either \ci{ga} or {\O$_{f}$},
@@ -2223,7 +2224,7 @@ regardless of whether S is agent or patient.
 			`The wallet has fallen.' \hfill{(Contrastive focus S (patient))}
 
 Note that
-it is more natural to code non-contrastive focus animate patient S by \ci{ga} rather than {\O$_{f}$} as exemplified in \Next.
+it is more natural to code non-contrastive focus animate patient S by \ci{ga} rather than {\O$_{f}$}, as exemplified in \Next.
 %
 \ex. \label{ExAnimateS}
 	\ag. a \EM{kodomo-\{ga/*o/{??\O}\}} taore-teru \\
@@ -2238,7 +2239,7 @@ it is more natural to code non-contrastive focus animate patient S by \ci{ga} ra
 \subsubsection{\textit{Ga} coding animate elements?}\label{Par:CasePar:Ga:GaAnim}
 
 Some might think that the choice between \ci{ga} vs.\ {\O$_{f}$} is sensitive to animacy rather than agentivity.
-As has been discussed in Chapter \ref{Introduction}, I rather take a view that a single marker can code complex features;
+As has been discussed in Chapter \ref{Introduction}, I rather take the view that a single marker can code complex features;
 the marker \ci{ga} codes focus, agent, and animate elements
 and one cannot determine a single feature that \ci{ga} codes.
 \citeA{comrie79} calls this \EM{seepage}.
@@ -2249,10 +2250,10 @@ while other kinds of direct objects tend to be zero-coded.
 There is no simple correlation of \ci{ko} with either animate or definite direct object.
 In the following example \Next,
 where \ab{do} stands for `direct object marker',
-sometimes \ci{ko} codes animate elements as in \Next[a] but sometimes not as in \Next[c],
-and it sometimes codes definite elements as in \Next[c] but sometimes not as in \Next[a,d].
+sometimes \ci{ko} codes animate elements, as in \Next[a] but sometimes not, as in \Next[c],
+and it sometimes codes definite elements, as in \Next[c] but sometimes not, as in \Next[a,d].
 Therefore,
-it is difficult to decide a single feature that \ci{ko} codes.
+it is difficult to decide on a single feature that \ci{ko} codes.
 Rather,
 as \citeA{comrie79} argues,
 \ci{ko} codes complex features of animacy, definiteness, and direct object.
@@ -2308,14 +2309,14 @@ Therefore, in addition to animacy,
 For example, 
 \ci{poteto-tippusu-to} `with potato chips' in \Next[a] and
 \ci{ima-made} `before now'
-are non-nominative
+are non-nominative,
 as is shown in the translation;
 however, they are coded by \ci{ga}.
 %
 \ex.\label{ExNon-ArgFocus}
  \ag. koora-wa \EM{poteto-tippusu-to-ga} au-n-da-yo \\
    cola-\ci{wa} \EM{potato-chip-with-\ci{ga}} match-\ab{nmlz}-\ab{cop}-\ab{fp} \\
-   `Cola (especially) goes with POTATO CHIPS.'%
+   `Cola (especially) goes well with POTATO CHIPS.'%
     \footnote{
     This nice example was suggested by Yuji Togo.
     }
@@ -2325,16 +2326,16 @@ however, they are coded by \ci{ga}.
  \hfill{(Focus non-nominative)}
 
 Similarly,
-\ci{guratan-ni} `for gratin' in \Next[B] is not argument of the predicate
+\ci{guratan-ni} `for gratin' in \Next[B] is not an argument of the predicate
 but is still coded by \ci{ga}.
 %
-\ex. \a.[A:] I thought that you did't like penne.
+\ex. \a.[A:] I thought that you didn't like penne.
 	\bg.[B:] penne-wa \EM{guratan-ni-ga} ii-n-da-yo \\
 	penne-\ci{wa} gratin-for-{ga} good-\ab{nmlz}-\ab{cop}-\ab{fp} \\
 	`Penne is good for GRATIN.' \hfill{(Contrastive focus non-nominative)}
 
 The following examples are from a comic book and the Internet.
-One can find many examples of \ci{ga}-coding non-nominative in the Internet.
+One can find many examples of \ci{ga}-coding non-nominative on the Internet.
 Note, however, that
 especially \Next[b] is not acceptable to some people.
 %
@@ -2355,19 +2356,19 @@ especially \Next[b] is not acceptable to some people.
       )}
   \bg. ie-ni kaeru-\EM{made}-\EM{ga} ensoku-desu \\
        home-\ab{dat} return-\ab{lim}-\ci{ga} excursion-\ab{cop}.\ab{plt} \\
-       `Until (you) arrive at home is the excursion. (Before you arrive at home, you are on the way of excursion.)'
+       `Until (you) arrive at home is the excursion. (Just before you arrive at home, you are traveling.)'
        \hfill{(Common warning by school teachers)}%
        \footnote{
        I found 32,700 websites using this expression with Google exact search (searched on 06/17/2015).
        }
 
 
-There are examples of \ci{ga} coding focus non-nominative
+There are examples of \ci{ga} coding non-nominative focus
 in actual spoken data.
 The following examples are from \ci{the Chiba three-party conversation corpus} \cite{Den_2007_SAC},
 which includes more casual conversations than CSJ.
 In \Next,
-\ci{sono hoo} `that way' is marked by \ci{ga} even though \ci{okane} `money' is the only argument of the intransitive predicate \ci{kakaru} `required or cost'.
+\ci{sono hoo} `that way' is marked by \ci{ga} even though \ci{okane} `money' is the only argument of the intransitive predicate \ci{kakaru} `to take (time) or to cost'.
 The speaker compares buying a computer with other options,
 and claims that buying a computer costs more.
 Buying a computer is interpreted as focus and is coded by \ci{ga},
@@ -2375,7 +2376,7 @@ while money is S.
 %
 \exg. \EM{sono} \EM{hoo-ga} \EMi{okane-{\O}} kakaru-zyan \\
 	that way-\ci{ga} money-{\O} required.\ab{intr}-\ab{fp} \\
-	`More money is required on THAT way (i.e., if you buy a computer).' \hfill{(\code{chiba0232: 400.32-401.43})}
+	`More money costs in THAT way (i.e., if you buy a computer).' \hfill{(\code{chiba0232: 400.32-401.43})}
 
 In \Next,
 after listening to an angry story of another participant,
@@ -2390,14 +2391,14 @@ because it is focused.
 	that-\ci{wa} rather \ab{1}\ab{sg}-\ab{pl}-ga belly-{\O} stand.\ab{intr}-\ab{past}-\ab{fp}-\ab{fp} \\
 	`In that event, WE got angry (rather than you).' \hfill{(\code{chiba0432: 111.64-113.37})}
 
-These examples are the cases where \ci{ga} codes purely focus:
+These examples are the cases where \ci{ga} purely codes focus:
 \ci{ga} codes neither agent nor animate elements.
 
 
 To summarize,
 \ci{ga} sometimes codes animate patient S like \ref{ExAnimateS},
 sometimes codes non-animate agent like \ref{ExInanimateA},
-sometimes codes non-nominative inanimate focus elements as in \ref{ExNon-ArgFocus} to \Last, and,
+sometimes codes non-nominative inanimate focus elements, as in \ref{ExNon-ArgFocus} to \Last, and,
 probably more frequently,
 it codes elements with complex features of agentivity, animacy, and focus.
 Like \ci{ko} in Hindi,
@@ -2437,17 +2438,17 @@ overt \ci{o}-coding is more natural than \ci{ga}- and zero-codings.
 		`I study philosophy.'
 
 
-Some native speakers of Japanese might find \ci{o}-coding in \LLast is not unnatural contrary to my claim.
+Some native speakers of Japanese might find \ci{o}-coding in \LLast not unnatural, contrary to my claim.
 I argue that \ci{o}-marking of non-contrastive focus in casual conversation
 is limited to theatric speech.
-According to \citeA{nakagawa13m}
-, who studied a casual spoken corpus of \ci{manzai}
+According to \citeA{nakagawa13m},
+who studied a casual spoken corpus of \ci{manzai}
 (a popular stand-up comedy performed by two people),
-75 \% (222 examples) of 297 P-codings are zero-coding,
-while only 25 \% (75 examples) are \ci{o}-coding.
+75\% (222 examples) of 297 P-codings are zero-coding,
+while only 25\% (75 examples) are \ci{o}-coding.
 Although this corpus survey does not distinguish contrastive vs.\ non-contrastive foci,
 it is clear from this survey that
-vast majority of P-coding in casual spoken Japanese is {\O}.
+the vast majority of P-coding in casual spoken Japanese is {\O}.
 
 %%% \citeA{kurumadajaeger13,kurumadajaeger15} にも言及
 
@@ -2468,20 +2469,20 @@ non-contrastive P can only naturally be coded by {\O}.
 %%----------------------------------------------------
 \subsection{Summary of case markers}
 
-The distributions of case markers including zero particles are summarized in Table \ref{OvertZeroCaseParT}.
-This thesis revealed the distributions of case particles and zero particles in term of information structure.
+The distribution of case markers including the zero particles is summarized in Table \ref{OvertZeroCaseParT}.
+This study revealed the distributions of case particles and the zero particles in term of information structure.
 The previous literature was not clear about the relationships between the twofold characteristics of \ci{ga}:
 nominative and exhaustive listing vs.~neutral description.
 Following \citeA{comrie79},
-the thesis proposed that
+the study proposed that
 a single particle has multiple features at the same time.
 The particles \ci{ga} and \ci{o} are used in the focus environment;
 at the same time, they indicate the functional relation of the element coded by these particles.
-Especially, \ci{ga} even codes non-nominative focus elements,
+In particular, \ci{ga} even codes non-nominative focus elements,
 which indicates that the particle is on the way to grammaticalize into a focus particle.
 In \S \ref{Par:Dis:Markedness},
 I will discuss why the particle \ci{ga}, among other particles,
-starts to code focus.
+is starting to code focus.
 
 %%----------------------------------------------------
 %%----------------------------------------------------
@@ -2520,7 +2521,7 @@ I briefly discuss a few points.
          & \rt{(14.9\%)} & \rt{(36.9\%)} & \rt{(36.4\%)}  \\
   	\midrule
   Sum    & 87          & 555   & 294 \\
-         & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)}  \\
+%         & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)}  \\
 	\bottomrule
 \end{tabular}
 \end{center}
@@ -2551,10 +2552,10 @@ I briefly discuss a few points.
 
 
 Whereas \citeA[2]{aoki92} reported that
-84.7\% of \ci{wa} attaching nouns code so-called subjects (A and S in my term, nominative case in her term) in novels and essays,
-only 40.3\% of \ci{wa} in our data codes As and Ss
+84.7\% of \ci{wa} attaching nouns code so-called subjects (A and S in my terms, nominative case in her terms) in novels and essays,
+only 40.3\% of \ci{wa} in our data codes As and Ss,
 as shown in Table \ref{Par:ASPTopParT} and Figure \ref{Par:ASPTopParF}.
-These table and figure include all kinds of elements excluded in other analyses.%
+This table and figure include all kinds of elements excluded in other analyses.%
  \footnote{
  Refer to \S \ref{FW:Cor:AnaRel} to see what is excluded.
  }
@@ -2570,8 +2571,8 @@ in terms of the preference of coding grammatical functions. %and the functions o
 Although a majority of the literature focuses on \ci{wa} coding subjects,
 the results suggest that \ci{wa} codes other kinds of elements in spoken Japanese.
 
-So-called subjects have some special status in the discourse;
-they are interpreted to be definite in the discourse
+So-called subjects have tspecial status in the discourse;
+they are interpreted as definite in the discourse
 even though the NP is coded by \ci{ga} instead of \ci{wa}.
 For example,
 consider the difference between \Next and \NNext.
@@ -2598,8 +2599,8 @@ consider the difference between \Next and \NNext.
 %			\b. My toy was eaten by a dog.
 
 These utterances represent the same propositional meaning
-that can be something like `(a/the) car ran over (a/the) dog.'
-Note that,
+that can be paraphrased as `(a/the) car ran over (a/the) dog.'
+Note that
 since Japanese does not have obvious ways to code definiteness,
 both `car' and `dog' can be potentially interpreted as either definite or indefinite,
 and hence `car' and `dog' are expressed in the same way in \LLast and \Last
@@ -2645,7 +2646,7 @@ In \Next,
 \ci{pan} `bread' is introduced in line b.
 In line c, which is of interest in the discussion,
 \ci{oziityan} `grandfather' is coded by \ci{wa}, but
-\ci{sore} `that' referring to the bread in line b is coded by the case particle \ci{o}.
+\ci{sore} `that', which refers to the bread in line b, is coded by the case particle \ci{o}.
 %
 \ex.
  \ag. uti-no \EM{sohu}-tteiuno-ga okasi-ga sukina mono-de \\
@@ -2664,7 +2665,7 @@ In line c, which is of interest in the discussion,
 It is unnatural for \ci{wa} to code \ci{sore} referring to the bread
 instead of \ci{oziityan} `grandfather',
 as shown in \Next[c$^{\prime}$].
-If A (e.g., \ci{obaatyan} `grandmother') is newly introduced as in \Next[c$^{\prime\prime}$],
+If A (e.g., \ci{obaatyan} `grandmother') is newly introduced, as in \Next[c$^{\prime\prime}$],
 there is no problem for \ci{wa} coding \ci{sore};
 \ci{obaatyan} `grandmother' is naturally coded by \ci{ga} instead of \ci{wa}.
 %
@@ -2679,17 +2680,17 @@ there is no problem for \ci{wa} coding \ci{sore};
 
 In fact, the majority of anaphoric Ps are still coded by \ci{o},
 instead of topic markers,
-whereas more ratio of anaphoric As and Ss are coded by topic markers.
-Table \ref{Par:ASPParGivenT} and \ref{Par:ASPParNewT} and
-Figure \ref{Par:ASPParGivenF} and \ref{Par:ASPParNewF} show
-the distributions of topic and case markers coding A, S, and P.
-Table \ref{Par:ASPParGivenT} and Figure \ref{Par:ASPParGivenF} represent the distributions of topic and case markers coding anaphoric A, S, and P.
+whereas a higher ratio of anaphoric As and Ss are coded by topic markers.
+Tables \ref{Par:ASPParGivenT} and \ref{Par:ASPParNewT} and
+Figures \ref{Par:ASPParGivenF} and \ref{Par:ASPParNewF} show
+the distribution of topic and case markers coding A, S, and P.
+Table \ref{Par:ASPParGivenT} and Figure \ref{Par:ASPParGivenF} represent the distribution of topic and case markers coding anaphoric A, S, and P.
 As the table and the graph show,
 while 44.1\% of anaphoric As and 38.8\% of anaphoric Ss are coded by topic markers,
 only 8.4\% of anaphoric Ps are coded by topic markers.
 On the other hand,
 the majority of non-anaphoric elements are coded by case markers,
-although non-anaphoric Ss (most of which are in fact inferable) are remarkably more coded by \ci{wa} than others.
+although non-anaphoric Ss (most of which are in fact inferable) are remarkably more often coded by \ci{wa} than others.
 
 I propose the hierarchy \Next for topic-coding.
 The given elements higher in this hierarchy are more likely to be coded by topic markers.
@@ -2702,11 +2703,11 @@ This hierarchy is a topic hierarchy:
 the hierarchy of elements which are more likely to be topics \cite{givon76,keenan76,comrie79,comrie83,dubois87}.
 %%% あやしい
 This hierarchy is present in many languages in various ways.
-For example, A and S are more likely to be agreed with the verb than P cross-linguistically.
+For example, A and S are more likely to agree with the verb than P cross-linguistically.
 Also, A and S are more likely to be zero-coded than P.
 Japanese \ci{wa}-coding seems to follow this hierarchy;
 if there are two given elements potentially coded by \ci{wa},
-A and S are preferred over P following the hierarchy \Last.
+A and S are preferred over P following the hierarchy in \Last.
 
 \begin{table}
 \begin{center}
@@ -2722,7 +2723,7 @@ A and S are preferred over P following the hierarchy \Last.
 	              & \rt{(0\%)} & \rt{(55.9\%)} & \rt{(61.2\%)} & \rt{(91.6\%)} \\
 	\midrule
 	 Sum          & 20 & 34 & 250 & 178 \\
-	              & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} \\
+%	              & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} \\
 	\bottomrule
 %             Ex   A   S   P DAT
 %  toiuno-wa   9   1  26   2   0
@@ -2747,7 +2748,7 @@ A and S are preferred over P following the hierarchy \Last.
 	 \rt{(0\%)} & \rt{(91.7\%)} & \rt{(78.4\%)} & \rt{(93.2\%)} \\
 	\midrule
 	 12 & 12 & 343 & 190 \\
-	 \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} \\
+%	 \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} \\
 	\bottomrule
 %             Ex   A   S   P DAT
 %  toiuno-wa   8   1  16   3   0
@@ -2793,10 +2794,10 @@ it is not the elephant itself that is long.
 		elephant-\ci{wa} nose-\ci{ga} long \\
 		`The elephant, the nose is long (The elephant has a long nose).' \hfill{\cite{mikami60}}
 
-Table \ref{Par:ASPParGivenT} and \ref{Par:ASPParNewT} and
-Figure \ref{Par:ASPParGivenF} and \ref{Par:ASPParNewF}
+Tables \ref{Par:ASPParGivenT} and \ref{Par:ASPParNewT} and
+Figures \ref{Par:ASPParGivenF} and \ref{Par:ASPParNewF}
 show that Ex is only coded by topic markers.
-Table \ref{Par:ASPTopParT} and Figure \ref{Par:ASPTopParF}
+Tables \ref{Par:ASPTopParT} and Figures \ref{Par:ASPTopParF}
 show that 21.7\% of \ci{toiuno-wa}-coded elements and
 5.9\% of \ci{wa}-coded elements are categorized into Ex.
 
@@ -2833,9 +2834,9 @@ These detached topics are strikingly similar to
 ``Ex'' in Japanese.
 
 Lambrecht also discusses cases in which
-topics are not counted as constituent of the clause
+topics are not counted as constituents of the clause
 even though they appear to be constituents.
-German, for example, has the principle that only allows the verb in the second position within a clause as exemplified in \Next[a-d].
+German, for example, has the principle that only allows the verb in the second position within a clause, as exemplified in \Next[a-d].
 However, the detached topic constituents that appear at the beginning are not counted as the first constituent of the clause.
 %rather they are outside of the clause.
 As exemplified in \Next[e],
@@ -2863,7 +2864,7 @@ if the detached topic \ci{den Apfel} is counted as the first constituent.%
    the.\ab{acc} apple it.\ab{acc} eat Hans \\
    `The apple, Hans eats it.'  \hfill{(TOVS)}
  \b. *\EMi{Den} \EMi{Apfel} \EM{isst} Hans den. \hfill{(*TVSO)}
- \b.[] \hfill{(op.cit.: p.~194)}
+ \b.[] \hfill{(op.cit.: 194)}
 
 Both the topicalized NP \ci{den Apfel} and the resumptive pronoun \ci{den} in \Last[e] appear as accusative.
 According to Lambrecht, however,
@@ -2894,7 +2895,7 @@ the speaker combines multiple clauses to form a thematic unit
 By combining clauses in this way,
 thematic continuity is achieved.
 In clause-chaining,
-the detached topic, which typically appears utterance-initially as will be discussed in Chapter \ref{WordOrder},
+the detached topic, which typically appears utterance-initially, as will be discussed in Chapter \ref{WordOrder},
 is not necessarily an argument of the clauses;
 instead, it is pragmatically related to the following clauses.
 For example, in \Next,
@@ -2902,7 +2903,7 @@ where the speaker talks about a life in Iran,
 \ci{mukoo-no hito} `people there (in Iran)' in \Next[a] is detached
 and annotated as ``Ex''
 because its predicate \ci{hukaku} `deep', which has a part-whole relations with the people, has the so-called subject \ci{hori} `(face) form'.
-In \Next[b-c], the speaker continues to talk about Iran people
+In \Next[b-c], the speaker continues to talk about her
 by clause-chaining.
 \ci{Kodomo} `child' in \Next[c] also has a part-whole relation
 with the Iran people.
@@ -2922,7 +2923,7 @@ with the Iran people.
 
 Clause-chaining is a useful way to talk about something;
 the speaker puts the topic at the beginning and
-continue to describe the topic as much as s/he can.
+continues to describe the topic as much as s/he can.
 In the descriptions in clause-chaining,
 the topic is not necessarily an argument;
 it is pragmatically associated with each clause.
@@ -2975,14 +2976,14 @@ Of course, there are no commas and periods in spoken language,
 
 As discussed in \S \ref{ParIntro},
 the particles code elements with features that can be mapped onto a conceptual space.
-As in Table \ref{ParInfoStatusT} and discussion in \S \ref{TopPar},
-topic markers map onto a conceptual space of given-new taxonomy,
+As reflected in Table \ref{ParInfoStatusT} and discussion in \S \ref{TopPar},
+topic markers map onto a conceptual space of the given-new taxonomy,
 while, as in Table \ref{OvertZeroCaseParT1} and discussion in \S \ref{CasePar},
 case markers map onto a conceptual space of agentivity, focushood, contrastiveness, and possibly animacy.
 
 The semantic map of topic markers in Japanese indicates that
 inferable and evoked statuses form a connected region and are expressed by the same marker \ci{wa},
-while declining and unused statuses form a connected region and are expressed by the same marker a copula followed by \ci{kedo} or \ci{ga};
+while declining and unused statuses form a connected region and are expressed by the same marker (a copula followed by \ci{kedo} or \ci{ga});
 hence, the inferable status is closer to the evoked status, and the declining status is closer to unused in the conceptual space.
 This makes sense because inferable elements are more relevant to
 the current topic than declining elements.
@@ -2991,7 +2992,7 @@ the inferable element \ci{gen'in} `cause' is coded by \ci{wa}.
 The element `cause' is inferable because the disease has been already introduced and the cause of the disease can be considered to be part of the knowledge of getting a disease.
 %
 \ex.
- \a. (The speaker got a wired disease.)
+ \a. (The speaker got a rare disease.)
  \b. First I visited several local hospitals.
  \b. I was examined several times, but
  \bg. \EM{gen'in-wa} humee-de \\
@@ -3023,7 +3024,7 @@ strongly evoked elements are zero and overt pronouns.
 %coded by \ci{toiuno-wa} and \ci{wa}.
 %Strongly active elements are, on the other hand, so-called zero pronouns.
 %Zero pronouns are more active than elements coded by \ci{toiuno-wa} and \ci{wa}.
-Figure \ref{DistExpTypeF2} shows the time difference (anaphoric distance) on logarithmic scale between the first mora of the element in question is produced and that of its antecedent is produced.
+Figure \ref{DistExpTypeF2} shows the time difference (anaphoric distance) on a logarithmic scale between when the first mora of the element in question is produced and when that of its antecedent is produced.
 Zero pronouns are assumed to be produced at the time when
 the first mora of the predicate is produced.
 The anaphoric distance approximates activation cost;
@@ -3035,12 +3036,12 @@ full NPs, pronouns, and zero pronouns.
 As is clear from the figure,
 the anaphoric distance of zero and overt pronouns is smaller than
 that of NPs,
-which indicate that
+which indicates that
 zero and overt pronouns are more evoked than full NPs \chd{(fixed effects model, $p < 0.001$)}.
 Therefore, I propose the status called ``strongly evoked''.
 I add this status in Table \ref{ParInfoStatusT2}.
-Since overt pronouns coded by topic markers are as strongly evoked as zero pronouns,
-I suppose that topic markers \ci{wa} and \ci{toiuno-wa} can also code strongly evoked elements.
+Since overt pronouns coded by the topic markers are as strongly evoked as zero pronouns,
+I suppose that the topic markers \ci{wa} and \ci{toiuno-wa} can also code strongly evoked elements.
 %%% Strongly activeだったら、トイウノハとハも付ける
 
 Markers for focus coding map onto agentivity, focushood, contrastiveness, and possibly animacy
@@ -3054,7 +3055,7 @@ P is conceptually closer to patient P.
 %I will discuss other features such as focushood and animacy in the following section.
 
 \begin{table}[hbt]
-	\caption{Topic marker vs.\ activation status and given-new taxonomy}
+	\caption{Topic marker vs.\ activation status and the given-new taxonomy}
 	\label{ParInfoStatusT2}
 	\begin{center}
 	\begin{tabular}{|l|l|c|c|}
@@ -3140,7 +3141,7 @@ I argue that, in coding focus elements,
 patient elements are ``unmarked'',
 i.e., more frequent than agent elements,
 and are more likely to be zero-coded than agent elements.
-This is supported in studies such as \citeA{dubois87} and \citeA{duboisetal03}.
+This is supported by studies such as \citeA{dubois87} and \citeA{duboisetal03}.
 On the other hand,
 in coding topic elements,
 agent elements are more frequent than patient elements,
@@ -3181,7 +3182,7 @@ As has been discussed in \S \ref{Par:CasePar:Ga:GaFoc},
 The theory of markedness also gives a hint to explain why \ci{ga} is on the way to grammaticalize into a focus particle;
 focus A is the most rare in natural occurring discourse
 and it is likely for Japanese native speakers to associate the marker \ci{ga} with focushood.
-On the other hand, P is very frequently focus,
+On the other hand, P is very frequently focused,
 in which case, it is less likely to associate the marker \ci{o} with focushood.
 
 
@@ -3200,7 +3201,7 @@ This chapter discussed the distributions of so-called topic marker and case mark
 I argued that
 different markers are sensitive to different features, and
 at the same time,
- multiple features contribute the usage of a single marker.
+ multiple features contribute to the usage of a single marker.
 
 
 %%----------------------------------------------------
@@ -3211,7 +3212,7 @@ one of the biggest issues is that
 it is necessary to test the proposals in this chapter through other empirical methods.
 If the proposals are supported also by other methods,
 they become more sound.
-Especially the distribution of zero particles is mainly based on a few native speakers' acceptability judgements.
+In particular, the distribution of the zero particles is mainly based on a few native speakers' acceptability judgements.
 This should be tested with a larger number of native speakers.
 One possible experiment is to ask subjects to listen to short conversation where the particles in question are blurred
 and to produce what they hear.
@@ -3221,10 +3222,10 @@ Another issue is the focus test.
 So far we only have the \ci{hee} test and the \ci{no} test,
 which depend on the author's acceptability judgements.
 One possible experiment is to ask subjects to listen to speech used in this study
-and respond to what the speaker say by \ci{hee}
+and respond to what the speaker means by \ci{hee}
 as if they were the hearers.
 The elements that many subjects respond to are more likely to be foci.
 Another possibility is to investigate conversations and study the elements that the hearer actually responds to.
 \citeA{denetal12} annotated response tokens like \ci{hee} and the elements those response tokens address.
-Thus it is not very difficult to seek the second possibility.
+One might be able to use this annotation to test the second hypothesis.
 

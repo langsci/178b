@@ -53,41 +53,41 @@ The reason why the frequencies of \code{1} and \code{2} are lower than \code{3} 
 the linguistic categories that appear in the first or second position
 are typically fillers, connectives, and adjectives and
 they are excluded from the analysis.
-The fact that the elements in more than fifth positions appear very frequently
+The fact that the elements later than fifth in the clause appear very frequently
 might be counterintuitive based on the ordinary idea of a clause;
 a clause consists of a single predicate and at most three arguments and a few more adjuncts.
 In spoken language, however,
 there are many fillers, intensifiers like \ci{hontooni} `really', and paraphrases,
 which make the clause longer.
-Since \code{nth} simply counts the position of a phrase flatly, not structurally,
+Since \code{nth} simply counts the position of a phrase in terms of linear position, and not structurally,
 embedded clauses such as relative clauses are also included in the count.
 \chd{I assume that it is worth including these intervening expressions
-to analyze where a phrase can be interfered by them and where it cannot.
-In fact, the following results show that most non-anaphoric elements appear immediately before the predicate, not interfered by fillers, intensifiers, and so on (see \S \ref{WOPrePredEles}).}
+to analyze where a phrase can be interrupted by them and where it cannot.
+In fact, the following results show that most non-anaphoric elements appear immediately before the predicate, not interrupted by fillers, intensifiers, and so on (see \S \ref{WOPrePredEles}).}
 Moreover,
-CSJ has a unique definition of clause, which is not always the same as intuitive clause;
-\chd{Rather, a clause in CSJ is closer to a single series of clause-chaining.}
+CSJ has a unique definition of clause, which is not always the same as the intuitive of clause;
+\chd{rather, a clause in CSJ is closer to a single series of clause-chaining.}
 For example,
 some subordinate markers such as \ci{-to} `if' and \ci{-te} `and' do not work as clause boundaries.
-These characteristics causes the \code{nth} of elements following the subordinate markers to be larger.
-See \citeA{maruyamaetal06} for the detailed definition of clause unit.
+These characteristics cause more elements to appear in later positions.
+See \citeA{maruyamaetal06} for a detailed definition of clause unit.
 
 Figure \ref{DEPositionISF} and \ref{DEPositionPerF} show
 element positions and their frequencies based on information status and persistence, respectively.
-Information status ``anaphoric'' in this thesis just means ``the element in question has the co-referential antecedent'' and ``non-anaphoric'' means ``it does not.''
-``Persistent'' means ``the referent in question is mentioned also in the following discourse'', and ``non-persistent'' means ``it is not.''
-See \ref{FW:Cor:AnaRel} for the detail of the procedure of annotation.
-\chd{
-As has been discussed in \S \ref{TopPar},
+The information status ``anaphoric'' in this study just means ``the element in question has a co-referential antecedent'' and ``non-anaphoric'' means ``it does not.''
+``Persistent'' means ``the referent in question is also mentioned in the following discourse'', and ``non-persistent'' means ``it is not.''%
+%%%ISSUE "means" out of alignment.
+See \S \ref{FW:Cor:AnaRel} for the detail of the annotation procedure.
+\chd{As was discussed in \S \ref{TopPar},
 a linear mixed effects model was employed to predict information status (anaphoric vs.~non-anaphoric).
 As fixed effects, word order (\code{nth} in CSJ, see \S \ref{WO:Intro} for the definition of this annotation), particles (\ci{toiuno-wa, wa, mo, ga, o, ni}), and intonation (phrasal vs.~clausal IU, see \S \ref{Int:PIUCIU} for the definitions) were included, and
 as a random effect, the speaker (\code{TalkID}) was included.
 The model with the effects of word order, particles, and intonation is significantly different from the models without each of them, which indicates that
-word order, particles, and intonation respectively contribute the prediction of information status.
+word order, particles, and intonation respectively contribute to the prediction of information status.
 The model with all three effects is significantly different from the model without the effect of word order (likelihood ratio test, $p < 0.01$);
-It is significantly different from the model without the effect of particles ($p < 0.001$) and the model without the effect of intonation ($p<0.05$)}
+it is significantly different from the model without the effect of particles ($p < 0.001$) and the model without the effect of intonation ($p<0.05$)}
 
-\chd{As has also been discussed in \S \ref{TopPar},
+\chd{As was also discussed in \S \ref{TopPar},
 a linear mixed effects model was also applied to predict persistence (persistent vs.~non-persistent).
 Word order, particles, and intonation were included as fixed effects, and
 the speaker (\code{TalkID}) was included as a random effect.
@@ -123,6 +123,8 @@ The results are to be discussed more in \S \ref{WOSentInitEles}.
 %\end{minipage}
 \end{figure}
 
+%%%ISSUE Figures and texts are too far away because only one figure appears on one page. Also, some figures are too big.
+
 Figure \ref{DiffAllF} shows the overall distribution of elements in terms of their distance from the predicate;
 %\code{0} indicates that the element in question is the predicate itself,
 \code{1} indicates that the element appears right before the predicate,
@@ -140,9 +142,9 @@ depending on information status and persistence.
 whereas the model with particles is significantly different from the model without them (likelihood ratio test, $p<0.001$),
 the difference between the models with and without the distance from the predicate is only marginally significant ($p=0.060$).
 This entails that the effect of particles significantly contributes to the model,
-but the effect of the distance is inconclusive (see \ref{WOPrePredEles} for discussion).
-On the other hand, a linear mixed effects model of persistence (fixed and random effects are the same above) shows that the effects of both particles and the distance are significant to the model ($p<0.01$ for both the model without particle and that without the distance).}
-The results are also to be discussed more in \S \ref{WOPrePredEles}.
+but the effect of the distance is inconclusive (see \S \ref{WOPrePredEles} for discussion).
+On the other hand, a linear mixed effects model of persistence (fixed and random effects are the same as above) shows that the effects of both particles and the distance are significant to the model ($p<0.01$ for both the model without particle and that without the distance).}
+The results are also to be discussed in further detail in \S \ref{WOPrePredEles}.
 
 
 \begin{figure}
@@ -258,11 +260,11 @@ This is explicitly stated in \Next.
  In languages in which word order is relatively free,
  the unmarked word order of constituents is old,
  predictable information first and new, unpredictable information last.
- \hfill{(\citeA[][p.~54]{kuno78}, \citeA[][p.\ 326]{kuno04})}
+ \hfill{(\citeA[][54]{kuno78}, \citeA[][p.\ 326]{kuno04})}
 
 
-This principle is motivated by accumulative nature of processing utterance;
-old (or given) elements work as anchor that relates
+This principle is motivated by the accumulative nature of processing utterances;
+old (or given) elements work as anchors that relate
 the previous utterance and the following utterance.
 %This does not indicate that all topics appear sentence initially.
 %First,
@@ -292,9 +294,7 @@ This principle appears to be supported by examples such as the following.
 % \b. hee, \{\EM{keeki-o} / Hanako-ga\}
 %
 In \Next,
-\ci{sore} `it' in line c precedes,
-which refers to \ci{kasi-pan} `sweet bread' back in line b,
-the A element \ci{oziityan} `grandfather'.
+\ci{sore} `it' in line c, referring back to \ci{kasi-pan} `sweetbread' in line b, precedes the A element \ci{oziityan} `grandfather'.
 %
 \ex. \label{PronIni1}
 % \ag. sarani uti-no sohu-tteiuno-ga okasi-ga sukina mono-de \\
@@ -303,11 +303,11 @@ the A element \ci{oziityan} `grandfather'.
  \ag. uti-no sohu-tteiuno-ga okasi-ga sukina mono-de \\
  		out-\ab{gen} grandfather-\ci{toiuno}-\ci{ga} sweet-\ci{ga} favorite thing-\ab{cop} \\
 		`Our grandfather likes sweets.'
- \bg. yoku pan-ya-san-de \ul{\ul{kasi-pan}}-o kat-te kuru-n-desu-ga \\
+ \bg. yoku pan-ya-san-de \EMi{kasi-pan}-o kat-te kuru-n-desu-ga \\
    often bread-store-\ab{hon}-\ab{loc} sweet-bread-\ci{o} buy-and come-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
    `(He) often buys sweet bread and comes home,'
  \bg. e n \EM{sore-o} i maa yoowa \EMi{oziityan-wa} issyookenmee \fbox{taberu}-n-desu-keredomo \\
-   \ab{fl} \ab{frg} that-\ci{o} \ab{frg} \ab{fl} in.a.word grandfather-\ci{wa} trying.best eat-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
+   \ab{fl} \ab{frg} it-\ci{o} \ab{frg} \ab{fl} in.a.word grandfather-\ci{wa} trying.best eat-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
    `that, he tries his best to eat it, but'
  \b. he cannot eat all and
  \b. gives leftovers to the dog...
@@ -317,20 +317,20 @@ the A element \ci{oziityan} `grandfather'.
 %S02M0198|00255210L|255.209674|272.289576|L|(F え)(F ん)(0.648)それを(D い)(0.147)(F まー)要はお爺ちゃんは一生懸命食べるんですけれども(0.412)余って(0.268)それを犬に(0.194)あげ(0.315)てしまうので(1.403)(F その)残飯で太り(0.447)菓子パンで太り(0.696)味は覚えてグルメになるという最悪の(0.322)育ち方をしてしまいまして|/テ節/|
 %
 
-Note that \ci{sore} `that' in line c is not coded by \ci{wa} but by \ci{o}.
+Note that \ci{sore} `it' in line c is not coded by \ci{wa} but by \ci{o}.
 This shows that clause-initial shared elements are not necessarily coded by topic markers,
-although it is predicted that elements coded by topic markers would more likely to appear clause-initially than those coded by case markers (see the discussion in \S \ref{WO:ClauseInit:Ident:Topic}).
+although it is predicted that elements coded by topic markers would be more likely to appear clause-initially than those coded by case markers (see the discussion in \S \ref{WO:ClauseInit:Ident:Topic}).
 
 Similarly in \Next,
 \ci{sore} `it' in line c refers back to \ci{buraunkan} `cathode ray tube'
-and appear at the beginning of the clause,
+and appears at the beginning of the clause,
 preceding other elements.
 %
 \ex.\label{PronIni2}
  \ag. oo-gata-no-ne \\
    large-type-\ab{gen}-\ab{fp} \\
    `(It's) a larger type (of cathode ray tube).'
- \bg. yoku maa a hooru-toka-ni aru-yoona oo-gata-no ee \ul{\ul{buraunkan}}-nan-da-kedomo \\
+ \bg. yoku maa a hooru-toka-ni aru-yoona oo-gata-no ee {\EMi{buraunkan}}-nan-da-kedomo \\
    often \ab{fl} \ab{fl} hall-etc.-\ab{dat} exist-like large-tyle-\ab{gen} \ab{fl} cathode.ray.tube-\ab{nmlz}-\ab{cop}-though \\
    `(It's) a large type of cathode ray tube typically equipped in a large hall, and'
  \bg. \EM{sore-o}-ne koo \EMi{kotti-kara} \EMi{kotti-ni} \fbox{moti-ageru}-toiu-yoona \\
@@ -344,14 +344,15 @@ preceding other elements.
 
 However,
 this is not the whole story;
-there are many counter-examples where non-anaphoric precedes anaphoric.
+there are many counter-examples where non-anaphoric precedes anaphoric.%
+%%%ISSUE "where" out of alignment.
 Table \ref{GNT} shows the number of cases
 where anaphoric precedes non-anaphoric and non-anaphoric precedes anaphoric within the same clause.
 There are 102 cases where anaphoric precedes non-anaphoric,
 while there are 63 cases where non-anaphoric precedes anaphoric.
 The cases where anaphoric precedes non-anaphoric only slightly outnumber the cases where non-anaphoric precedes anaphoric.
 63 cases (39.4\%) is too large a number to believe that
-they are mere exceptions of the principle \ref{oldnewprinciple}.
+they are mere exceptions to the principle \ref{oldnewprinciple}.
 
 \begin{table}
 \centering
@@ -384,11 +385,11 @@ I argue that this is because
 %
 \ex.\label{WO:ClauseInit:Given:mizu}
  \ag. desukara daitai iti-niti-ni ni-rittoru-no \EM{mizu-o} \ul{tot}-te kudasai-to iw-are-te \\
- so approximately one-day-for two-litter-\ab{gen} water-\ci{o} drink-and please-\ab{quot} tell-\ab{pass}-and \\
- `So we were told to drink two litters of water per day,'
+ so approximately one-day-for two-liter-\ab{gen} water-\ci{o} drink-and please-\ab{quot} tell-\ab{pass}-and \\
+ `So we were told to drink two liters of water per day,'
  \bg. syokuzi-no toki-wa kanarazu magukappu-de ni-hai-bun-no \EM{mizu-o} \ul{nomi}-masu-si \\
  	meal-\ab{gen} time-\ci{wa} surely mug-with two-cup-amount-\ab{gen} water-\ci{o} drink-\ab{plt}-and \\
-	`whenever we have meal, we drink two cups of water,'
+	`whenever we have a meal, we drink two cups of water,'
  \bg. totyuu totyuu-de-mo kanarazu \EM{mizu-o} ho anoo \ul{nomi}-taku-naku-temo \\
  		on.the.way on.the.way-\ab{loc}-also surely water-\ci{o} \ab{frg} \ab{fl} drink-want-\ab{neg}-even.if \\
 		`also on the way, even if we didn't want to drink water,'
@@ -404,25 +405,25 @@ I argue that this is because
 
 In the same way,
 \ci{tenkan} `epilepsy' appears many times in \Next,
-but never appear clause-initially.
+but never appears clause-initially.
 %
 \ex.\label{WO:ClauseInit:Given:tenkan}
  \ag. ato ik-kai \EM{tenkan} \EMi{okosi}-tara sinu-tte it-te-ta-n-desu-kedo \\
       moreover one-time.\ab{cl} epilepsy cause-\ab{cond} die-\ab{quot} say-\ab{past}-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
-      `(The doctor) said that, if (my dog) get an epilepsy seizure once more, (the dog) would die, but...'
- \bg. mata so sookoo si-teru uti-ni \EM{tenkan} okosi-masi-te \\
+      `(The doctor) said that, if (my dog) gets an epilepsy seizure once more, (the dog) would die, but...'
+ \bg. mata so sookoo si-teru uti-ni \EM{tenkan} \EMi{okosi}-masi-te \\
       again \ab{frg} meanwhile do-\ab{prog} while-\ab{dat} epilepsy cause-\ab{plt}-and \\
-      `meanwhile, (the dog) get an epilepsy seizure, and...'
- \b. The dog recovered this time, but got an epilepsy seizure several times and finally die. (130.8 sec omitted.)
+      `meanwhile, (the dog) has an epilepsy seizure, and...'
+ \b. The dog recovered this time, but has an epilepsy seizure several times and finally died. (130.8 sec omitted.)
  \bg. sono boku-ga dekakeru toki-ni moo noki-sita-de \EM{tenkan} \EMi{okosi}-te \\
       \ab{fl} \ab{1}\ab{sg}-\ci{ga} go.out when-\ab{dat} already eave-under-\ab{loc} epilepsy cause-and \\
-      `When I leave (home), (the dog) had already gotten an epilepsy seizure, and...'
+      `When I leave (home), (the dog) had already had an epilepsy seizure, and...'
  \bg. tabun sin-dei-ta-n-da-roo-to \\
       probably die-\ab{prog}-\ab{past}-\ab{nmlz}-\ab{cop}-\ab{infr}-\ab{quot}\\
       `probably died...'
  \bg. ta noki-sita-de \EM{tenkan} \EMi{okosi}-ta-ga tame-ni \\
       \ab{frg} eave-under-\ab{loc} epilepsy cause-\ab{past}-\ab{gen} reason-\ab{dat} \\
-      `just because (the dog) get an epilepsy seizure under the eaves...'
+      `just because (the dog) has an epilepsy seizure under the eaves...'
  \b. the dog could not get out of there and died, we [the family members] were talking like that.
  \src{S02M0198: 558.7-712.8}
 %  \ex [飼い犬が]あと一回\EM{てんかん}起こしたら死ぬって言ってたんですけど
@@ -438,9 +439,9 @@ but never appear clause-initially.
 
 
 Whether the speaker refers to the shared entity mentioned previously
-depends on the speaker's subjective judgement rather than objective reasoning.
+depends on the speaker's subjective judgement rather than on objective reasoning.
 In \Next, for example,
-the anaphoric element \ci{kuruma} `car' in line c does not appear clause-initially for the same reason as \LLast and \Last.
+the anaphoric element \ci{kuruma} `car' in line c does not appear clause-initially for the same reason as in \LLast and \Last.
 However, \ci{kuruma} `car' in line b and d are clearly the same entity.
 %
 \ex.\label{WO:ClauseInit:Given:kuruma}
@@ -465,19 +466,19 @@ I argue that, in this case, the speaker does not care about the identity of the 
 Rather, she focuses on talking about her trip to Kirauea;
 the car she was in is not important for this speech.
 As will be discussed in \S \ref{PersistentAppearClause-Initially},
-importance as well as the identity of the entity contributes to word order in spoken Japanese.
+importance, as well as the identity, of the entity contributes to word order in spoken Japanese.
 Important (i.e., persistent) elements appear clause-initially.
 
 Interestingly,
-these elements which are repeatedly mentioned but never appear clause-initially are not mentioned by zero or overt pronouns.
+these elements which are repeatedly mentioned but never appear clause-initially are not referred to by zero or overt pronouns.
 It is especially difficult to zero-pronominalize \ci{tenkan} `epilepsy' in \LLast[b-f] and \ci{kuruma} `car' in \Last[d].%
  \footnote{
  It is difficult to apply this test in \ref{WO:ClauseInit:Given:mizu} because \ci{mizu} `water' accompanies numeral modifiers such as 
- `of two litters' and `two cup of'.
+ `of two liters' and `two cups of'.
  }
 Zero pronouns are considered to be the most accessible topics \cite[17]{givon83}.
 To zero-pronominalize,
-the speaker needs to provide signals to let the hearer know which is the topic as will be discussed in \ref{TopicAppearClause-Initially}.
+the speaker needs to provide signals to let the hearer know which is the topic, as will be discussed in \ref{TopicAppearClause-Initially}.
 
 %%
 %\ex.
@@ -547,7 +548,7 @@ the speaker needs to provide signals to let the hearer know which is the topic a
 %there is no definite markers in Japanese.
 From the discussion above,
 there are at least two predictions testable in the corpus.
-Firstly, since evoked and inferable elements are coded by topic markers as shown in Chapter \ref{Particles},
+Firstly, since evoked and inferable elements are coded by topic markers, as was shown in Chapter \ref{Particles},
 it is predicted that
 elements coded by topic markers tend to appear earlier in a clause (\S \ref{WO:ClauseInit:Ident:Topic}).
 This is because elements assumed by the speaker to be evoked or inferable
@@ -560,7 +561,7 @@ Thirdly, I will show that clause-initial elements are not sensitive to activatio
 unused elements can also appear clause-initially (\S \ref{WO:ClauseInit:Ident:ActStatus}).
 Evoked, inferable, declining, and unused elements are shared
 (See Table \ref{ActStatusCorpus}).
-Therefore, the claim that shared elements appear clause-initial is supported.
+Therefore, the claim that shared elements appear clause-initially is supported.
 
 %%----------------------------------------------------
 \subsubsection{Topic-coded elements appear clause-initially}\label{WO:ClauseInit:Ident:Topic}
@@ -591,12 +592,12 @@ and their positions.
 Compare this figure with Figure \ref{WOCaseParF},
 which shows the distribution of case-coded elements and their positions.
 It is clear that
-elements coded by topic markers are more skewed to earlier positions within a clause as compared with those coded by case markers.
+elements coded by topic markers are more skewed to earlier positions within a clause as compared to those coded by case markers.
 
-\Next is an example of \ci{wa}-coded element appearing clause-initially.
+\Next is an example of a \ci{wa}-coded element appearing clause-initially.
 The \ci{wa}-coded element \ci{hone} `bone' in line a,
 which has been discussed in the previous discourse,
-is intervened with the locative (a tomb for animals in the temple).
+is separated from the predicate by an intervening locative (a tomb for animals in the temple).
 The intervening part is long and the predicate finally appears in line d.
 %
 \ex.
@@ -605,10 +606,10 @@ The intervening part is long and the predicate finally appears in line d.
 		`Part of bone of Sleepy (dog's name),'
 	\bg. sono morimati-no watasi-no senzo-no o hait-teru otera-no \\
 		that Morimachi-\ab{gen} \ab{1}\ab{sg}-\ab{gen} ancestor-\ci{gen} \ab{fl} enter-\ab{prog} temple-\ab{gen} \\
-		`the temple in Morimachi where my ancestors were there,'
+		`the temple in Morimachi where my ancestors were,'
 	\bg. yahari ano doobutu-no kuyootoo-ga ari-masu \\
 		again that animal-\ab{gen} tomb-\ci{ga} exist-\ab{plt} \\
-		`there're tombs for animals,'
+		`there are tombs for animals,'
 	\bg. sotira-no hoo-ni \ul{osame}-masite-ne \\
 		that-\ab{gen} direction-\ab{dat} place-\ab{plt}-and \\
 		`(we) placed (his bone) there.'
@@ -618,11 +619,12 @@ The intervening part is long and the predicate finally appears in line d.
 In \Next,
 \ci{sono ko} `that puppy',
 whose referent has appeared in the previous line a,
-is also an example of \ci{wa}-coded element appearing clause-initially.
-The element is also intervened by another argument `distemper'.
+is also an example of a \ci{wa}-coded element appearing clause-initially.
+The element is also separated from the predicate
+by an intervening argument `distemper'.
 %
 \ex.
-	\ag. mosi \ul{\ul{koinu-o}} kat-tesimat-tara \\
+	\ag. mosi \EMi{koinu-o} kat-tesimat-tara \\
 		if puppy-\ci{o} keep-\ab{pfv}-\ab{cond} \\
 		`If you decided to keep a new puppy,'
 	\bg. \EM{sono} \EM{ko-wa} mata zisutenpaa-ni \ul{kakat}-te sin-zyau-kara \\
@@ -638,8 +640,8 @@ The element is also intervened by another argument `distemper'.
 %all of which are given.
 %\ex.\label{WO:Ex:mizu}
 % \ag. desukara daitai iti-niti-ni ni-rittoru-no \EM{mizu-o} \ul{tot}-te kudasai-to iw-are-te \\
-% so approximately one-day-for two-litter-\ab{gen} water-\ab{acc} drink-and please-\ab{quot} tell-\ab{pass}-and \\
-% `So we were told to drink two litters of water per day,'
+% so approximately one-day-for two-liter-\ab{gen} water-\ab{acc} drink-and please-\ab{quot} tell-\ab{pass}-and \\
+% `So we were told to drink two liters of water per day,'
 % \bg. syokuzi-no toki-wa kanarazu magukappu-de ni-hai-bun-no \EM{mizu-o} \ul{nomi}-masu-si \\
 % 	meal-\ab{gen} time-\ci{wa} surely mug-with two-cup-amount-\ab{gen} water-\ab{acc} drink-\ab{plt}-and \\
 %	`whenever we have meal, we drink two cups of water,'
@@ -691,16 +693,16 @@ The element is also intervened by another argument `distemper'.
 %Therefore,
 %\ci{kuruma} is coded by the case marker \ci{o} and appears non-initial position, i.e., immediately before the predicate as will be discussed in \S \ref{WOPrePredEles}.
 
-\ci{Wa} appearing at the initial position is already conventionalized, and
-it is possible to examine by acceptability judgements.
-It is not acceptable for \ci{wa}-coded P to appear between the focus agent and the predicate except for contrastive reading of \ci{wa}.
+\ci{Wa} appearing in the initial position is already conventionalized, and
+it is possible to test this with acceptability judgements.
+It is not acceptable for \ci{wa}-coded P to appear between the focus agent and the predicate except for contrastive readings of \ci{wa}.
 %	\footnote{
 %	Contrastive \ci{wa} appearing in this position will be
 %	discussed more in detail in \S \ref{WODiscussion}.
 %	}
-As the contrast among \Next[a-c] shows,
+As the contrast between \Next[a-c] shows,
 the zero-coded P \ci{hon} `book' in \Next[a] right before the predicate is acceptable,
-while the \ci{wa}-coded \ci{hon} `book' in the same position as in \Next[b] is not acceptable.
+while the \ci{wa}-coded \ci{hon} `book' in the same position in \Next[b] is not acceptable.
 To express the idea of \Next[b],
 the \ci{wa}-coded P should precede A \ci{taroo} `Taro'.
 %
@@ -720,7 +722,7 @@ where \ci{wa}-coded P is preceded by \ci{ga}-coded A.
 This \ci{wa}-coded P is contrastive, which will be discussed in \S \ref{WODiscussion}.
 
 I propose the hypothesis that elements which belong to the same unit of information structure appear adjacent within a clause.
-I call this information-structure continuity principle in word order.
+I call this the information-structure continuity principle in word order.
 %
 \ex. \label{IScontinuityP}\tl{Information-structure continuity principle}:
  A unit of information structure is continuous in a clause;
@@ -728,11 +730,11 @@ I call this information-structure continuity principle in word order.
 
 This principle explains why \LLast[b] is not acceptable,
 while \LLast[a,c] are acceptable.
-The information structure of each of the examples \LLast are represented in \Next.
+The information structure of each of the examples \LLast is represented in \Next.
 In \Next[b],
-the topic P element \ci{hon-wa} `book-\ci{wa}' intervenes two focus elements \ci{taroo-ga} `Taro-\ci{ga}' and \ci{yon-deru} `read-\ab{prog}', which is not acceptable.
+the topic P element \ci{hon-wa} `book-\ci{wa}' intervenes between two focus elements \ci{taroo-ga} `Taro-\ci{ga}' and \ci{yon-deru} `read-\ab{prog}', which is not acceptable.
 In \Next[c], on the other hand,
-the topic P does not intervene the domain of focus,
+the topic P does not split up the domain of focus,
 and the whole sentence is acceptable.
 In \Next[a],
 all the elements including \ci{hon} `book' belong to focus
@@ -749,7 +751,7 @@ and hence \ci{hon} in this position is acceptable.
 		`Taro is reading the book.'
 
 Interestingly,
-it is possible for \ci{wa}-coded A to be preceded by \ci{o}-coded P as shown in \Next[a] (compare this with \Next[b]).
+it is possible for \ci{wa}-coded A to be preceded by \ci{o}-coded P, as shown in \Next[a] (compare this with \Next[b]).
 %
 \ex.
 \ag. \ul{hon-o} \EM{taroo-wa}  yon-deru-yo \\
@@ -759,7 +761,7 @@ it is possible for \ci{wa}-coded A to be preceded by \ci{o}-coded P as shown in 
 		book-\ci{o} Taro-\ci{ga} read-\ab{prog}-\ab{fp} \\
 		`Taro is reading the book.'
 
-As has been argued above,
+As was argued above,
 the preposed P, \ci{hon-o} `book-\ci{o}' in \Last,
 is topical, which is represented as in \Next.
 %
@@ -772,9 +774,9 @@ is topical, which is represented as in \Next.
 		`Taro is reading the book.'
 
 As shown in \Last[a],
-the two topic elements \ci{hon-o} `book-\ci{o}' and \ci{taroo-wa} `Taro-\ci{wa}' are adjacent with each other and hence this sentence is acceptable.
+the two topic elements \ci{hon-o} `book-\ci{o}' and \ci{taroo-wa} `Taro-\ci{wa}' are adjacent to each other and hence this sentence is acceptable.
 Also in \Last[b],
-the only topic element \ci{hon-o} `book-\ci{o}' does not intervene the focus elements \ci{taroo-ga}, which is predicted to be acceptable.
+the only topic element \ci{hon-o} `book-\ci{o}' does not split up the focus elements \ci{taroo-ga yon-deru}, which is predicted to be acceptable.
 \ci{Hon-o} `book-\ci{o}' could be focus instead of topic in \LLast[b], since given elements can be focus.
 But it is reasonable to think of a situation where given focus elements are preposed
 for the sentence to be a smooth transition from the previous sentence.
@@ -785,7 +787,7 @@ rather, it is about adjacency.
 I argue that this principle is also at work in intonation (see Chapter \ref{Intonation}).
 
 What is the difference between clause-initial elements coded by topic markers and those coded by case markers?
-As has been discussed in \S \ref{Par:ArgStr:TopHierarchy},
+As was discussed in \S \ref{Par:ArgStr:TopHierarchy},
 there is a hierarchy of topic coding \ref{ASPGivenSchema},
 which is repeated here as \Next.
 %
@@ -795,25 +797,25 @@ which is repeated here as \Next.
 The hierarchy indicates that
 evoked or inferable A and S are more likely to be coded by topic markers than P in the same status.
 Word order is not affected by this hierarchy.
-Figure \ref{WOSGivenF} and \ref{WOPGivenF} show word order of
+Figures \ref{WOSGivenF} and \ref{WOPGivenF} show word order of
 anaphoric S and P, respectively.
-Compare these with Figure \ref{WOSNewF} and \ref{WOPNewF},
+Compare these with Figures \ref{WOSNewF} and \ref{WOPNewF},
 which show word order of non-anaphoric S and P.
 Word order of A is omitted because the number is too small.
-As can be seen from the contrasts between Figure \ref{WOSGivenF} and \ref{WOSNewF} and between Figure \ref{WOPGivenF} and \ref{WOPNewF},
+As can be seen from the contrasts between Figures \ref{WOSGivenF} and \ref{WOSNewF} and between Figures \ref{WOPGivenF} and \ref{WOPNewF},
 anaphoric elements are more likely to appear earlier in a clause than non-anaphoric elements.
 Although the contrast is less clear between anaphoric vs.~non-anaphoric P,
-especially notable is that there are three times as much anaphoric Ps as non-anaphoric Ps in the third position.
+especially notable is that there are three times as many anaphoric Ps as non-anaphoric Ps in the third position.
 (There are 27 anaphoric Ps in the third position,
 while there are only 10 non-anaphoric P.)
 I speculate that the contrast is less clear in anaphoric vs.~non-anaphoric P than S because there are cases like \ref{WO:ClauseInit:Given:mizu} and \ref{WO:ClauseInit:Given:tenkan},
-where the element is annotated as anaphoric but is considered to be not shared;
-in this case, P appear pre-predicatively rather than clause-initially.
+where the element is annotated as anaphoric but is considered to be not shared.
+In this case, P appears pre-predicatively rather than clause-initially.
 Therefore, I argue that,
 while elements coded by topic markers are likely to appear earlier in a clause,
 word order is independent of topic marking.
-Topic markers are sensitive to given-new taxonomy as has been discussed in Chapter \ref{Particles};
-clause-initial position is sensitive to shared-ness.
+Topic markers are sensitive to the given-new taxonomy, as was discussed in Chapter \ref{Particles};
+clause-initial position is sensitive to sharedness.
 Topic markers and word order are sensitive to different aspects of topichood.
 
 \begin{figure}
@@ -860,7 +862,7 @@ Next let us examine the position of pronouns.
 Figure \ref{WOExpTypeF} shows the positions of pronouns.
 Figure \ref{DEPositionAllF}, repeated as Figure \ref{DEPositionAllF2} for comparison,
 represents the distributions of all elements.
-Although the number of pronoun is small,
+Although the number of pronouns is small,
 it is clear, comparing with the overall distributions of elements in Figure \ref{DEPositionAllF2}, that
 the order of pronouns is skewed to earlier positions within a clause.
 Hence, it is reasonable to conclude that
@@ -948,11 +950,11 @@ The result is compatible with \citeA{yamashita02} and \citeA{kondoyamashita07}.
 \subsubsection{Unused elements appear clause-initially}\label{WO:ClauseInit:Ident:ActStatus}
 
 Not only evoked, inferable, and declining elements,
-unused elements appear clause-initially.
-Elements coded by copula followed by \ci{ga} or \ci{kedo} are unused elements as has been discussed in Chapter \ref{Particles}.%
+but also unused elements appear clause-initially.
+Elements coded by the copula followed by \ci{ga} or \ci{kedo} are unused elements, as was discussed in Chapter \ref{Particles}.%
  \footnote{
  \chd{See \S \ref{BackSubSubKedo} for the reason why
- An element coded by copula followed by \ci{ga} or \ci{kedo} is not considered to be a clause.}
+ an element coded by the copula followed by \ci{ga} or \ci{kedo} is not considered to be a clause.}
  }
 It is very unnatural when they are preceded by other arguments.
 For example,
@@ -968,7 +970,7 @@ as shown in the contrast between \Next[a] and \Next[b],
       this.side-\ab{loc} that-\ab{gen} issue-\ab{cop}.\ab{plt}-though whatever become-will-\ab{cop}.\ab{plt} \\
 
 In a similar manner,
-\ci{yamada-no koto} `the issue of Yamada' cannot naturally be preceded by adverbial, \ci{ano mama} `that way'
+\ci{yamada-no koto} `the issue of Yamada' cannot naturally be preceded by an adverbial, \ci{ano mama} `that way',
 as shown in the contrast between \Next[a] and \Next[b].
 %
 \ex.
@@ -982,7 +984,7 @@ as shown in the contrast between \Next[a] and \Next[b].
 
 Unused elements include indefinite elements
 although it is counter-intuitive to consider indefinite NPs as being ``shared''.
-For example, as has been mentioned in \S \ref{Fr:Definition:TFFeathers:Definite},
+For example, as was mentioned in \S \ref{Fr:Definition:TFFeathers:Definite},
 an indefinite element can appear clause-initially
 if the speaker assumes the hearer to remember that the speaker (or somebody else) has talked about a category the element refers to.
 For example, as shown in \Next[Y],
@@ -1005,11 +1007,11 @@ I regard this as unused and hence shared.
 			`(I) ate (a) mango in Miyako island the other day.'
 
 In this case, however,
-\ci{mangoo} `mango' in the pre-predicate position is also felicitous
-as in \Last[$^{\prime}$],
+\ci{mangoo} `mango' in the pre-predicate position is also felicitous,
+as in \Last[Y$^{\prime}$],
 which indicates that this is a borderline case;
 \ci{mangoo} can be a topic in the sense that
-it is unused and the speaker has talked about before,
+it is unused and the speaker has talked about it before,
 while it can be a focus in the sense that
 it is new to the discourse and indefinite.
 
@@ -1039,7 +1041,7 @@ they can appear clause-initially.
 %%----------------------------------------------------
 \subsection{Persistent elements tend to appear clause-initially}\label{PersistentAppearClause-Initially}
 
-Persistent elements are skewed to earlier positions than non-persistent elements
+Persistent elements are skewed to earlier positions more than non-persistent elements,
 as shown in Figure \ref{DEPositionPerF}.
 %This is especially clear in the contrast between Figure \ref{WOASPPerF} and \ref{WOASPNPerF},
 %which show the word order of A, S, and P for persistent and non-persistent elements
@@ -1066,9 +1068,9 @@ The following are examples of persistent elements appearing clause-initially.
 In \Next,
 \ci{hihu-byoo} `skin-disease' in line a, coded by the topic marker \ci{toiuno-wa},
 appear clause-initially.
-The predicate appear in line c,
-intervened by a proposition in line b and also another argument (\ci{hito-ni} `person-by') of the clause.
-Also in line d, \ci{kore-wa} `this-\ci{wa}', referring to `skin-disease', appear clause initially.
+The predicate appears in line c,
+separated from the subject by a proposition in line b and also another argument (\ci{hito-ni} `person-by') of the clause.
+Also in line d, \ci{kore-wa} `this-\ci{wa}', referring to `skin-disease', appears clause initially.
 %
 \ex.
  \ag. \EM{hihu-byoo-toiuno-wa} \\
@@ -1090,7 +1092,7 @@ Similarly, in \Next,
 \ci{sore-wa} `that-\ci{wa}' in line b and g,
 and \ci{sore-dake-wa} `that-only-\ci{wa}' in line i,
 all of which refer to `chelow kebab' in line a,
-appear clause-initially.
+appears clause-initially.
 %
 \ex.
  \a. There is a dish called \EM{chelow kebab}.
@@ -1107,35 +1109,35 @@ appear clause-initially.
  \b. I thought it was delicious.
  \bg. \EM{sore-dake-wa} anoo iran-ryoori-no naka-de \ul{taberu} koto-ga ano deki-ta ryoori-desu \\
  		that-only-\ci{wa} \ab{fl} Iran-dish-\ab{gen} inside-\ab{loc} eat thing-\ci{ga} \ab{fl} can-\ab{past} dish-\ab{cop} \\
-		`This is the only dish I could eat among Iran dish.'
+		`This is the only dish I could eat among Iranian dishes.'
  \hfill{(\code{S03F0072: 446.03-447.66})}
 %S03F0072|00446026L|446.026013|447.663208|L|チェロカバブというのがありまして|/テ節/|
 %S03F0072|00448150L|448.150018|463.667799|L|でそれは(0.114)(F えーと)御飯に(0.376)(F えーと)バターを混ぜてその上に香辛料を振って(0.174)その上に羊のお肉が乗っていて(0.289)それをこう(0.11)混ぜてぐちゃぐちゃに混ぜて食べるという(0.441)(F えーと)お料理が(0.707)(F あのー)(0.681)多かったんですけれども|/並列節ケレドモ/|
 %S03F0072|00464361L|464.360734|476.870208|L|それは結構そんなに羊の(0.42)お肉の臭さもなくて(1.094)(F あのー)(0.156)おいしいな(0.178)って(0.418)思ってそれだけは(0.475)(F あのー)イラン料理の中で(0.273)食べることが(0.28)(F あの)できた料理です|[文末]|
 
-\chd{As has been mentioned in \ref{WO:Intro},
+\chd{As was mentioned in \ref{WO:Intro},
 both word order and particles significantly contribute to predict persistence,
 contrary to the result of \citeA{imamura17},
 who concludes that ``scrambling [PSV order] is pertinent to anaphorically prominent but cataphorically non-prominent objects and that topicalization is especially germane to `continuing topic' as the referent of the object'' (p.~78).
 There are a few potential reasons for why the results of the present work are different from those of \citeA{imamura17}.
-One potential reason is the difference of modalities;
+One potential reason is the difference of modalities:
 \citeA{imamura17} employed a corpus of written Japanese (\ci{the Balanced Corpus of Contemporary Written Japanese}, BCCWJ), while the present study employs spoken Japanese.
 Related to the first point,
-clause-chaining, which I will point out is one of the motivations for clause-initial elements tend to be persistent (see the next section),
+clause-chaining, which I will point out is one of the motivations for why clause-initial elements tend to be persistent (see the next section),
 only appears in spoken Japanese, but not in written Japanese.
 In any case, this is a mere speculation and further studies are needed to analyze
-why the results of two studies differ.}
+why the results of these two studies differ.}
 
 
 %%----------------------------------------------------
 \subsection{Motivations for topics appearing clause-initially}\label{TopicAppearClause-Initially}
 
-As has been pointed out by many linguists,
+As was pointed out by many linguists,
 topics tend to appear clause-initially
-because they function as an anchor of the previous discourse.
+because they function as an anchor to the previous discourse.
 The principle \ref{oldnewprinciple} is motivated by this processing convenience \cite[e.g.,][]{keenan77}.
-Clause-initial locatives and other adjectives can be also explained by this motivation.
-This anchoring function best works when the activation cost of the referent is relatively high \cite{givon83};
+Clause-initial locatives and other adjectives can also be explained by this motivation.
+This anchoring function works best when the activation cost of the referent is relatively high \cite{givon83};
 i.e.,
 when the referent of the element in question is inferable or declining.
 When the activation cost is low, i.e., the topic is continuous from the previous discourse,
@@ -1144,17 +1146,17 @@ there is no need for anchoring because the topic is already evoked and the heare
 This explanation predicts that the distance between the element in question and the antecedent is larger when the element in question is expressed in the form of NP instead of zero.
 Figure \ref{DistExpTypeF} appears to support this prediction,
 \chd{although a statistical analysis indicates that the expression types do not significantly contribute to predict the distance.
-This paragraph discuss NPs with long distance.
+This paragraph discusses NPs with long distance.
 See the discussion below for NPs with shorter distance.}
-The whisker plot in FIgure \ref{DistExpTypeF} shows the distance between the element in question (NP vs.\ (explicit) pronoun vs.\ zero pronoun) and its antecedent.
-It measures the time between when the first mora of the element question is produced and when the first mora of the antecedent produced.
+The whisker plot in Figure \ref{DistExpTypeF} shows the distance between the element in question (NP vs.\ (explicit) pronoun vs.\ zero pronoun) and its antecedent.
+It measures the time between when the first mora of the element question is produced and when the first mora of the antecedent is produced.
 The figure shows that the distance between NP and the antecedent is larger than that of zero and the antecedent in many cases.
 Zero pronouns are assumed to be produced at the time
 when the first mora of the predicate is uttered.
 
 \Next exemplifies this pattern,
 \chd{where zero pronouns are indicated by \ci{\O}.}
-In line b, \ci{san-nin-me} `the last person' precedes adjuncts (`last fall') and coded by a variation of \ci{toiuno-wa} (\ci{ttuuno-wa}).
+In line b, \ci{san-nin-me} `the last person' precedes adjuncts (`last fall') and is coded by a variation of \ci{toiuno-wa} (\ci{ttuuno-wa}).
 \chd{Zero pronouns \ci{\O} are inserted right before the predicate for the purpose of presentation,
 but this does not affect the analysis.}
 Since this person is one of the three people mentioned in line a,
@@ -1163,21 +1165,21 @@ through a part-whole relation.
 The topic moves on to another person in line f, who is also one of the three people mentioned in line a.
 In line j, the speaker again refers to the person mentioned in line b.
 Also this time, the element \ci{moo hitori-wa} `the other person' appears near clause-initially, preceding other arguments.
-The referent keeps to be mentioned until line q.
+The referent continues to be mentioned until line q.
 %where the elements that refer to this person is either pronouns, as in line h and k, or zero, as in line i, l, and o.
 Finally, the speaker starts talking about himself in line r,
-in which case the element \ci{boku-wa} `\ab{1}\ab{sg}-\ci{wa}' appear near clause-initially.
+in which case the element \ci{boku-wa} `\ab{1}\ab{sg}-\ci{wa}' appears near clause-initially.
 %
 \ex.
- \a. All of us three quitted this job, interestingly, or strangely.
+ \a. All of us three quit this job, interestingly, or strangely.
  \bg. de anoo \EM{san-nin-me-ttuuno-wa} tui se ee kyonen-no o aki-ni yame-ta-n-desu-kedomo \\
  	and \ab{fl} three-\ab{cl}-\ab{ord}-\ci{toiuno}-\ci{wa} just \ab{frg} \ab{fl} last.year-\ab{gen} \ab{fl} fall-in quit-\ab{past}-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
-	`The last person quitted this fall.'
+	`The last person quit this fall.'
  \bg. \EM{soitu-wa} maa itiban saisyo-ni yame-tai yame-tai ttut-ta ningen-nan-desu-kedomo \\
  		\ab{3}\ab{sg}-\ci{wa} \ab{fl} most first-in quit-want quit-want \ab{quot}.say-\ab{past} person-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
 		`He was the first person who said he wanted to quit.'
  \b. This kind of thing often happens.
- \b. All of us three quitted eventually.
+ \b. All of us three quit eventually.
  \bg. ndee \ul{hitori-wa}-desu-ne \\
  		then one.person-\ci{wa}-\ab{cop}.\ab{plt}-\ab{fp} \\
 		`Concerning another person,'
@@ -1206,7 +1208,7 @@ in which case the element \ci{boku-wa} `\ab{1}\ab{sg}-\ci{wa}' appear near claus
  \bg. sore-ga maa doositemo nai-to \EM{\O} sum-e-nai-tte iu koto-o sono ziki-ni \EM{\O} sato-ta-n-zya-nai-ka-to \\
  	that-\ci{ga} \ab{fl} by.all.means not.exist-\ab{cond} {\O} live-can-\ab{neg}-\ab{quot} say thing-\ci{o} that time-in {\O} learn-\ab{past}-\ab{nmlz}-\ab{cop}-\ab{neg}-\ab{q}-\ab{quot} \\
 	`(He) learned at that time that (he) can't live without such scene (I guess).'
- \b. de \ul{\ul{boku-wa}}-to ii-masu-to \\
+ \b. de \EMi{boku-wa}-to ii-masu-to \\
  	then \ab{1}\ab{sg}-\ab{quot} say-\ab{plt}-\ab{cond} \\
 	`Talking about myself...'
  \b. ...
@@ -1228,7 +1230,7 @@ in which case the element \ci{boku-wa} `\ab{1}\ab{sg}-\ci{wa}' appear near claus
 %S05M
 
 In this type of example,
-clause-initial elements especially coded by topic markers function as an anchor to the previous discourse.
+clause-initial elements, especially those coded by topic markers, function as an anchor to the previous discourse.
 
 \begin{figure}
 %\begin{minipage}{0.5\textwidth}
@@ -1251,9 +1253,9 @@ Figure \ref{DistExpTypeF} also indicates that
 	}
 and zero pronouns do not differ from each other.
 %Or pronouns even seem to have shorter distance than zeros.
-Moreover, there are NPs which refer to the immediate antecedent;
+Moreover, there are NPs which refer to the immediate antecedent.
 \chd{Whereas more than half of the NPs have longer distance than explicit and zero pronouns,
-the figure also shows that many NPs have distance as short as that explicit and zero pronouns.
+the figure also shows that many NPs have distances as short as those of explicit and zero pronouns.
 In fact, a fixed effects analysis for the distance (the expression type as a fixed effect and the speaker as a random effect) indicates that expression types are not a significant factor to predict the distance.}
 For example, in the previous example \Last,
 the referent of \ci{hitori} `one person' in line f is mentioned in line h as \ci{sono hito} `that person' again,
@@ -1262,20 +1264,20 @@ although the distance is not very far.%
 	The impression of line g is inserted clause rather than topic shift.
 	}
 In a similar manner,
-the referent of \ci{san-nin-me} in line b is mentioned immediately following clause (line c) as \ci{soitu} `\ab{3}\ab{sg}'.
+the referent of \ci{san-nin-me} in line b is mentioned in the immediately following clause (line c) as \ci{soitu} `\ab{3}\ab{sg}'.
 These examples are not mere exceptions.
-in fact, 74.1\% of secondly mentioned referents are still expressed in the form of NP;
-only 21.4\% are expressed as zero and 4.6\% as pronoun
+In fact, 74.1\% of secondly mentioned referents are still expressed in the form of an NP;
+only 21.4\% are expressed as zero and 4.6\% as pronoun,
 as shown in Table \ref{AnaCountExpTypeT} and Figure \ref{AnaCountExpTypeF}.
 Figure \ref{AnaCountExpTypeF} and Table \ref{AnaCountExpTypeT} show
 the expression type of the element in question based on how many times the referent is mentioned.
-"2" indicates that the element in question is second mentioned,
-"3" indicates that it is third mentioned, and so on.
-The ratio of zero increases as the referent keeps to be mentioned.
+"2" indicates that the element in question is mentioned second,
+"3" indicates that it is mentioned third, and so on.
+The ratio of zero increases as the referent keeps being mentioned.
 The fact that the referent introduced is mentioned repeatedly is also reported in \citeA{clancy80}, who investigates Pear Stories;
 this pattern is not unique to the corpus of the current study.
 \Next is another example
-of two NPs which refers to the same referent adjacent with each other.
+of two NPs which refer to the same referent adjacent with each other.
 In this example,
 the very long word \ci{yuugosurabia-syakaisyugi-kyoowakoku} `Socialist Federal Republic of Yugoslavia' is repeated twice.
 %
@@ -1311,7 +1313,7 @@ Why?
           & \rt{(21.4\%)} & \rt{(28.4\%)} & \rt{(35.7\%)} & \rt{(35.0\%)} & \rt{(56.3\%)} \\
     \midrule
   Sum     & 351 & 208 & 143 & 103 & 630 \\
-          & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} \\
+%          & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} \\
     \bottomrule
 	\end{tabular}
 	\label{AnaCountExpTypeT}
@@ -1329,20 +1331,20 @@ Why?
 	\label{AnaCountExpTypeF}
 \end{figure}
 
-Since the most frequent pronouns is zero pronoun in Japanese as indicated in Figure \ref{AnaCountExpTypeF} and Table \ref{AnaCountExpTypeT},
+Since the most frequent pronoun in Japanese is the zero pronoun as indicated in Figure \ref{AnaCountExpTypeF} and Table \ref{AnaCountExpTypeT},
 the speaker needs to make sure that the hearer understand which referent zero pronouns refer to.
 Therefore, the speaker needs to establish the referent as a topic
 before s/he uses zero.%
  \footnote{\chd{
- As pointed by one of the reviewers (Morimoto),
- it is possible to replace `this Socialist Federal Republic of Yugoslavia' in line b of \ref{WO:TopicAppearClause-Initially:Ex:Yuugo} with pronoun-like form such as \ci{kono kuni} `this country'.
+ As pointed out by one of the reviewers (Morimoto),
+ it is possible to replace `this Socialist Federal Republic of Yugoslavia' in line b of \ref{WO:TopicAppearClause-Initially:Ex:Yuugo} with a pronoun-like form such as \ci{kono kuni} `this country'.
  My argument here still holds because the pronoun-like form `this country' is
- much more informative than zero pronoun.
+ much more informative than the zero pronoun.
  The following argument by \citeA{lambrecht94} also suggests that
  focus can be the antecedent of overt pronouns, but not zero pronouns.
  See examples \ref{WO:TopicAppearClause-Initially:Ex:John} and \ref{WO:TopicAppearClause-Initially:Ex:Rosa}.
  }}
-This might be related to the observation in \citeA[p.~136]{lambrecht94} that
+This might be related to the observation in \citeA[136]{lambrecht94} that
 focus elements cannot be the antecedent of zero,
 while topic elements can.
 Compare \Next and \NNext (the acceptability judgements are based on Lambrecht. Information structure is added by the present author).
@@ -1357,7 +1359,7 @@ On the other hand,
 in \Next,
 \ci{John} is focus because it is the answer to the question,
 in which case zero is not acceptable as in \Next[b].
-Only explicit pronoun is acceptable as shown in \Next[a].
+Only an explicit pronoun is acceptable, as shown in \Next[a].
 %
 \ex.\label{WO:TopicAppearClause-Initially:Ex:Rosa}
  \a.[Q:] Who married Rosa?
@@ -1385,9 +1387,9 @@ Only explicit pronoun is acceptable as shown in \Next[a].
 %\end{minipage}
 \end{figure}
 
-Why are these pronouns or NPs which refer to the immediate antecedent appear (near) clause-initially?
+Why do these pronouns or NPs which refer to the immediate antecedent appear (near) clause-initially?
 I argue that, in addition to the from-old-to-new principle \ref{oldnewprinciple},
-the persistent-element-first principle works in a spontaneous speech.
+the persistent-element-first principle works in spontaneous speech.
 %
 \ex. \label{PerFirstPrinciple}\tl{Persistent-element-first principle}:
  In languages in which word order is relatively free,
@@ -1411,7 +1413,7 @@ where the speaker announces the topic at the beginning and continues to talk abo
 
 A specific example of clause-chaining is shown in \Next,
 where the topic `Everest Trail' in line a is preannounced,
-and the following clauses (b--f) is about this topic `Everest Trail'.
+and the following clauses (b--f) are about this topic `Everest Trail'.
 %
 \ex.
 \ag. \EM{kono} \EM{eberesuto-kaidoo-toiuno-wa} \\
@@ -1430,7 +1432,7 @@ and the following clauses (b--f) is about this topic `Everest Trail'.
 	local-\ab{gen} person$\sim$\ab{pl}-for-\ci{wa} \ab{fl} {\O} trade-road-\ab{quot} say-like \\
 \bg. insyoo-no \EM{\O} miti-desi-ta \\
 	 impression-\ab{gen} {\O} road-\ab{cop}.\ab{plt}-\ab{past} \\
- `{it} was a road like trading road for local people.'
+ `{it} was a road like a trading road for local people.'
  \b.[] \hfill{(\code{S01F0151: 105.73-120.14})}
 %このエベレスト街道というのは
 %チベットとネパールの交易路にもなっておりまして
@@ -1438,7 +1440,7 @@ and the following clauses (b--f) is about this topic `Everest Trail'.
 %高尾山みたいな山道なんですけれども
 %現地の人々にとってはえー通商路というような印象の道でした (S01F0151: 105.73-120.14)
 
-\chd{This pattern is useful because which referent the speaker talks about in the chain of clauses in question.}
+\chd{This pattern is useful because which referent the speaker talks about in the chain of clauses in question is referred to at the beginning of the chain and s/he can use the zero pronoun in the following clauses.}
 
 %This principle is motivated by processing;
 %it is easier for the hearer to process if the topic to be talked about is stated first.
@@ -1448,9 +1450,9 @@ and the following clauses (b--f) is about this topic `Everest Trail'.
 %	\footnote{
 %	This might be the same as the from-old-to-new principle (\ref{oldnewprinciple}).
 %	}
-Figure \ref{ExpTypePrevWOF} and \ref{ExpTypePrevWOZeroF} show word order of antecedents of NPs and zero pronouns, respectively.
+Figure \ref{ExpTypePrevWOF} and \ref{ExpTypePrevWOZeroF} show the word order of antecedents of NPs and zero pronouns, respectively.
 Although the contrast is subtle,
-the antecedents of zero pronouns are more skewed to earlier positions than NPs.
+the antecedents of zero pronouns are more skewed towards earlier positions than NPs.
 %The figure is a bar plot of expression types of elements based on the word orders of their antecedents.
 %The x-axis indicates the word order of the antecedents and y-axis indicates the raw frequencies of elements.
 
@@ -1458,7 +1460,7 @@ Consider the following example \Next.
 The speaker mentions the topic `the participants of the trekking' first in line a,
 and describes this in the following discourse.
 After \Next[f],
-the speaker extends the topic and describes each participants.
+the speaker extends the topic and describes each participant.
 %
 \ex.\label{trekking}
  \ag. e \EM{torekking-sankasya}-nituki-masite-wa \\
@@ -1466,17 +1468,17 @@ the speaker extends the topic and describes each participants.
 	`Concerning the participants of this trekking,'
  \bg. moo hontooni ni-zyuu-go-sai-no ooeru-san-kara \\
  	\ab{fl} really two-ten-five-years.old-\ab{gen} working.woman-\ab{hon}-from \\
-	`from 25-year-old working lady,'
+	`from the 25-year-old working lady,'
  \bg. nana-zyuu-ni-sai-no ozii-san-made \\
  	seven-ten-two-years.old-\ab{gen} old.guy-\ab{hon}-till \\
-	`to 72-year-old elderly man,'
+	`to the 72-year-old elderly man,'
  \bg. hizyooni takusan-no hito$\sim$bito-ga \\
  	very many-\ab{gen} person$\sim$\ab{pl}-\ci{ga} \\
 	`many people...'
  \b. no, not many people,
  \bg. ta-syu-ni wataru nenree-soo-no hito-ga i-te omosirokat-ta-desu \\
  		many-kind-\ab{dat} cover age-tier-\ab{gen} person-\ci{ga} exist-and interesting-\ab{past}-\ab{plt} \\
-		`there were many kinds of people from wide age range and it was interesting.'
+		`there were many kinds of people from a wide age range and it was interesting.'
 		\src{S01F0151: 597.67-610.87}
 %S01F0151|00597665L|597.665333|610.870275|L|(F え)トレッキング参加者につきましては(0.192)もう本当に二十五歳の(A オーエル;ＯＬ)さんから七十二歳のお爺さんまで(0.278)非常にたくさんの人々が(0.539)(F えー)(0.131)<FV>たくさんのじゃない(0.11)多種に渡る(0.237)年齢層の人がいて面白かったです|[文末]|
 %S01F0151|00611451L|611.450993|614.022662|L|で(0.429)みんな人によって趣味が違いまして|/テ節/|
@@ -1503,7 +1505,7 @@ but are only pragmatically associated with the constituents in the following cla
           & \rt{(50.0\%)}  & \rt{(50.0\%)} & \rt{(33.1\%)} & \rt{(22.7\%)} \\
  \midrule
  Sum      & 30             & 82      & 127     & 119 \\ 
-          & \rt{(100\%)}   & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} \\
+%          & \rt{(100\%)}   & \rt{(100\%)} & \rt{(100\%)} & \rt{(100\%)} \\
  \bottomrule
 %           NP Pron Zero
 %  toiuno-wa 11    4   15
@@ -1521,7 +1523,7 @@ but are only pragmatically associated with the constituents in the following cla
 	\end{center}
 \end{figure}
 
-Not all clause-initial antecedents of zero are coded by topic markers.
+Not all clause-initial antecedents of zero pronouns are coded by topic markers.
 Figure \ref{ExpTypePrevParF} is a bar plot of expression types of elements based on the particles of their antecedents.
 According to the figure, the antecedents of zero pronouns are more likely to be coded by \ci{wa} or \ci{toiuno-wa} than
 those of overt NPs,
@@ -1548,7 +1550,7 @@ In the following example \Next,
 %S00F0014|00612711L|612.710582|621.496514|L|それで(0.344)(F あのー)<FV>(0.176)夜に(0.554)(F あの)食事をこうしてましたら(0.748)(F ん)窓のところと言うかベランダに何か小動物がこうちょこちょこと来たんですね|[文末]|
 %S00F0014|00621815L|621.814615|627.660077|L|で最初こう(0.282)(F あの)(0.12)そちらの外の方から覗いたもんですから(0.312)私は最初(0.265)リスかなと思ったんです|[文末]|
 %S00F0014|00628000L|627.999519|631.707987|L|で(0.329)(D (? つ))さっとこう(F あれ)(0.235)と思って行ったらさっと逃げ(0.169)ちゃいまして|/テ節/|
-\ci{waru-gaki} `brats' which is coded by \ci{ga} clause-initially in line a is the antecedent of the zero in line b.
+\ci{waru-gaki} `brats', which is coded by \ci{ga} clause-initially in line a, is the antecedent of the zero in line b.
 %
 \ex.
  \ag. a dokka-no kinzyo-no \EM{waru-gaki-ga} sute-inu-o mi-te \\
@@ -1561,7 +1563,7 @@ In the following example \Next,
  \src{S02M0198: 176.26-184.61}
 %S02M0198|00176259L|176.258754|184.61063|L|(F あ)どっかの(0.161)近所の悪がきが(0.461)捨て犬を見て(0.599)赤いペンキを(0.263)鼻の上に塗ったんだろうと(0.193)話したんですけども|/並列節ケドモ/|
 
-This might sound a priori to some readers because Japanese is traditionally argued to be an SOV language:
+This might sound \ci{a priori} to some readers because Japanese is traditionally argued to be an SOV language:
 of course \ci{ga}-coded elements are subjects and precede other arguments.
 However, what I claim is that
 the persistent-element-first principle \ref{PerFirstPrinciple}, in addition to the from-old-to-new principle \ref{oldnewprinciple}, is one of the motivations for so-called subjects (A and S) to precede other arguments.
@@ -1590,7 +1592,7 @@ Another motivation has been pointed out for topic elements immediately repeated 
 Since topics have already been evoked in the speaker's mind, the cost of producing topics is lower than that of producing new elements.
 While the speaker utters the topic,
 s/he plans the following utterance.
-They investigated conversations and found that the topic elements repeated immediately after the previous speaker's utterance
+\citeA{dennakagawa13} investigated conversations and found that the topic elements repeated immediately after the previous speaker's utterance
 complementarily distribute with fillers.
 They also found that the length of the final mora of the topic phrase (typically \ci{wa}) correlates with the length of the following utterance
 \cite[see also][]{watanabeden10}.
@@ -1599,28 +1601,28 @@ In the following example \Next,
 not only `Serbian people' is repeated twice in line a and b,
 the whole sentence is almost repeated;
 the sentences in line a and b convey almost the same proposition.
-This is another piece of evidence that supports their claim;
+This is another piece of evidence that supports Den \& Nakagawa's claim;
 while repeating almost the same proposition,
 the speaker can plan what to say next about this topic.
 %
 \ex.
  \ag. sono \EM{serubia-zin-no} \EM{kata-tati}-ga soko-ni-wa ma hazimete ee serubia-teekoku-toiu kokka-o tukuru-no-ga maa zyuu-ni-seeki-no ma owari-gurai-nan-desu-ga \\
  	that Serbia-people-\ab{gen} person.\ab{plt}-\ab{pl}-\ci{ga} there-\ab{dat}-\ci{wa} \ab{fl} first.time \ab{fl} Serbia-empire-\ab{quot} nation-\ci{o} make-\ab{nmlz}-\ci{ga} \ab{fl} ten-two-century-\ab{gen} \ab{fl} end-around-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
-	`Thoese Serbian people built a nation called the Serbian Empire towards the end of the eleventh century.'
+	`Those Serbian people built a nation called the Serbian Empire towards the end of the eleventh century.'
  \bg. ee kono ziki maa \EM{serubia-no} \EM{kata-tati}-ga maa koko-ni tu kokka-o tukut-te ee serubia-teekoku-toiu koto-de \\
  	\ab{fl} this time \ab{fl} Serbia-\ab{gen} person.\ab{plt}-\ci{ga} \ab{fl} here-\ab{dat} \ab{frg} nation-\ci{o} make-and \ab{fl} Serbia-empire-\ab{quot} thing-\ab{cop}.and \\
-	`Around this time Serbian people build a nation, this is Serbian Empire and'
+	`Around this time Serbian people build a nation, this is the Serbian Empire and'
  \bg. ee ryuusee-o \EM{\O} kiwame \\
  		\ab{fl} flourish-\ci{o} {\O} be.extreme \\
 	`(it) flourished.'
- \b. At that time from north Catholic was coming, and from south Greek Orthodox was coming,
+ \b. At that time Catholics were coming from the north, and from the south, Greek Orthodox were coming,
  \b. though they are both Christian,
  \bg. ee ni-keetoo-no syuukyoo-no naka-de seekatu-o \EM{\O} si-te-iku naka-de \\
  		\ab{fl} two-stream-\ab{gen} religion-\ab{gen} inside-\ab{loc} life-\ci{o} {\O} do-and-go inside-\ab{loc} \\
 		`While (they) were living surrounded by two streams of religion,'
  \bg. ee serubia-teekoku-tosite ma dotira-o erabu-ka-tteiu na ko ee koto-no naka-de \\
  	\ab{fl} Serbia-empire-as \ab{fl} which-\ci{o} choose-\ab{q}-\ab{quot} \ab{frg} \ab{frg} \ab{fl} thing-\ab{gen} inside-\ab{cop}.and \\
-	`(they) faced a question of which one to choose.'
+	`(they) faced the question of which one to choose.'
  \bg. ee ma minami-gawa-no girisya-seekyoo-o \EM{\O} toru wake-nan-desu-ga \\
  	\ab{fl} \ab{fl} south-side-\ab{gen} Greek-Orthodox-\ci{o} {\O} choose reason-\ab{nmlz}-\ab{cop}.\ab{plt}-though \\
 	`(They) eventually chose Greek Orthodox.'
@@ -1636,7 +1638,7 @@ the speaker can plan what to say next about this topic.
 This section investigated characteristics of clause-initial elements.
 It turned out that
 shared and persistent elements tend to appear clause-initially.
-Not only this study confirmed the classic observation that
+Not only did this study confirm the classic observation that
 topics tend to appear clause-initially,
 this section and the next section analyze what kind of topics appear clause-initially.
 I also discussed motivations for clause-initial topics.
@@ -1665,9 +1667,9 @@ the examples are from the dialogue part of CSJ.
 		`(He) is wearing sunglasses, isn't he, Terry Ito?'
 		\src{D02F0015: 359.17-362.42}
 
-This section investigates the information structure of post-predicate construction of this kind.
+This section investigates the information structure of post-predicate constructions of this kind.
 Although post-predicate expressions could be adverbs, connectives, and other adjuncts,
-this study only examine noun phrases.
+this study only examines noun phrases.
 %I call all the elements which appear before the predicate
 %``elements before the predicate'' or ``preposed elements''
 %as opposed to ``post-predicate'' or ``postposed'' elements.
@@ -1678,8 +1680,8 @@ this study only examine noun phrases.
 %%----------------------------------------------------
 \subsection{Strongly evoked elements appear after predicate}\label{WORdis}
 
-\citeA[][p.~136]{takami95a} argues that
-postposed elements are elements other than focus.
+\citeA[][136]{takami95a} argues that
+postposed elements are elements other than the focus.
 For example,
 the answer to a question or \ci{wh}-phrase cannot be postposed naturally.
 \Next is an example of a postposed element `a 10-carat diamond ring' as the answer to the question `what'.
@@ -1693,7 +1695,7 @@ the postposed element cannot felicitously be the answer to a question.
 		`Taro bought (it) for Hanako, a 10-carat diamond ring.'
 
 Similarly,
-\ci{wh}-phrases such as \ci{dore} `which' cannot be postposed
+\ci{wh}-phrases such as \ci{dore} `which' cannot be postposed,
 as shown in \Next.
 %
 \exg. *itiban oisii-desu-ka \EM{dore-ga}? \\
@@ -1705,22 +1707,22 @@ as shown in \Next.
 %topics can be postposed.
 \citeA{nakagawaetal08_paper} found that
 there are two types of post-predicate construction:
-single-contour type and double-contour type.
+the single-contour and the double-contour types.
 The single-contour type is a type of post-predicate construction
-where the post-predicate elements are uttered without a pause and does not have the F$_{0}$ peak,
+where the post-predicate elements are uttered without a pause and do not have the F$_{0}$ peak,
 whereas the double-contour type is a type of construction
-where the post-predicate elements are uttered with a pause and does have the F$_{0}$ peak.
-The pitch contours of each utterance is shown in Figure \ref{kome1F} for single-contour type (\Next[A] and \NNext[A]) and \ref{kome2F} for double-contour type (\Next[A$^{\prime}$] and \NNext[A$^{\prime}$]),
+where the post-predicate elements are uttered with a pause and do have the F$_{0}$ peak.
+The pitch contours of each utterance are shown in Figure \ref{kome1F} for the single-contour type (\Next[A] and \NNext[A]) and \ref{kome2F} for the double-contour type (\Next[A$^{\prime}$] and \NNext[A$^{\prime}$]),
 both of which are produced by the author.
 The post-predicate part is \ci{kome-wa} `rice-\ci{wa}',
 whose accent nucleus is on \ci{me} and overall accent is supposed to be LHL (L indicates low and H indicates high in pitch).
-In Figure \ref{kome1F}, where the postposed element is uttered in the same continuous contour as the main clause,
-one cannot observe the F$_{0}$ peak in \ci{me} nor a pause between the predicate and the postposed element.
+In Figure \ref{kome1F}, where the postposed element is uttered with the same continuous contour as the main clause,
+one can neither observe the F$_{0}$ peak in \ci{me} nor a pause between the predicate and the postposed element.
 In Figure \ref{kome2F}, on the other hand,
 where the postposed element is uttered in a separate contour from the main clause,
 one can observe the F$_{0}$ peak in \ci{me} and a pause between the predicate and the postposed element.
 
-Nakagawa et al. investigated the difference between these two types in terms of information structure and found that
+\citeA{nakagawaetal08_paper} investigated the difference between these two types in terms of information structure and found that
 the post-predicate elements of the single-contour type are evoked
 by being mentioned immediately before or through physical context.
 On the other hand,
@@ -1749,11 +1751,11 @@ is acceptable.
 	\bg.[A$^{\prime}$:] ?o\pk{isii}-yo, \ul{ko\pk{me}-wa} \\
 			good-\ab{fp} rice-\ci{wa} \\
 			`RICE is good (but others not).'
-			\hfill{\cite[][p.~7]{nakagawaetal08_paper}}
+			\hfill{\cite[][7]{nakagawaetal08_paper}}
 
 On the other hand,
 in \Next, where `rice' is not evoked before the speaker utters \Next[A] or \Next[A$^{\prime}$],
-only double-contour type \Next[A$^{\prime}$] is acceptable
+only the double-contour type \Next[A$^{\prime}$] is acceptable
 and the single-contour type \Next[A] is not natural.
 \ex. \tl{The referent `rice' not evoked}
  \a.[Q:] Is that sushi bar good?
@@ -1791,26 +1793,26 @@ i.e., they measured the number of inter-pausal units between the element in ques
 They modified the definition of RD from the original one \cite{givon83} and decided to use inter-pausal unit as a measure of RD
 since clause boundaries are sometimes difficult to identify in spoken Japanese.
 Their results are shown in Table \ref{RDPostT}.
-The table shows that the average RD of the post-predicate elements of single-contour type is 6.9 on average,
-whereas that of double-contour type is 39.7.
+The table shows that the average RD of the post-predicate elements of the single-contour type is 6.9 on average,
+whereas that of the double-contour type is 39.7.
 What about elements before the predicate?
 
-I conducted the same investigation for elements before the predicate, but this time I used monologues employed throughout this dissertation
-because the dialogues they used in their study lack the information about RD of elements before the predicate.%
+I conducted the same investigation for elements before the predicate, but this time I used monologues employed throughout this study
+because the dialogues Nakagawa and her colleagues used in their study lack the information about RD of elements before the predicate.%
 	\footnote{
-	Nakagawa et al. counted the RD of non-anaphoric elements as 100 (the maximum value of RD),
+	\citeA{nakagawaetal08_paper} counted the RD of non-anaphoric elements as 100 (the maximum value of RD),
 	but this study didn't include non-anaphoric elements
-	since I thought that this is too arbitrary.
+	since I thought that this is ad hoc.
 	This modification makes the RD of elements before the predicate (conducted in this study) smaller.
-	This has only a small effect and the overall conclusion does not change because,
+	This has only a small effect and the overall conclusion does not change because
 	according to our result,
 	the RD of pre-predicate elements are larger than that of post-predicate elements;
-	If this study employed the same criteria as Nakagawa et al.,
-	the RD of elements before the predicate are expected to be even larger.
+	if this study employed the same criteria as Nakagawa et al.,
+	the RD of elements before the predicate would be expected to be even larger.
 	}
-Further study is needed to make sure that elements before the predicate in monologues and dialogues have the same characteristics.
+Further studies are needed to make sure that elements before the predicate in monologues and dialogues have the same characteristics.
 Table \ref{RDPreT} shows the average RDs of elements before the predicate based on their word order.
-Here, I simplified word order to only include arguments in the count (excluding fillers, fragments, adverbs, adjectives, etc.).
+Here, I simplified word order to only count arguments (excluding fillers, fragments, adverbs, adjectives, etc.).
 \code{1} indicates that the element in question is the first argument in a clause,
 \ci{2} indicates that it is the second argument, and so on.
 The RD of the first argument is 20.9 on average,
@@ -1821,12 +1823,12 @@ The table indicates that the RDs of elements before the predicate,
 regardless of their word orders,
 are larger than that of postposed elements of the single-contour type.
 The RD of double-contour postposed elements is similar to that of preposed elements in the third position.
-I do not have explanation for the RD of double-contour postposed elements.
+I do not have an explanation for the RD of double-contour postposed elements.
 I believe that postposed elements of the double-contour type are heterogeneous;
 some might be afterthought,
 some might have interactional functions \cite{ono07},
 others might be something else (\citeA{tanaka05,kakuden12}, see also the discussion in \S \ref{WO:PostP:Motiv:Double}).
-What I want to emphasize here is that the RD of the single-contour postposed elements is smaller than elements before the predicate.
+What I want to emphasize here is that the RD of the single-contour postposed elements is smaller than that of elements before the predicate.
 The postposed elements of the single-contour type are evoked when they are uttered;
 their activation cost is low.
 Taking into consideration the fact that
@@ -1835,7 +1837,7 @@ I propose that post-predicative elements are often strongly evoked.
 On the other hand, the activation cost of preposed elements is higher than that of postposed elements.%
  \footnote{
  The average RD of zero pronouns is 5.0,
- which shows that post-predicate elements of single-contour type is
+ which shows that post-predicate elements of the single-contour type is
  close to zero pronouns.
  }
 
@@ -1869,18 +1871,18 @@ On the other hand, the activation cost of preposed elements is higher than that 
 \end{table}
 
 The following are examples of post-predicate constructions from dialogues.
-\Next and \NNext are examples of single-contour type.
-The postposed elements of this type are typically pronouns or modified by demonstratives such as \ci{kono} `\ab{dem}.\ab{prox} (this)', \ci{sono} `\ab{dem}.\ab{med} (this/that)', \ci{ano} `\ab{dem}.\ab{dist} (that)'.
+\Next and \NNext are examples of the single-contour type.
+The postposed elements of this type are typically pronouns or modified by demonstratives such as \ci{kono} `\ab{dem}.\ab{prox} (this)', \ci{sono} `\ab{dem}.\ab{med} (this/that)', and \ci{ano} `\ab{dem}.\ab{dist} (that)'.
 In \Next,
 the postposed element is the pronoun \ci{kore} `\ab{dem}.\ab{prox} (this)'.
-The participants are working on a tasks of ranking famous people based on how much they earn.
-The utterance is produced in the middle of this tasks and
+The participants are working on a task of ranking famous people based on how much they earn.
+The utterance is produced in the middle of this task and
 the demonstrative \ci{kore} refers to the ranking so far.
 Therefore, the referent of \ci{kore} is expected to be evoked in the participants' mind.
 As shown in Figure \ref{D02F0025_sugoi_tatakaiF},
 where the upper box indicates the intensity of the utterance
-and the under box indicates the F$_{0}$,
-the postposed element \ci{kore} does not have F$_{0}$ peak.
+and the lower box indicates the F$_{0}$,
+the postposed element \ci{kore} does not have a F$_{0}$ peak.
 %
 \ex. \label{D02F0025_sugoi_tatakai}
 	\ag.[L:] sugoi tatakai-da-yo-ne \EM{kore} \\
@@ -1895,7 +1897,7 @@ Figure \ref{D02M0028_konohitoF} shows the intensity and the F$_{0}$ of the utter
 Although the F$_{0}$ of the postposed element is not shown because the speaker's utterance is too quiet,
 the intensity tells us that
 the postposed part is uttered without a pause.
-Also, the fact that the intensity is low indicates that the postposed element is only weakly uttered because the referent is evoked enough.
+Also, the fact that the intensity is low indicates that the postposed element is only weakly uttered because the referent is sufficiently evoked.
 %
 \ex.\label{D02M0028_konohito}
 	\ag.[R:] nani yat-teru-no \EM{kono} \EM{hito} \\
@@ -1905,14 +1907,14 @@ Also, the fact that the intensity is low indicates that the postposed element is
 
 Common nouns can also be postposed elements of the single-contour type as in \Next.
 In \Next, where the participants are again involved in the same task,
-the postposed element \ci{syasin} `photo' is uttered without a pause or F$_{0}$ peak as shown in Figure \ref{D02F0015_syasinF}.
-Since R, the other participant, has photos physically and this is part of their rules of the task,
-it is reasonable to assume that the participants have already evoked photos.
+the postposed element \ci{syasin} `photo' is uttered without a pause or F$_{0}$ peak, as shown in Figure \ref{D02F0015_syasinF}.
+Since R, the other participant, is physically holding the photos and this is part of their rules of the task,
+it is reasonable to assume that the participants have already evoked the photos.
 %
 \ex.\label{D02F0015_syasin}
 	\ag.[L:] siro-kuro-desu-ka \EM{syasin} \\
 		white-black-\ab{cop}.\ab{plt}-\ab{q} photo \\
-		`Are (they) black-and-white, the photo?'
+		`Are (they) black-and-white, the photos?'
 		\src{D02F0015: 313.95-315.26}
 
 \begin{figure}
@@ -1947,14 +1949,14 @@ it is reasonable to assume that the participants have already evoked photos.
 On the other hand,
 postposed elements of the double-contour type have not been evoked enough or they are contrastive at the time of utterance.
 In \Next, where again the participants are involved in the task of ranking famous people based on their income,
-\ci{kotti-wa} `on my side' is uttered in a separate contour from the main clause and there is a pause between the main clause and the postposed element as shown in Figure \ref{D02F0015_kottiwaF}.
+\ci{kotti-wa} `on my side' is uttered in a separate contour from the main clause and there is a pause between the main clause and the postposed element, as shown in Figure \ref{D02F0015_kottiwaF}.
 `On my side' is necessary information in the sense that
 the other participant L was talking about how many people were listed on her own side.
-Therefore, the participant R might have thought that `there are ten people' is not enough and add `on my side' later.
+Therefore, the participant R might have thought that `there are ten people' is not enough and added `on my side' later.
 The F$_{0}$ peak of the postposed \ci{kotti-wa} `on my side' is still lower than \ci{zyuu} `ten' in the main clause,
 and the intensity is also lower.
-This is because the postposed element is not focus as \citeA{takami95a,takami95b} has pointed out.
-Foci are typically new in the given-new taxonomy and need F$_{0}$ peak and intensity in order for the hearer to understand clearly what is said.
+This is because the postposed element is not the focus as \citeA{takami95a,takami95b} has pointed out.
+Foci are typically new in the given-new taxonomy and need both F$_{0}$ peak and intensity in order for the hearer to understand clearly what is said.
 %
 \ex.\label{D02F0015_kottiwa}
  \a.[L:] There are eleven people (listed on my side).
@@ -1974,17 +1976,17 @@ Foci are typically new in the given-new taxonomy and need F$_{0}$ peak and inten
 %	\src{D02F0015: 890.51-893.82}
 
 In \Next,
-L is interviewing about R's study on the difference among Japanese dialects.
+L is interviewing R about her study on the difference among Japanese dialects.
 R utters `western area' in a separate contour from the predicate
-because R compares different dialects and, only in eastern area, she didn't find any differences among smaller areas (prefectures).
+because R compares different dialects and, only in the eastern area, did she find no differences among smaller areas (prefectures).
 Therefore `the eastern area' is contrasted with other areas.
-In this case, the F$_{0}$ peak and the intensity of the postposed element are as high as those of the main clause
+In this case, the F$_{0}$ peak and the intensity of the postposed element are as high as those of the main clause,
 as shown in Figure \ref{D04F0050_kantooF}.
 %
 \ex.\label{D04F0050_kantoo}
  \ag.[R:] kooiu sa-ga aru-ne-tte iu-koto-wa ie-nai zyootai-desi-ta-ne \EM{kantoo-no} \EM{hoo-wa} \\
  	such.and.such difference-\ci{ga} exist-\ab{fp}-\ab{q} say-thing-\ci{wa} say-\ab{neg} situation-\ab{cop}.\ab{plt}-\ab{past}-\ab{fp} east-\ab{gen} direction-\ci{wa} \\
-	`One cannot say that there is such as such difference, eastern area.'
+	`One cannot say that there is such and such difference, eastern area.'
 	\src{D04F0050: 338.54-349.27}
 
 \begin{figure}
@@ -2013,16 +2015,17 @@ as shown in Figure \ref{D04F0050_kantooF}.
 
 It has been pointed out that
 topics or given elements tend to appear clause initially \cite{mathesius28,firbas64,danes70}.
-Then, what are motivations for them to appear post-predicatively?
-In this section I mainly discuss the post-predicate elements of single-contour type in comparison with the elements before the predicate.
-Those of double-contour type is heterogeneous as discussed above and this needs further investigation.
+What are the motivations for them to appear post-predicatively?
+In this section I mainly discuss the post-predicate elements of the single-contour type in comparison with the elements before the predicate.
+Those of the double-contour type are heterogeneous as discussed above and this needs further investigation.
 
 
 %%----------------------------------------------------
 \subsubsection{Low activation cost and general characteristics of intonation unit}\label{WO:PostP:Motivations:IU}
 
 Before getting directly into the question of
-why some topics appear post-predicatively,
+why some topics appear post-predicatively,%
+%%%ISSUE "post-predicatively" does not allign properly.
 let us begin with the question of why some topics do not appear clause-initially.
 As discussed in \S \ref{GivenAppearClause-Initially} and this section,
 the activation cost of preposed topics is higher than
@@ -2030,17 +2033,17 @@ those of postposed topics and zero pronouns.
 The low activation cost of post-predicate elements suggests that
 they are not anchors to the previous discourse;
 since they are already evoked enough,
-they do not have to relate the previous contexts and the current utterance.
-Therefore, they have at least motivations for not appearing clause-initially.
+they do not have to relate to the previous contexts and the current utterance.
+Therefore, they have the motivations for not appearing clause-initially.
 Why do they appear post-predicatively?
 
-I argue that the element whose activation cost is low tend to appear post-predicatively
+I argue that the element whose activation cost is low tends to appear post-predicatively
 because, in Japanese and many other languages,
 an intonation unit starts from high F$_{0}$ and gradually declines toward the end 
 \cite{libermanpierrehumbert84,cruttenden86,duboisetal93,chafe94,prieto96,truckenbrodt04,denetal10}.
-Since the elements with low activation cost does not require high F$_{0}$,
+Since the elements with low activation cost do not require high F$_{0}$,
 their preferred position is toward the last position in an intonation unit.
-This kind of phenomenon has been already reported in Siouan, Caddoan, and Iroquoian languages of North America \cite{mithun95}.
+This kind of phenomenon has already been reported in Siouan, Caddoan, and Iroquoian languages of North America \cite{mithun95}.
 In these languages,
 this newsworthy-first (i.e., given-last) word order is fully grammaticalized, and Mithun proposes a hypothesis that the given-last word order comes from right-detachment constructions, namely, the postposed constructions discussed in this section.
 She argues that this word order is motivated by the general tendency that intonation units start from high F$_{0}$, which gradually declines.
@@ -2051,19 +2054,19 @@ as \citeA{cruttenden86} discusses:
 The explanation for declination has often been related to the decline in transglottal pressure as the speaker uses up the breath in his lungs.
 A more recent explanation suggests that an upward change of pitch involves a physical adjustment which is more difficult than a downward change of pitch,
 the evidence being that a rise takes longer to achieve than a fall of a similar interval in fundamental frequency.
-\cite[][p.~168]{cruttenden86}
+\cite[][168]{cruttenden86}
 \end{quote}
 %
 
-Moreover, \citeA[][p.~89]{comrie89} argues that unstressed constituents such as clitic pronouns are cross-linguistically ``subject to special positioning rules only loosely, if at all, relating to their grammatical relation'';
+Moreover, \citeA[][89]{comrie89} argues that unstressed constituents such as clitic pronouns are cross-linguistically ``subject to special positioning rules only loosely, if at all, relating to their grammatical relation'';
 therefore, he argues that ``sentences with pronouns can be discounted in favour of those with full noun phrases''.
 %I believe that this tendency is also the case not only with pronouns but also given full NPs in Japanese
 %because, in Japanese, pronouns are not very frequent and full NPs are frequently used to refer to activated referent and they are frequently unstressed \cite[\S 6.3]{venditti00}.
 Arguing against the hypothesis \cite{givon79}
 that one can reconstruct ancient word order of a language based on pronominal affixes and clitics,
-Comrie suggests that the order of pronominal affixes and clitics in a clause is more likely to be influenced by stress rhythm properties \cite[][p.~218]{comrie89}.
+Comrie suggests that the order of pronominal affixes and clitics in a clause is more likely to be influenced by stress rhythm properties \cite[][218]{comrie89}.
 
-I argue that the order of Japanese unstressed pronouns and NPs are also affected by some phonetic constraints as Comrie suggests.
+I argue that the order of Japanese unstressed pronouns and NPs is also affected by phonetic constraints as Comrie suggests.
 As will be discussed in Chapter \ref{Intonation},
 some unstressed pronouns and NPs referring to highly evoked entities
 lose pitch peaks and are produced only in low pitch.
@@ -2075,10 +2078,11 @@ see Chapter \ref{Intonation}.
 
 
 %%----------------------------------------------------
-\subsubsection{Why post-predicate construction mainly appears in dialogue and the source of ``emotive'' usage}
+\subsubsection{Why the post-predicate construction mainly appears in dialogue and what the source of ``emotive'' usage is}
 
-The declination of F$_{0}$ does not fully explain post-predicate constructions in Japanese.
-The discussion above does not explain why Japanese post-predicate construction mainly appears in dialogues, but not in monologues.
+The declination of F$_{0}$ does not fully explain post-predicate constructions in Japanese.%
+%%%ISSUE "Japanese" out of alignment.
+The discussion above does not explain why the Japanese post-predicate construction mainly appears in dialogues, but not in monologues.
 Moreover, Japanese post-predicate constructions are reported to have ``emotive'' characteristics \cite{ono07}.
 As examples for emotive characteristics of post-predicate constructions, consider the following constructed example.
 Let us assume that a boy gave a present to his girlfriend.
@@ -2103,12 +2107,12 @@ the canonical order is \Next and
 	\hfill{(Post-predicate construction)}
 
 These two utterances consist of the same constituents \ci{kore} `this' and \ci{nani} `what'.
-As has been pointed out in \citeA{onosuzuki92} and \citeA{ono07},
+As was pointed out in \citeA{onosuzuki92} and \citeA{ono07},
 however, the implicatures of these two are different.
 In \LLast,
 she simply does not know what she received,
 probably because she has never seen it before.
-Contrastively, in \Last,
+By contrast, in \Last,
 she knows what she received (it's a banana case) but she did not like it, as we expected.
 \chd{In other contexts, \Last can be used to express the speaker's surprise,
 excitement, etc.
@@ -2120,7 +2124,7 @@ it is obvious that the implicature in \Last cannot be derived from the meaning o
 In this study, I propose two factors involved in the questions of why post-predicate constructions mainly appear in dialogues and of what the source of this ``emotive'' usage is:
 word order and intonation.
 
-Firstly, I concentrate on the relation between word order and why they appear mainly in dialogues.
+Firstly, I discuss why the post-predicate construction appears mainly in dialogues.
 My point is that,
 since the intonation-unit-final position is a position for expressions with interactional functions,
 the post-predicate element (of the single-contour type) plays some interactional role.
@@ -2128,13 +2132,13 @@ As has traditionally been argued \cite[e.g.,][]{watanabe71},
 the post-predicate position is for interaction in Japanese.
 \citeA{iwasaki93} extended this argument and claimed that
 in fact the intonation-unit-final position is the position for interaction;
-the post-predicate position is only one of examples of this intonation-unit-final position.
+the post-predicate position is only one example of this intonation-unit-final position.
 Consider the following example.
 Each line corresponds to a single intonation unit.
 The lines a, b, and c end with interactional markers \ci{ne} and \ci{sa},
-which is indicated by \EM{IT}.%
+which is indicated by \EM{IT}.
 As examples \Next show,
-these interactional markers appear IU-finally.
+these interactional markers appear IU-finally.%
 	\footnote{
 	IT stands for ``interactional component'',
 	one of four types of components in an intonation unit.
@@ -2144,7 +2148,7 @@ these interactional markers appear IU-finally.
 %	SU (subjective component), and
 	CO (cohesive component).
 	The order of an intonation unit is proposed to be
-	LD ID CO IT in Japanese \cite[][p.~44]{iwasaki93}.
+	LD ID CO IT in Japanese \cite[][44]{iwasaki93}.
 	}
 %
 \ex.
@@ -2167,7 +2171,7 @@ these interactional markers appear IU-finally.
  		gather-and \\
 		ID-CO \\
 	\glt `gathered dead bodies on top of that bank...'
-	\hfill{\cite[][p.~47, gloss and transcription modified by the current author]{iwasaki93}}
+	\hfill{\cite[][47, gloss and transcription modified by the current author]{iwasaki93}}
 
 As \citeA{morita05} suggests,
 a general function of interactional particles such as \ci{ne} and \ci{sa} is ``to foreground a certain stretch of talk as an `interactionally relevant unit' to be operated on
@@ -2186,20 +2190,20 @@ possibly employing conversational analysis.
 Secondly,
 I argue that 
 the source of ``emotive'' implicature of \ref{nanikore} in contrast with \ref{korenani} comes from the intonational constraint of the post-predicate element.
-In Japanese, \ci{wh}-questions can be optionally uttered in rising intonation.
+In Japanese, \ci{wh}-questions can be optionally uttered with rising intonation.
 %%% 要文献
 However, the post-predicate element is always falling and the rising intonation is not natural.
 Figure \ref{nanikoreF} shows the pitch contour of the utterance \ci{nani kore} `what's this (weird thing)?' \ref{nanikore},
 while Figure \ref{korenaniF} shows the pitch contour of neutral order \ci{kore nani} `what's this?' \ref{korenani}.
-As indicated in the figures, the neutral word order \ref{korenani} in Figure \ref{korenaniF} is uttered in rising intonation,
+As indicated in the figures, the neutral word order \ref{korenani} in Figure \ref{korenaniF} is uttered with rising intonation,
 and I believe that this is the most frequent intonation,
 whereas the post-predicate construction \ref{nanikore} in Figure \ref{nanikoreF} is falling intonation,
 in which case it is impossible to utter \ci{kore} with rising intonation.
 %Questions with falling intonation convey negative emotion of the speaker.
-It is this constraint on the intonation of post-predicate elements to cause emotive implicature of the utterance \ref{nanikore}.
-In fact, the neutral word order \ci{kore nani} can be uttered in falling intonation as shown in Figure \ref{korenani_fallF}.
+It is this constraint on the intonation of post-predicate elements that yields the emotive implicature of the utterance \ref{nanikore}.
+In fact, the neutral word order \ci{kore nani} can be uttered in falling intonation, as shown in Figure \ref{korenani_fallF}.
 In this case, as predicted from the discussion, the falling intonation conveys emotion of the speaker.
-It is possible for \ci{nani} `what' in \ref{nanikore} to be uttered in rising intonation as indicated in Figure \ref{nanikore_riseF},
+It is possible for \ci{nani} `what' in \ref{nanikore} to be uttered with rising intonation as indicated in Figure \ref{nanikore_riseF},
 in which case the emotive nuance of \ref{nanikore} disappears.
 
 
@@ -2245,25 +2249,25 @@ in which case the emotive nuance of \ref{nanikore} disappears.
 
 Finally, in this section,
 I briefly mention intriguing studies on post-predicate constructions,
-which I assume belong to double-contour type.
+which I assume belong to the double-contour type.
 The first study is \citeA{kakuden12}.
-They investigated whether the hearer responses (including back-channel responses) to the speaker near and after the predicate and showed that
+They investigated whether the hearer responds (including back-channel responses) to the speaker near and after the predicate and showed that
 the speaker adds post-predicate elements
 when the hearer does not respond to the predicate.
-Their further analysis suggests that the speaker produces post-predicate elements to acquire hearer's response and to achieve mutual belief.
+Their further analysis suggests that the speaker produces post-predicate elements to acquire the hearer's response and to achieve mutual belief.
 Let us see example \Next,
 which comes from the dialogue part of CSJ they employed.
-The duration of silence is shown in second inside parentheses
+The duration of silence is shown in seconds inside parentheses
 since it is important for the discussion.
 In \Next[-L2], where the speaker postposes the element \ci{kono kenkyuu} `this study',
 there are pauses between the verb phrase and the postposed demonstrative \ci{kono} `this' and between the demonstrative and the postposed NP \ci{kenkyuu} `study',
 which is enough time for L to realize that
 R does not respond to L.
-Note that R, the listener of the post-posed construction,
+Note that R, the listener of the postposed construction,
 does not respond until 604.33 seconds,
 0.32 seconds after L finished the post-predicate part.
 Also note that
-these pauses differentiate post-predicate constructions of double-contour type from those of single-contour type.
+these pauses differentiate post-predicate constructions of the double-contour type from those of the single-contour type.
 %
 \ex.
  \ag.[L1:] ima nan-nin-gurai-de (0.588) a (0.29) ohi \\
@@ -2276,7 +2280,7 @@ these pauses differentiate post-predicate constructions of double-contour type f
  \b.[] \src{D04M0010: 597.20-604.01}
  \bg.[R3:] ettoo (0.434) a (0.137) boku-no syozoku-si-teru kenkyuu-situ-de(0.44)-wa hanasi-kotoba-no ninsiki-o yat-teru-no-wa (0.143) m soo-desu-ne \\
            \ab{fl} {} \ab{fl} {} \ab{1}\ab{sg}-\ab{gen} belong-do-\ab{prog} study-room-\ab{loc}-\ci{wa} speech-language-\ab{gen} recognization-\ci{o} do-\ab{prog}-\ab{nmlz}-\ci{wa} {} \ab{frg} so-\ab{cop}.\ab{plt}-\ab{fp} \\
-           `Lets see... in the lab I belong to, the one who studies speech recognition is, yes...,'
+           `Lets see... in the lab I belong to the one who studies speech recognition is, yes...,'
  \bg.[R4:] boku hitori-desu-ne \\
       \ab{1}\ab{sg} alone-\ab{cop}.\ab{plt}-\ab{fp} \\
       `it's just me.'
@@ -2289,7 +2293,7 @@ these pauses differentiate post-predicate constructions of double-contour type f
 \citeA{tanaka05} investigates postposed and preposed constructions
 in terms of interactional structures:
 preferred vs.~dispreferred structures.
-See the discussion \S \ref{Back:CharJ:WO:PostP} for detail.
+See the discussion in \S \ref{Back:CharJ:WO:PostP} for detail.
 %Preferred structures include assessment followed by agreement and request followed by acceptance,
 %while dispreferred structures include assessment followed by disagreement and request followed by refusal.
 %According to \citeA[332ff.]{levinson83},
@@ -2340,20 +2344,20 @@ See the discussion \S \ref{Back:CharJ:WO:PostP} for detail.
 %%----------------------------------------------------
 \subsection{Summary of post-predicate elements}
 
-In this section,
+In this section
 I investigated post-predicate elements.
 It turned out that
-the activation cost of postposed elements are much lower than
+the activation costs of postposed elements are much lower than
 that of preposed elements,
 which appear before the predicate.
-It suggests that topics also appear post-predicatively.
+This suggests that topics also appear post-predicatively.
 I also discussed why
 topics appear post-predicatively as well as clause-initially
 in terms of the shape of intonation and its constraints on Japanese grammar.
 
 The characteristic found in this study is one of many features of post-predicate elements.
-In the future study,
-it is necessary to explore how these features are related with each other.
+In future research,
+it is necessary to explore how these features are related to each other.
 
 
 %%----------------------------------------------------
@@ -2363,8 +2367,8 @@ it is necessary to explore how these features are related with each other.
 This section discusses pre-predicate elements,
 which appear immediately before the predicate.
 In \S \ref{WO:PreP:New},
-I show a result which indicates that
-new, namely focus, elements tend to appear right before the predicate.
+I show results which indicate that
+new, namely focus elements, elements tend to appear right before the predicate.
 In \S \ref{WO:PreP:Motivation},
 I discuss motivations for focus elements to appear near the predicate.
 
@@ -2421,9 +2425,9 @@ Figure \ref{DiffInfoStatusF2} shows the distance between the element and the pre
 %Figure \ref{WOISGivenF2} and \ref{WOISNewF2} are histograms of position of arguments excluding other expressions and clauses with one argument.
 %They also show the distribution of A, S, and P in each position.
 As indicated in Figure \ref{DEPositionISF2},
-the distribution of anaphoric elements skews towards clause-initial position,
-whereas that of non-anaphoric elements does not.
-Taking Figure \ref{DiffInfoStatusF2} also into this account,
+the distribution of anaphoric elements is skewed towards clause-initial position,
+whereas that of non-anaphoric elements is not.
+Taking Figure \ref{DiffInfoStatusF2} into this account as well,
 we can see that many of new elements appear immediately before the predicate.
 %Considering clauses which contain equal to or more than two arguments,
 %given elements appear at the initial position most frequently
@@ -2434,16 +2438,16 @@ we can see that many of new elements appear immediately before the predicate.
 %New S or P elements appear more frequently than given S or P elements in the second position.
 \chd{As discussed in \ref{WO:Intro}, the mixed effects model of information status (the distance between the predicate and the element in question) shows that
 the contribution of the distance is only marginally significant.
-However, a further analysis imply that the distance is also a significant factor to predict information status.
+However, a further analysis implies that the distance is also a significant factor for predicting information status.
 As is clear from Table \ref{ParInfoStatusCTT} and \ref{Par:InfoStatusPar:LSMEANST},
 datives tend to code new elements (especially, as opposed to \ci{wa}).
 Datives can appear anywhere, from pre-predicate to clause-initial positions,
 which is shown in Figure \ref{WO:Prep:New:DiffASPF}.
 %In fact, the model excluding datives indicates that
 %both the distance and particles are significant factors to predict information status (likelihood ratio test, $p<0.05$ without the distance, $p<0.001$ without particles).
-Therefore, I tantatively conclude that the distance between the predicate and the element in question (excluding \ci{ni}-coded elements) is an important factor for information status and
+Therefore, I tentatively conclude that the distance between the predicate and the element in question (excluding \ci{ni}-coded elements) is an important factor for information status and
 new elements appear before the predicate.
-This supports a classic observation in other languages that focus appears closely with the predicate (\citeA{bresnan94,morimoto99} on Bantu languages, \citeA{jacennikdryer92} on Polish, \citeA{erguvanli84} on Turkish, see \citeA{morimoto00} for the summary of studies on both VO and OV languages).
+This supports a classic observation in other languages that focus appears closely with the predicate (\citeA{bresnan94,morimoto99} on Bantu languages, \citeA{jacennikdryer92} on Polish, \citeA{erguvanli84} on Turkish, see \citeA{morimoto00} for a summary of studies on both VO and OV languages).
 Further studies are necessary to obtain conclusive evidence.}
 
 \begin{figure}
@@ -2460,7 +2464,7 @@ The following are example of non-anaphoric elements appearing close to the predi
 In \Next,
 \ci{kyoomi} `interest' appear immediately before the predicate \ci{moti} `have',
 and, in \NNext,
-\ci{aidenthithii} `identity' in line a, \ci{inoti} `life' in line b, and \ci{ti} `blood' in line c appear right before the preciates \ci{kake} `risk' and \ci{nagasi} `bleed', respectively.
+\ci{aidenthithii} `identity' in line a, \ci{inoti} `life' in line b, and \ci{ti} `blood' in line c appear right before the prediates \ci{kake} `risk' and \ci{nagasi} `bleed', respectively.
 Non-anaphoric Ps are typically abstract concepts like \ci{kyoomi} `interest' in \Next, \ci{aidenthithii} `identity' in \NNext[a], and \ci{inoti} `life' in \NNext[b], or
 indefinite like \ci{ti} `blood' in \NNext[c].
 %
@@ -2482,7 +2486,7 @@ indefinite like \ci{ti} `blood' in \NNext[c].
 		`bled (in battles),'
  \bg. rekisi-ga ee sono-go tenkai s-are-masu \\
  	history-\ci{ga} \ab{fl} that-later progress do-\ab{pass}-\ab{plt} \\
-	`the history went on this way.'
+	`history went on this way.'
 	\src{S00M0199: 343.53-351.77}
 %S00M0199|00337016L|337.015835|351.772351|L|その時(0.488)(F えー)(F ま)その聖地(0.157)を(0.142)守るという意味で(F あのー)このコソボ平原において(0.422)(F えー)多数のセルビア人が民族の(0.204)(F えー)アイデンティティーを賭けて命を賭けて血を流したという(0.379)歴史が(0.17)(F えー)その後(0.167)展開されます|[文末]|
 
@@ -2554,28 +2558,25 @@ However,
 it is obvious that argument-focus structure,
 where the predicate is not in the domain of focus,
 is the least frequent type among all three types (predicate-focus, sentence-focus, and argument-focus structures).
-Especially the corpus employed in this study is monologues,
-there are expected to be even fewer examples of argument-focus structures
-because argument-focus structure typically appears as the answer to a question of \ci{who/what} as shown in \Next,
-where the capital letters indicate prominence.
+Given that the corpus employed in this study consists of monologues, it is to be expected that there are even fewer examples of argument-focus structures because these structures typically appear as the answer to a who/what question, as shown in \Next where the capital letters indicate prominence.
 %
 \ex.
  \a.[Q:] Who went to school?
  \b.[A:] [The CHILDREN]$_{F}$ [went to school]$_{T}$.
- \hfill{\cite[][p.~121]{lambrecht94}}
+ \hfill{\cite[][121]{lambrecht94}}
 
 Since there are no (explicit) questions in monologues,
-there are few argument-focus structure.
+we find fewer argument-focus structures.
 
-Another context in which sentences of argument-focus structure appear is ``A not B'' context.
-In monologue, ``A not B'' context typically appears in self-repair,
+Another context in which sentences with argument-focus structure appear is the ``A not B'' context.
+In monologue, ``A not B'' contexts typically appear in self-repair,
 which is also rare in our relatively smooth monologues.
 Therefore, it is not unreasonable to assume that the predicate is in the domain of focus most of the time,
 and I argue that the information-structure continuity principle \ref{IScontinuityP2} explains why new elements (i.e., focus elements) tend to appear immediately before the predicate.
 
 One piece of evidence that supports the information-structure continuity principle is the fact that
 it is difficult for presupposed elements to appear immediately before the predicate,
-intervening the focus domain.
+interrupting the focus domain.
 Compare \Next[A] and \Next[A$^{\prime}$],
 which are assumed to be the answers to the question \Next[Q].%
 	\footnote{
@@ -2585,9 +2586,9 @@ which are assumed to be the answers to the question \Next[Q].%
 	See the discussion in \S \ref{CasePar} for more detail.
 	}
 In \Next[A],
-the presupposed elements \ci{taroo-ni} `to Taro' and \ci{hanako-ni} `to Hanako' are intervening the domain of focus `gave a travel ticket' and `gave a cake'.
+the presupposed elements \ci{taroo-ni} `to Taro' and \ci{hanako-ni} `to Hanako' are interrupting the domain of focus `gave a travel ticket' and `gave a cake'.
 Therefore this sentence is not acceptable.
-Contrarily, in \Next[A$^{\prime}$],
+Conversely, in \Next[A$^{\prime}$],
 the presupposed elements do not intervene the domain of focus and hence this is acceptable.
 %
 \ex.
@@ -2609,7 +2610,7 @@ where the predicate is given.
 \ex.
  In cases where the predicate is given,
  the position immediately before the predicate is the position for new.
- \hfill{\cite[][p.~60, translated by the current author]{kuno78}}
+ \hfill{\cite[][60, translated by the current author]{kuno78}}
 
 I argue that this observation also applies to cases where the predicate is new.
 
@@ -2673,24 +2674,24 @@ one can see that
 \subsection{Summary of pre-predicate elements}
 
 The results of this section showed that
-new, namely focus, elements tend to appear right before the predicate.
+new elements, namely focus elements, tend to appear right before the predicate.
 A similar claim has been made by \citeA{kuno78} and \citeA{endo14}
 through constructed examples.
-This study supported their claim by examining natural occurring utterances.
-I also discussed motivations for focus to appear right before the predicate.
+This study supported their claim by examining naturally occurring utterances.
+I also discussed motivations for the focus to appear right before the predicate.
 
 %%----------------------------------------------------
 %%----------------------------------------------------
 \section{Discussion}\label{WODiscussion}
 
 This section first discusses possible confounding effects on word order in Japanese,
-especially in association with basic word order (\S \ref{WO:Dis:Confounding}).
+in particular in association with basic word order (\S \ref{WO:Dis:Confounding}).
 Second,
 I discuss Giv{\'{o}}n's topicality hierarchy (\S \ref{WO:Dis:Givon}).
 I provide some counter-examples of this hierarchy and
 propose to modify it.
 Finally, 
-I discuss the implications of this study's findings toward word order typology (\S \ref{WO:Dis:WOTypology}).
+I discuss the implications of this study's findings as regards word order typology (\S \ref{WO:Dis:WOTypology}).
 
 
 
@@ -2736,7 +2737,8 @@ I discuss the implications of this study's findings toward word order typology (
 
 
 It is necessary to take other features into account
-to see the exact effect of topichood and focushood on word order.
+to see the exact effect of topichood and focushood on word order.%
+%%%ISSUE odd word break in "topichood".
 Especially, the effect of ``basic word order'' should not be ignored.
 %I did not employ any statistical analysis because
 %there are still not enough data in my corpus.
@@ -2748,7 +2750,7 @@ These figures indicate that
 anaphoric elements of all grammatical function types are still more likely to appear earlier in a clause than new elements.
 A and S are more likely to appear earlier in a clause than P because of the basic word order.
 However, my argument still holds for the same grammatical function types.
-In case with new elements,
+In cases with new elements,
 one can see the effect of basic word order;
 the peak of S is 4,
 which means the 4th position is the most popular for new S (Figure \ref{DEPositionASPSF}),
@@ -2777,7 +2779,7 @@ while high RD means low topicality.
  \b. Unstressed/bound pronouns or grammatical agreement
  \b. Zero anaphora
  \b.[$\downarrow$] Low RD
- \hfill{\cite[][p.~7]{givon83}}
+ \hfill{\cite[][7]{givon83}}
 
 Here I point out two counter-examples against this hierarchy.
 First,
@@ -2792,11 +2794,11 @@ the overall tendency is that
 the elements closer to the predicate have higher average RD.%
  \footnote{
  For now I do not have an explanation for S in the second position.
- It is necessary to test whether the difference between Ss in the first and the second positions are statistically significant or not.
+ It is necessary to test whether the difference between Ss in the first and the second positions is statistically significant or not.
  }
 %%% 2Sに関しては説明が必要
 The topicality hierarchy \ref{TopicHierarchy} predicts that
-clause-initial elements (d in \ref{TopicHierarchy}) is lower RD than elements in the neutral-ordered position (e in \ref{TopicHierarchy}).%
+clause-initial elements (d in \ref{TopicHierarchy}) is lower RD than that of elements in the neutral-ordered position (e in \ref{TopicHierarchy}).%
 	\footnote{
 	I assume that all elements that have antecedents (and namely RDs) are definite.
 	}
@@ -2864,13 +2866,13 @@ preposed definite NPs (d in \ref{TopicHierarchy}) and neutral-ordered definite N
 higher RDs than
 postposed definite NPs.
 As discussed above,
-elements are postposed for some interactional purpose and/or intonational reason.
+elements are postposed for interactional purposes and/or intonational reason.
 
 
 \begin{table}
 %\begin{minipage}{0.5\textwidth}
 \centering
-\caption{RD of postposed elements of single-contour type (based on expression type)}
+\caption{RD of postposed elements of the single-contour type (based on expression type)}
 \begin{tabular}{lrr}
 \toprule
   & Pronoun & NP \\
@@ -2897,13 +2899,13 @@ RD & 15.1 & 5.0 \\
 \end{table}
 
 The final point is an additional suggestion of \ref{TopicHierarchy} rather than a counter-example.
-The RD of postposed elements of double-contour type is much higher than Giv\'on predicts.
+The RD of postposed elements of the double-contour type is much higher than Giv\'on predicts.
 As will be argued in Chapter \ref{Intonation},
 a unit of information structure corresponds to a unit of intonation.
-Since postposed elements of single-contour type by definition belong to the same intonation unit as the main predicate,
-the predicate and the postposed element form a single unit (construction) and postposed elements are relatively homogeneous and are relatively easy to characterize.
+Since postposed elements of the single-contour type by definition belong to the same intonation unit as the main predicate,
+the predicate and the postposed element form a single unit (construction) and postposed elements are relatively homogeneous and easy to characterize.
 However,
-postposed elements of double-contour type are heterogeneous as discussed above and are difficult to characterize
+postposed elements of the double-contour type are heterogeneous as discussed above and are difficult to characterize
 because the element itself corresponds to a single unit.
 The motivations for such elements to be uttered are heterogeneous.
 The functions of such postposed elements are determined by the sequence of conversation.
@@ -2939,7 +2941,7 @@ Tomlin proposes this claim as Verb-Object Bonding.
 \ex. \tl{Verb-Object Bonding (VOB):}
 	the object of a transitive verb is more tightly bounded to the verb
 	than is its subject.
-	\hfill{\cite[][p.~74]{tomlin86}}
+	\hfill{\cite[][74]{tomlin86}}
 %``[i]n general the object of a transitive clause is syntactically and semantically more tightly `bound' to the verb than is the subject of a transitive clause'' (p.~73).
 
 He also states that
@@ -2958,13 +2960,14 @@ In French, for example,
 liaison does not occur between the subject and the transitive verb,
 but it does between the object and the verb \cite[see also][]{selkirk72}.
 There is no liaison between the subject \ci{les gens} and the verb \ci{ach\`{e}tent} as in \Next,
-whereas there can be liaison between the verb \ci{donnerons} and the object \ci{une pomme} as in \NNext.
+whereas there can be liaison between the verb \ci{donnerons} and the object \ci{une pomme} as in \NNext.%
+%%%ISSUE IPA fonts (inside the command \tp{}) are not shown properly.
 %
 \ex.
  \a. \glll
 	les gens ach\`{e}tent beaucoup de \c{c}a \\
 	\tp{le} \tp{Z\~a} \tp{aSEt} \tp{boku} \tp{d@} \tp{sa} \\
-	the people buy much of that \\
+	the people buy.\ab{3}\ab{pl} much of that \\
 	`Those people buy a lot of that.' \hfill{(no liaison)}
  \b. *\tp{le} \tp{Z\~a} \tp{zaSEt} \tp{boku} \tp{d@} \tp{sa} 
  		 \hfill{(*liaison)}
@@ -2996,7 +2999,7 @@ This happens between verb and object, but not between subject and verb.
 		\hfill{\cite[][pp.~29--30]{bamgbose64}}
 
 These phonological phenomena in French and Yoruba suggest that
-the object and predicate are bound tighter than the subject and predicate.
+the object and predicate are bound more tightly than the subject and predicate.
 In a similar manner,
 in Japanese,
 the focus element and the predicate form a single intonation unit,
@@ -3036,7 +3039,8 @@ while \Next[b] is a case where the object is indefinite and is incorporated into
 
 As \citeA{mithun84} observes,
 in some languages patient S can also be incorporated into verbs
-but languages allows patient S-incorporation also allows P-incorporation (See also \citeA{baker88}).
+but languages allows patient S-incorporation also allows P-incorporation (See also \citeA{baker88}).%
+%%%ISSUE "P-incorporation" does not align properly.
 Namely, there is a universal hierarchy as in \Next.
 The last two (agent S and A) are in brackets because
 they are not attested.
@@ -3082,7 +3086,7 @@ The table shows that
 SOV and SVO are the most popular dominant word order among all other possibilities as predicted,
 while the next popular order is VSO,
 which is against our prediction.
-However, note that, in deciding which word order is dominant in a language,
+However, note that in deciding which word order is dominant in a language,
 Dryer included only
 ``a transitive clause, more specifically declarative clauses in which both the subject and object involve a noun (and not just a pronoun)'' \cite{wals-81}.
 Therefore, this dominant word order might not be of predicate-focus structure.
