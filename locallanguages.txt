@@ -1,2 +1,35 @@
-languages to index
-oneperline
+Chinese
+Czech
+Dutch
+English
+French
+Georgian
+German
+Greek
+Hindi
+Hixkaryana
+Hungarian
+Iranian
+Iroquoian
+Kansai Japanese 
+Korean  
+Mam-Maya
+Mian
+Mokilese
+Mongolian
+Navajo
+Niuean
+Onondaga
+Polish
+Russian
+Ryukyuan
+Sakapultec Maya
+Sinhalese
+Siouan
+Spanish
+Swahili 
+Lahu
+Tongan
+Turkish
+Yoruba
+Yucatec
